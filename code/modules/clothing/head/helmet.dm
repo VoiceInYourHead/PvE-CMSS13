@@ -357,10 +357,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "helmet"
 	item_state = "helmet"
 	armor_melee = CLOTHING_ARMOR_MEDIUM
-	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
 	armor_energy = CLOTHING_ARMOR_NONE
-	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bio = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
@@ -759,7 +759,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "The older Mk20 Advanced Armored Crew Helmet is a variant of the precursor program to the Mk30, with a flipdown welding visor attached. Camera on the side and biometric transmitter ties into the sensor matrix."
 	icon_state = "tanker_helmet"
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_HIGH
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_inventory = BLOCKSHARPOBJ
@@ -780,9 +780,9 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "An M10 marine helmet version designed for use in darkened enviroments. It is coated with a special anti-reflective paint."
 	icon_state = "marsoc_helmet"
 	armor_melee = CLOTHING_ARMOR_MEDIUM
-	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
@@ -833,7 +833,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "grenadier_helmet"
 	item_state = "grenadier_helmet"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_bomb = CLOTHING_ARMOR_ULTRAHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_HIGH
@@ -866,7 +866,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "sadar_helmet"
 	desc = "M10 combat helmet fitted with enhanced suspension liner and improved hearing protection, for firing high-concussion weapons like the M5 RPG."
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
-	armor_bomb = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
 	specialty = "M3-T bombardier"
 	flags_inventory = BLOCKSHARPOBJ
 	clothing_traits = list(TRAIT_EAR_PROTECTION)
@@ -877,7 +877,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "Standard flight helmet of the UA treaty forces. Probably one of the few good things that came out of the Joint Procurement Office. Eyepiece allows for augmented reality effects, giving relevant data in real time."
 	icon_state = "helmetp"
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_inventory = BLOCKSHARPOBJ
@@ -895,7 +895,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	name = "\improper M10 ghillie helmet"
 	desc = "M10 helmet fitted with thermal camouflage ghillie strips. Used and customized by USCMC Scout Snipers."
 	icon_state = "ghillie_coif"
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	flags_inventory = BLOCKSHARPOBJ
@@ -910,7 +910,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "co_officer"
 	item_state = "co_officer"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	specialty = "M10 pattern captain"
@@ -953,10 +953,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	name = "\improper M09 Custom Helmet"
 	desc = "Partially due to old stocks, partially due to preference. USCM MARSOC commando ballistic helmet, customized and updated to mission requirements."
 	icon_state = "marsoc_helmet"
-	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bio = CLOTHING_ARMOR_HIGH
 	specialty = "M10 pattern SOF"
 	flags_atom = NO_SNOW_TYPE
 	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/marine_raider, new /obj/item/device/helmet_visor/security)
@@ -974,7 +974,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "Venlar padded cap with rheological armor reinforcement. A bit finicky to fit right, but lightweight while protecting like a helmet."
 	icon_state = "pmc_hat"
 	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_LOW
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
@@ -1003,7 +1003,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "An M10 combat helmet modified with full face visor and cutting edge materials, used by W-Y's inhouse corporate tactical teams."
 	icon_state = "heavy_helmet"
 	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
-	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
