@@ -37,9 +37,9 @@
 /datum/ammo/bullet/pistol/ap
 	name = "armor-piercing pistol bullet"
 
-	damage = 25
+	damage = 30
 	accuracy = HIT_ACCURACY_TIER_2
-	penetration= ARMOR_PENETRATION_TIER_8
+	penetration= ARMOR_PENETRATION_TIER_5
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 
 /datum/ammo/bullet/pistol/ap/penetrating
@@ -106,26 +106,26 @@
 
 /datum/ammo/bullet/pistol/heavy/super //Commander's variant
 	name = ".50 heavy pistol bullet"
-	damage = 60
+	damage = 70
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_6
-	penetration = ARMOR_PENETRATION_TIER_4
+	penetration = ARMOR_PENETRATION_TIER_5
 
 /datum/ammo/bullet/pistol/heavy/super/highimpact
 	name = ".50 high-impact pistol bullet"
-	penetration = ARMOR_PENETRATION_TIER_1
+	penetration = ARMOR_PENETRATION_TIER_3
 	debilitate = list(0,1.5,0,0,0,1,0,0)
 	flags_ammo_behavior = AMMO_BALLISTIC
 
 /datum/ammo/bullet/pistol/heavy/super/highimpact/ap
 	name = ".50 high-impact armor piercing pistol bullet"
 	penetration = ARMOR_PENETRATION_TIER_10
-	damage = 45
+	damage = 50
 
 /datum/ammo/bullet/pistol/heavy/super/highimpact/upp
 	name = "high-impact pistol bullet"
 	sound_override = 'sound/weapons/gun_DE50.ogg'
-	penetration = ARMOR_PENETRATION_TIER_6
+	penetration = ARMOR_PENETRATION_TIER_5
 	debilitate = list(0,1.5,0,0,0,1,0,0)
 	flags_ammo_behavior = AMMO_BALLISTIC
 
@@ -182,7 +182,7 @@
 
 	accuracy = HIT_ACCURACY_TIER_2
 	damage = 50
-	penetration = ARMOR_PENETRATION_TIER_2
+	penetration = ARMOR_PENETRATION_TIER_4
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_1
 	effective_range_max = 3 //hopefully this fixes the damage woes.
 	damage_falloff = DAMAGE_FALLOFF_TIER_6
