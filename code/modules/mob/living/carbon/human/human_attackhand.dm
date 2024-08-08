@@ -4,11 +4,9 @@
 	if(..())
 		return TRUE
 
-	SEND_SIGNAL(attacking_mob, COMSIG_LIVING_ATTACKHAND_HUMAN, src)
-
 	if((attacking_mob != src) && check_shields(0, attacking_mob.name))
 		visible_message(SPAN_DANGER("<B>[attacking_mob] attempted to touch [src]!</B>"), null, null, 5)
-		return FALSE
+		return 0
 
 	switch(attacking_mob.a_intent)
 		if(INTENT_HELP)
