@@ -79,9 +79,10 @@
 	caliber = "9mm"
 	ammo_band_color = null
 
-/obj/item/ammo_magazine/pistol/mod88/normalpoint/extended // Unused
+/obj/item/ammo_magazine/pistol/mod88/normalpoint/extended
 	name = "\improper 88M4 FMJ extended magazine (9mm)"
 	icon_state = "88m4_mag_ex"
+	max_rounds = 27
 	default_ammo = /datum/ammo/bullet/pistol
 	caliber = "9mm"
 
