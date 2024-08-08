@@ -391,7 +391,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/heavy_barrel
 	name = "barrel charger"
-	desc = "A hyper threaded barrel extender that fits to the muzzle of most firearms. Increases bullet speed and velocity.\nGreatly increases projectile damage at the cost of accuracy and firing speed."
+	desc = "A hyper threaded barrel extender that fits to the muzzle of most firearms. Increases bullet speed and velocity.\nGreatly increases projectile damage at the cost of accuracy and firing speed, without minuses now."
 	slot = "muzzle"
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "hbarrel"
@@ -400,16 +400,14 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/heavy_barrel/New()
 	..()
-	accuracy_mod = -HIT_ACCURACY_MULT_TIER_3
 	damage_mod = BULLET_DAMAGE_MULT_TIER_6
-	delay_mod = FIRE_DELAY_TIER_11
 	velocity_mod = AMMO_SPEED_TIER_1
 
 	accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_7
 
 /obj/item/attachable/heavy_barrel/Attach(obj/item/weapon/gun/G)
 	if(G.gun_category == GUN_CATEGORY_SHOTGUN)
-		damage_mod = BULLET_DAMAGE_MULT_TIER_1
+		damage_mod = BULLET_DAMAGE_MULT_TIER_6
 	else
 		damage_mod = BULLET_DAMAGE_MULT_TIER_6
 	..()
@@ -426,9 +424,9 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/compensator/New()
 	..()
-	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
-	damage_mod = -BULLET_DAMAGE_MULT_TIER_2
-	recoil_mod = -RECOIL_AMOUNT_TIER_3
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_5
+	damage_mod = -BULLET_DAMAGE_MULT_TIER_1
+	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
 	damage_falloff_mod = 0.1
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_4
@@ -583,7 +581,9 @@ Defined in conflicts.dm of the #defines folder.
 	..()
 	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
 	scatter_mod = -SCATTER_AMOUNT_TIER_6
-	delay_mod = FIRE_DELAY_TIER_7
+	delay_mod = FIRE_DELAY_TIER_3
+	damage_mod = BULLET_DAMAGE_MULT_TIER_2
+	velocity_mod = AMMO_SPEED_TIER_1
 
 /obj/item/attachable/mateba/long/Attach(obj/item/weapon/gun/G)
 	..()
@@ -603,6 +603,8 @@ Defined in conflicts.dm of the #defines folder.
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_4
 	scatter_mod = SCATTER_AMOUNT_TIER_6
 	delay_mod = -FIRE_DELAY_TIER_7
+	damage_mod = -BULLET_DAMAGE_MULT_TIER_2
+	velocity_mod = -AMMO_SPEED_TIER_1
 
 /obj/item/attachable/mateba/short/Attach(obj/item/weapon/gun/G)
 	..()
