@@ -793,16 +793,18 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	name = "\improper M09 pattern helmet"
 	desc = "Back issue model of an older combat helmet. Uncomfortable, but the added protection is supposedly worth it. It's been wired up the same, so it still ties into the sensor matrix fine."
 	icon_state = "sl_helmet"
+	armor_melee
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	specialty = "M11 pattern marine"
 
 /obj/item/clothing/head/helmet/marine/rto
 	name = "\improper M12 pattern helmet"
-	desc = "Failed procurement, limited run successor to the old M10 Ballistic Helmet. New ceramic composites and suspension system show a remarkable increase in blunt impact resistance, while a revamped wiring structure added space for a second optic socket."
+	desc = "Failed procurement, limited run successor to the old M10 Ballistic Helmet. New ceramic composites and suspension system show a remarkable increase in blunt impact and bullet resistance, while a revamped wiring structure added space for a second optic socket."
 	icon_state = "io"
 	item_state = "io"
-	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
 	specialty = "M12 pattern"
 	max_inserted_visors = 2
 
