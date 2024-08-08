@@ -24,7 +24,6 @@
 
 /mob/living/Destroy()
 	GLOB.living_mob_list -= src
-	cleanup_status_effects()
 	pipes_shown = null
 
 	. = ..()
@@ -34,7 +33,6 @@
 	QDEL_NULL(pain)
 	QDEL_NULL(stamina)
 	QDEL_NULL(hallucinations)
-	status_effects = null
 
 /mob/living/proc/initialize_pain()
 	pain = new /datum/pain(src)
@@ -403,10 +401,7 @@
 /mob/living/launch_towards(datum/launch_metadata/LM)
 	if(src)
 		SEND_SIGNAL(src, COMSIG_MOB_MOVE_OR_LOOK, TRUE, dir, dir)
-	if(!istype(LM) || !LM.target || !src)
-		return
-	if(buckled)
-		LM.invoke_end_throw_callbacks(src)
+	if(!istype(LM) || !LM.target || !src || buckled)
 		return
 	if(pulling)
 		stop_pulling() //being thrown breaks pulls.
