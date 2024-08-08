@@ -364,7 +364,7 @@
 
 /obj/item/weapon/gun/rifle/m41aMK1
 	name = "\improper M41A pulse rifle"
-	desc = "Pulse action 10x24mm caseless assault rifle of the USCMC, personal friend of any Marine."
+	desc = "Pulse action 10x24mm caseless assault rifle of the USCMC, personal friend of any Marine. Older MK1 model have much better stopping power then MK2 or HPR."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
 	icon_state = "m41amk1" //Placeholder.
 	item_state = "m41amk1" //Placeholder.
@@ -403,7 +403,7 @@
 	scatter = SCATTER_AMOUNT_TIER_9
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_5
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 
 /obj/item/weapon/gun/rifle/m41aMK1/ap //for making it start with ap loaded
@@ -547,7 +547,7 @@
 	scatter = SCATTER_AMOUNT_TIER_8
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_5
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 	fa_max_scatter = SCATTER_AMOUNT_TIER_7
 
