@@ -388,17 +388,17 @@
 		if(0)
 			lighting_color = "#000"
 		if(1)
-			lighting_color = "#040712"
+			lighting_color = "#000"
 		if(2)
-			lighting_color = "#111322"
+			lighting_color = "#000"
 		if(3)
-			lighting_color = "#291642"
+			lighting_color = "#000"
 		if(4)
-			lighting_color = "#3f2239"
+			lighting_color = "#000"
 		if(5)
-			lighting_color = "#632c3d"
+			lighting_color = "#000"
 		if(6)
-			lighting_color = "#b97034" //it ends on very orange for cinematics
+			lighting_color = "#000" //it ends on very orange for cinematics
 
 	return lighting_color
 
@@ -422,11 +422,11 @@
 
 	var/atom/movable/screen/fullscreen/screen = fullscreens["lighting_backdrop"]
 
-	var/stage_time = 30 MINUTES
+	var/stage_time = 15 MINUTES
 	var/max_stages = null
 	var/startup_delay = 10 SECONDS
 	var/special_start_time = 0
-	var/special_stage_time = 0.1 MINUTES
+	var/special_stage_time = 0.05 MINUTES
 	var/special_tick_dir = 0
 	var/special_call = Z_CHANGE_CALL
 	var/create_new_lighting_timer = FALSE
@@ -457,11 +457,11 @@
 
 	var/atom/movable/screen/fullscreen/screen = fullscreens["lighting_backdrop"]
 
-	var/stage_time = 30 MINUTES
+	var/stage_time = 15 MINUTES
 	var/max_stages = null
 	var/startup_delay = 10 SECONDS
 	var/special_start_time = 0
-	var/special_stage_time = 4 MINUTES
+	var/special_stage_time = 2 MINUTES
 	var/special_tick_dir = 0
 	var/special_call = AREA_CHANGE_CALL
 	var/create_new_lighting_timer = FALSE
