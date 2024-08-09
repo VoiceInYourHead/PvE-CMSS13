@@ -335,45 +335,45 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD] || SSmapping.configs[GROUND_MAP].map_name == MAP_LV522_CHANCES_CLAIM || MAP_PRISON_STATION_V3)
 		switch(lighting_stage) //for sun stages, the more you have the better it looks when special called, I recommend choosing cinematic 4 colors then using a gradient tool to pick out the rest
 			if(0)
-				lighting_color = "#e3a979"
+				lighting_color = "#a8c3cf"
 			if(1)
-				lighting_color = "#e29658"
+				lighting_color = "#7a9abb"
 			if(2)
-				lighting_color = "#da8b4a"
+				lighting_color = "#6679a8"
 			if(3)
-				lighting_color = "#a9633c"
+				lighting_color = "#516a8b"
 			if(4)
-				lighting_color = "#90422d"
+				lighting_color = "#38486e"
 			if(5)
-				lighting_color = "#68333a"
+				lighting_color = "#2c2f4d"
 			if(6)
-				lighting_color = "#4d2b35"
+				lighting_color = "#211b36"
 			if(7)
-				lighting_color = "#231935"
+				lighting_color = "#1f1b33"
 			if(8)
-				lighting_color = "#050c27"
+				lighting_color = "#0c0a1b"
 			if(9)
 				lighting_color = "#000"
 	else //the default, a very warm sunset
 		switch(lighting_stage)
 			if(0)
-				lighting_color = "#e3a979"
+				lighting_color = "#a8c3cf"
 			if(1)
-				lighting_color = "#e29658"
+				lighting_color = "#7a9abb"
 			if(2)
-				lighting_color = "#da8b4a"
+				lighting_color = "#6679a8"
 			if(3)
-				lighting_color = "#a9633c"
+				lighting_color = "#516a8b"
 			if(4)
-				lighting_color = "#90422d"
+				lighting_color = "#38486e"
 			if(5)
-				lighting_color = "#68333a"
+				lighting_color = "#2c2f4d"
 			if(6)
-				lighting_color = "#4d2b35"
+				lighting_color = "#211b36"
 			if(7)
-				lighting_color = "#231935"
+				lighting_color = "#1f1b33"
 			if(8)
-				lighting_color = "#050c27"
+				lighting_color = "#0c0a1b"
 			if(9)
 				lighting_color = "#000"
 
