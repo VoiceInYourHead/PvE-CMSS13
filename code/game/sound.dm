@@ -177,7 +177,10 @@
 	template.channel = channel
 	template.volume = vol
 	if(random_freq)
-		template.frequency = GET_RANDOM_FREQ
+		if(random_freq == "minor")
+			template.frequency = GET_RANDOM_FREQ_MINOR
+		else
+			template.frequency = GET_RANDOM_FREQ
 	template.status = status
 	template.echo = echo
 
