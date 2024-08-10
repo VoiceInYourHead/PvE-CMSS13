@@ -79,7 +79,7 @@
 	caliber = "9mm"
 	ammo_band_color = null
 
-/obj/item/ammo_magazine/pistol/mod88/normalpoint/extended
+/obj/item/ammo_magazine/pistol/mod88/normalpoint/extended // Unused
 	name = "\improper 88M4 FMJ extended magazine (9mm)"
 	icon_state = "88m4_mag_ex"
 	max_rounds = 27
