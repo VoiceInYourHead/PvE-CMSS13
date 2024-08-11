@@ -286,7 +286,7 @@ Defined in conflicts.dm of the #defines folder.
 	throw_range = 6
 	hitsound = 'sound/weapons/slash.ogg'
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	attack_speed = 9
+	attack_speed = 7
 	flags_equip_slot = SLOT_FACE
 	flags_armor_protection = SLOT_FACE
 	flags_item = CAN_DIG_SHRAPNEL
@@ -386,6 +386,7 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/extended_barrel/New()
 	..()
 	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
+	damage_mod = BULLET_DAMAGE_MULT_TIER_2
 	velocity_mod = AMMO_SPEED_TIER_1
 
 /obj/item/attachable/heavy_barrel
@@ -399,15 +400,14 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/heavy_barrel/New()
 	..()
-	accuracy_mod = -HIT_ACCURACY_MULT_TIER_3
 	damage_mod = BULLET_DAMAGE_MULT_TIER_6
-	delay_mod = FIRE_DELAY_TIER_11
+	velocity_mod = AMMO_SPEED_TIER_1
 
 	accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_7
 
 /obj/item/attachable/heavy_barrel/Attach(obj/item/weapon/gun/G)
 	if(G.gun_category == GUN_CATEGORY_SHOTGUN)
-		damage_mod = BULLET_DAMAGE_MULT_TIER_1
+		damage_mod = BULLET_DAMAGE_MULT_TIER_6
 	else
 		damage_mod = BULLET_DAMAGE_MULT_TIER_6
 	..()

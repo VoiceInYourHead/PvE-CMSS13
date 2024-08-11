@@ -450,7 +450,7 @@
 //Ties that can store stuff
 
 /obj/item/storage/internal/accessory
-	storage_slots = 3
+	storage_slots = 4
 
 /obj/item/clothing/accessory/storage
 	name = "load bearing equipment"
@@ -535,10 +535,10 @@
 	hold = /obj/item/storage/internal/accessory/webbing/five_slots
 
 /obj/item/storage/internal/accessory/webbing/five_slots
-	storage_slots = 5
+	storage_slots = 6
 
 /obj/item/storage/internal/accessory/black_vest
-	storage_slots = 5
+	storage_slots = 6
 
 /obj/item/clothing/accessory/storage/black_vest
 	name = "black webbing vest"
@@ -796,6 +796,7 @@
 	hold = /obj/item/storage/internal/accessory/holster
 
 /obj/item/storage/internal/accessory/holster
+	storage_slots = 5
 	w_class = SIZE_LARGE
 	max_w_class = SIZE_MEDIUM
 	var/obj/item/weapon/gun/current_gun
