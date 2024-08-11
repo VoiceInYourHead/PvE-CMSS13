@@ -55,7 +55,7 @@
 	name = "armor-piercing rifle bullet"
 
 	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_8
+	penetration = ARMOR_PENETRATION_TIER_6
 
 // Basically AP but better. Focused at taking out armour temporarily
 /datum/ammo/bullet/rifle/ap/toxin
@@ -82,7 +82,7 @@
 	name = "wall-penetrating rifle bullet"
 	shrapnel_chance = 0
 
-	damage = 35
+	damage = 40
 	penetration = ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/ap/penetrating/set_bullet_traits()
@@ -103,7 +103,7 @@
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 55//big damage, doesn't actually blow up because thats stupid.
-	penetration = ARMOR_PENETRATION_TIER_8
+	penetration = ARMOR_PENETRATION_TIER_6
 
 /datum/ammo/bullet/rifle/rubber
 	name = "rubber rifle bullet"
@@ -137,19 +137,19 @@
 	flags_ammo_behavior = AMMO_BALLISTIC
 	accurate_range_min = 4
 
-	damage = 55
+	damage = 65
 	scatter = -SCATTER_AMOUNT_TIER_8
-	penetration= ARMOR_PENETRATION_TIER_7
+	penetration= ARMOR_PENETRATION_TIER_8
 	shell_speed = AMMO_SPEED_TIER_6
 
 /datum/ammo/bullet/rifle/m4ra/incendiary
 	name = "A19 high velocity incendiary bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 40
+	damage = 45
 	accuracy = HIT_ACCURACY_TIER_4
 	scatter = -SCATTER_AMOUNT_TIER_8
-	penetration= ARMOR_PENETRATION_TIER_5
+	penetration= ARMOR_PENETRATION_TIER_7
 	shell_speed = AMMO_SPEED_TIER_6
 
 /datum/ammo/bullet/rifle/m4ra/incendiary/set_bullet_traits()
@@ -162,7 +162,7 @@
 	name = "A19 high velocity impact bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 40
+	damage = 45
 	accuracy = -HIT_ACCURACY_TIER_2
 	scatter = -SCATTER_AMOUNT_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_10
@@ -219,12 +219,12 @@
 /datum/ammo/bullet/rifle/type71/ap
 	name = "heavy armor-piercing rifle bullet"
 
-	damage = 40
-	penetration = ARMOR_PENETRATION_TIER_10
+	damage = 45
+	penetration = ARMOR_PENETRATION_TIER_8
 
 /datum/ammo/bullet/rifle/type71/heap
 	name = "heavy high-explosive armor-piercing rifle bullet"
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 65
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_8

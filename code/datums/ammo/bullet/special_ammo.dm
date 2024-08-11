@@ -11,8 +11,8 @@
 
 	max_range = 12
 	accuracy = HIT_ACCURACY_TIER_4
-	damage = 36
-	penetration = 0
+	damage = 40
+	penetration = ARMOR_PENETRATION_TIER_2
 
 /datum/ammo/bullet/smartgun/armor_piercing
 	name = "armor-piercing smartgun bullet"
@@ -20,7 +20,7 @@
 
 	accurate_range = 12
 	accuracy = HIT_ACCURACY_TIER_2
-	damage = 24
+	damage = 30
 	penetration = ARMOR_PENETRATION_TIER_8
 	damage_armor_punch = 1
 
@@ -40,7 +40,7 @@
 	accurate_range = 22
 	accuracy = HIT_ACCURACY_TIER_3
 	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_7
+	penetration = ARMOR_PENETRATION_TIER_6
 	damage_armor_punch = 3
 
 /datum/ammo/bullet/smartgun/holo_target //Royal marines smartgun bullet has only diff between regular ammo is this one does holostacks
@@ -59,7 +59,7 @@
 
 	accurate_range = 12
 	accuracy = HIT_ACCURACY_TIER_2
-	damage = 20
+	damage = 30
 	penetration = ARMOR_PENETRATION_TIER_8
 	damage_armor_punch = 1
 
@@ -70,8 +70,8 @@
 
 	max_range = 7
 	accuracy = HIT_ACCURACY_TIER_7
-	damage = 35
-	penetration = ARMOR_PENETRATION_TIER_1
+	damage = 40
+	penetration = ARMOR_PENETRATION_TIER_2
 
 /datum/ammo/bullet/turret
 	name = "autocannon bullet"
@@ -82,16 +82,16 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_8
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_8
 	max_range = 22
-	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_1
+	damage = 40
+	penetration = ARMOR_PENETRATION_TIER_2
 	damage_armor_punch = 0
 	pen_armor_punch = 0
 	shell_speed = 2*AMMO_SPEED_TIER_6
 	accuracy = HIT_ACCURACY_TIER_5
 
 /datum/ammo/bullet/turret/upp
-	damage = 45
-	penetration = ARMOR_PENETRATION_TIER_2
+	damage = 50
+	penetration = ARMOR_PENETRATION_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_2
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_2
 
@@ -137,7 +137,7 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 12
-	damage = 35
+	damage = 55
 	penetration = ARMOR_PENETRATION_TIER_6
 
 /datum/ammo/bullet/minigun/New()

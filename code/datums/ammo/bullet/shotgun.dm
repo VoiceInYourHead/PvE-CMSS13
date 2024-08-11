@@ -13,8 +13,8 @@
 
 	accurate_range = 6
 	max_range = 8
-	damage = 70
-	penetration = ARMOR_PENETRATION_TIER_4
+	damage = 85
+	penetration = ARMOR_PENETRATION_TIER_3
 	damage_armor_punch = 2
 	handful_state = "slug_shell"
 
@@ -97,10 +97,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
+	damage = 40
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_7
+	penetration = ARMOR_PENETRATION_TIER_5
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
 	handful_state = "flechette_shell"
 	multiple_handful_name = TRUE
@@ -112,7 +112,7 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
+	damage = 40
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_7
@@ -129,7 +129,7 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_5
 	accurate_range = 4
 	max_range = 4
-	damage = 65
+	damage = 70
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_1
@@ -169,7 +169,7 @@
 /datum/ammo/bullet/shotgun/buckshot/masterkey
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/masterkey
 
-	damage = 55
+	damage = 60
 
 /datum/ammo/bullet/shotgun/spread
 	name = "additional buckshot"
@@ -179,7 +179,7 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 4
 	max_range = 4
-	damage = 65
+	damage = 70
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_1
@@ -189,7 +189,7 @@
 	pen_armor_punch = 0
 
 /datum/ammo/bullet/shotgun/spread/masterkey
-	damage = 20
+	damage = 60
 
 /datum/ammo/bullet/shotgun/spread/special
 	name = "additional buckshot, USCM special type"
@@ -212,9 +212,9 @@
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
 	accurate_range = 3
 	max_range = 3
-	damage = 75
-	penetration = 0
-	shell_speed = AMMO_SPEED_TIER_2
+	damage = 120
+	penetration = ARMOR_PENETRATION_TIER_2
+	shell_speed = AMMO_SPEED_TIER_3
 	damage_armor_punch = 0
 	pen_armor_punch = 0
 
@@ -232,8 +232,8 @@
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	accurate_range = 8
 	max_range = 8
-	damage = 75
-	penetration = 0
+	damage = 120
+	penetration = ARMOR_PENETRATION_TIER_2
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 0
 	pen_armor_punch = 0
@@ -250,7 +250,7 @@
 	handful_state = "heavy_dragonsbreath"
 	multiple_handful_name = TRUE
 	damage_type = BURN
-	damage = 60
+	damage = 75
 	accurate_range = 3
 	max_range = 4
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/heavy/buckshot/dragonsbreath/spread
@@ -275,8 +275,8 @@
 
 	accurate_range = 7
 	max_range = 8
-	damage = 90 //ouch.
-	penetration = ARMOR_PENETRATION_TIER_6
+	damage = 95 //ouch.
+	penetration = ARMOR_PENETRATION_TIER_4
 	damage_armor_punch = 2
 
 /datum/ammo/bullet/shotgun/heavy/slug/on_hit_mob(mob/M,obj/projectile/P)
@@ -329,10 +329,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_3
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_3
 	max_range = 12
-	damage = 45
+	damage = 60
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_7
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_2
 
 /datum/ammo/bullet/shotgun/heavy/flechette_spread
@@ -341,10 +341,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 45
+	damage = 60
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_7
 	scatter = SCATTER_AMOUNT_TIER_4
 
 //Enormous shell for Van Bandolier's superheavy double-barreled hunting gun.

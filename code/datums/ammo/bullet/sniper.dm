@@ -15,7 +15,7 @@
 	accurate_range = 32
 	max_range = 32
 	scatter = 0
-	damage = 70
+	damage = 125
 	penetration= ARMOR_PENETRATION_TIER_10
 	shell_speed = AMMO_SPEED_TIER_6
 	damage_falloff = 0
@@ -33,7 +33,7 @@
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SNIPER|AMMO_IGNORE_COVER
 
 	//Removed accuracy = 0, accuracy_var_high = Variance Tier 6, and scatter = 0. -Kaga
-	damage = 60
+	damage = 85
 	penetration = ARMOR_PENETRATION_TIER_4
 
 /datum/ammo/bullet/sniper/incendiary/set_bullet_traits()
@@ -61,7 +61,7 @@
 
 	accuracy = HIT_ACCURACY_TIER_8
 	scatter = SCATTER_AMOUNT_TIER_8
-	damage = 55
+	damage = 75
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8 //Documenting old code: This converts to a variance of 96-109% damage. -Kaga
 	penetration = 0
 
@@ -109,7 +109,7 @@
 
 	shrapnel_chance = 0 // This isn't leaving any shrapnel.
 	accuracy = HIT_ACCURACY_TIER_8
-	damage = 125
+	damage = 250
 	shell_speed = AMMO_SPEED_TIER_6
 
 /datum/ammo/bullet/sniper/anti_materiel/on_hit_mob(mob/M,obj/projectile/P)
@@ -127,7 +127,7 @@
 		to_chat(P.firer, SPAN_WARNING("Bullseye!"))
 
 /datum/ammo/bullet/sniper/anti_materiel/vulture
-	damage = 400 // Fully intended to vaporize anything smaller than a mini cooper
+	damage = 550 // Fully intended to vaporize anything smaller than a mini cooper
 	accurate_range_min = 10
 	handful_state = "vulture_bullet"
 	sound_hit = 'sound/bullets/bullet_vulture_impact.ogg'
@@ -149,7 +149,7 @@
 
 	shrapnel_chance = 0 // This isn't leaving any shrapnel.
 	accuracy = HIT_ACCURACY_TIER_8
-	damage = 150
+	damage = 250
 	shell_speed = AMMO_SPEED_TIER_6 + AMMO_SPEED_TIER_2
 
 /datum/ammo/bullet/sniper/elite/set_bullet_traits()

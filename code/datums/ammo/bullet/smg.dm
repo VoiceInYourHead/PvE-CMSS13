@@ -13,7 +13,7 @@
 
 /datum/ammo/bullet/smg
 	name = "submachinegun bullet"
-	damage = 34
+	damage = 40
 	accurate_range = 4
 	effective_range_max = 4
 	penetration = ARMOR_PENETRATION_TIER_1
@@ -28,16 +28,16 @@
 /datum/ammo/bullet/smg/ap
 	name = "armor-piercing submachinegun bullet"
 
-	damage = 26
-	penetration = ARMOR_PENETRATION_TIER_6
+	damage = 34
+	penetration = ARMOR_PENETRATION_TIER_4
 	shell_speed = AMMO_SPEED_TIER_4
 
 /datum/ammo/bullet/smg/heap
 	name = "high-explosive armor-piercing submachinegun bullet"
 
-	damage = 45
+	damage = 50
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	penetration = ARMOR_PENETRATION_TIER_6
+	penetration = ARMOR_PENETRATION_TIER_4
 	shell_speed = AMMO_SPEED_TIER_4
 
 /datum/ammo/bullet/smg/ap/toxin

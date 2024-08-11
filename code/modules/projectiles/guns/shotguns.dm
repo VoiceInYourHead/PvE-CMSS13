@@ -1075,7 +1075,7 @@ can cause issues with ammo types getting mixed up during the burst.
 	icon_state = "m37"
 	item_state = "m37"
 	current_mag = /obj/item/ammo_magazine/internal/shotgun
-	flags_equip_slot = SLOT_BACK
+	flags_equip_slot = SLOT_WAIST|SLOT_BACK
 	fire_sound = 'sound/weapons/gun_shotgun.ogg'
 	firesound_volume = 60
 	var/pump_sound = "shotgunpump"
