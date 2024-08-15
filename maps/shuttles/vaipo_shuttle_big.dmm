@@ -42,6 +42,12 @@
 	},
 /turf/open/floor/plating/almayer,
 /area/shuttle/ert)
+"dw" = (
+/obj/docking_port/mobile/emergency_response/big/vaipo,
+/turf/open/floor/almayer{
+	opacity = 100
+	},
+/area/shuttle/ert)
 "dx" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/box/donkpockets,
@@ -1338,7 +1344,7 @@ Tp
 Tp
 Tp
 Tp
-Tp
+dw
 "}
 (2,1,1) = {"
 Tp

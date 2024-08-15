@@ -46,3 +46,6 @@ endmap
 
 map stalwart
 endmap
+
+map vaiorbit
+endmap

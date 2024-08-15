@@ -1,0 +1,9 @@
+{
+    "map_name": "VAI Orbit",
+    "map_path": "map_files/VAI_Orbit",
+    "map_file": "VAI_Orbit.dmm",
+    "webmap_url": "GoldenArrow",
+    "traits": [{"Marine Main Ship": true}],
+    "nightmare_path": "maps/Nightmare/maps/VAI_Orbit/",
+    "platoon": "/datum/squad/marine/vaipo"
+}

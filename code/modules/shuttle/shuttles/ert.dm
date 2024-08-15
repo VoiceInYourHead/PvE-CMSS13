@@ -348,9 +348,21 @@
 	height = 29
 	roundstart_template = /datum/map_template/shuttle/big_vaipo
 
-/obj/docking_port/stationary/emergency_response/vaipo_lz1
-	name = "Landing Zone 1"
-	dir = SOUTH
+/obj/docking_port/stationary/emergency_response/vaipo_landing_zone
+	name = "VAIPO landing zone"
+	dir = NORTH
 	id = "vaipo_lz_1"
 	width  = 17
 	height = 29
+
+/obj/docking_port/stationary/emergency_response/vaipo_landing_zone/north
+	dir = NORTH
+
+/obj/docking_port/stationary/emergency_response/vaipo_landing_zone/south
+	dir = SOUTH
+
+/obj/docking_port/stationary/emergency_response/vaipo_landing_zone/west
+	dir = WEST
+
+/obj/docking_port/stationary/emergency_response/vaipo_landing_zone/east
+	dir = EAST
