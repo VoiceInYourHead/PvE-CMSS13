@@ -136,3 +136,58 @@
 	name = JOB_SQUAD_TEAM_LEADER_FL
 	squad = SQUAD_MERC
 	job = /datum/job/marine/tl/ai/lancer
+
+/datum/job/marine/leader/ai/vaipo
+	title = JOB_SQUAD_LEADER_VAIPO
+	gear_preset = /datum/equipment_preset/uscm/leader/vaipo
+
+/obj/effect/landmark/start/marine/leader/vaipo
+	name = JOB_SQUAD_LEADER_VAIPO
+	squad = SQUAD_VAIPO
+	job = /datum/job/marine/leader/ai/vaipo
+
+/datum/job/marine/medic/ai/vaipo
+	title = JOB_SQUAD_MEDIC_VAIPO
+	gear_preset = /datum/equipment_preset/uscm/medic/vaipo
+	gear_preset_secondary = /datum/equipment_preset/uscm/medic/vaipo
+
+/obj/effect/landmark/start/marine/medic/vaipo
+	name = JOB_SQUAD_MEDIC_VAIPO
+	squad = SQUAD_VAIPO
+	job = /datum/job/marine/medic/ai/vaipo
+
+/datum/job/marine/smartgunner/ai/vaipo
+	title = JOB_SQUAD_SMARTGUN_VAIPO
+	total_positions = 1
+	spawn_positions = 1
+	gear_preset = /datum/equipment_preset/uscm/sg/vaipo
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/vaipo
+
+/obj/effect/landmark/start/marine/smartgunner/forecon // Моё почтение.
+	name = JOB_SQUAD_SMARTGUN_VAIPO
+	job = /datum/job/marine/smartgunner/ai/vaipo
+	squad = SQUAD_VAIPO
+
+/datum/job/marine/specialist/vaipo
+	title = JOB_SQUAD_MARKSMAN_VAIPO
+	total_positions = 1
+	spawn_positions = 1
+	allow_additional = 0
+	scaled = 0
+	gear_preset = /datum/equipment_preset/uscm/spec/vaipo
+	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>You are the very rare and valuable weapon expert</a>, trained to use special equipment. You can serve a variety of roles, so choose carefully."
+
+/obj/effect/landmark/start/marine/spec/vaipo
+	name = JOB_SQUAD_MARKSMAN_VAIPO
+	squad = SQUAD_VAIPO
+
+/datum/job/marine/standard/ai/vaipo
+	title = JOB_SQUAD_MARINE_VAIPO
+	total_positions = 3
+	spawn_positions = 3
+	gear_preset = /datum/equipment_preset/uscm/pfc/vaipo
+
+/obj/effect/landmark/start/marine/vaipo
+	name = JOB_SQUAD_MARINE_VAIPO
+	squad = SQUAD_VAIPO
+	job = /datum/job/marine/standard/ai/vaipo

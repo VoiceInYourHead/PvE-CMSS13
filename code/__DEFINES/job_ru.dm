@@ -5,8 +5,8 @@
 #define GET_DEFAULT_ROLE(title) (RoleAuthority?.default_roles[title] ? RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Sun Riders"
-#define SQUAD_MARINE_2 "Bravo"
+#define SQUAD_MARINE_1 "Iron Heads"
+#define SQUAD_MARINE_2 "Storm Breakers"
 #define SQUAD_MARINE_3 "Charlie"
 #define SQUAD_MARINE_4 "Delta"
 #define SQUAD_MARINE_5 "Echo"
@@ -16,6 +16,7 @@
 #define SQUAD_CBRN "CBRN"
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_VAIPO "Venelli-Aegis Inc."
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -245,6 +246,13 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 #define JOB_PMCPLAT_SG "Heavy Weapons Specialist"
 #define JOB_PMCPLAT_STANDARD "Tactical Unit"
 #define JOB_PMCPLAT_MEDIC "Medical Specialist"
+
+//---- VAI-POS ----//
+#define JOB_SQUAD_LEADER_VAIPO "VAIPO Team Leader"
+#define JOB_SQUAD_MARKSMAN_VAIPO  "VAIPO Marksman"
+#define JOB_SQUAD_MEDIC_VAIPO "VAIPO Medic"
+#define JOB_SQUAD_MARINE_VAIPO "VAIPO Contractor"
+#define JOB_SQUAD_SMARTGUN_VAIPO "VAIPO Automatic Rifleman"
 
 //---- Contractors ----//
 #define JOB_CONTRACTOR "VAIPO Mercenary"

@@ -16,9 +16,9 @@
 	service_hat = list(/obj/item/clothing/head/cmcap)
 	service_shoes = list(/obj/item/clothing/shoes/dress)
 
-	dress_under = list(/obj/item/clothing/under/marine/dress)
-	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress)
-	dress_hat = list(/obj/item/clothing/head/marine/peaked)
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues)
+	dress_hat = list(/obj/item/clothing/head/marine/dress_cover)
 	dress_gloves = list(/obj/item/clothing/gloves/marine/dress)
 	dress_shoes = list(/obj/item/clothing/shoes/dress)
 	var/auto_squad_name
@@ -109,9 +109,9 @@
 	minimap_icon = "private"
 
 /datum/equipment_preset/uscm/pfc/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel
+	var/back_item = /obj/item/storage/backpack/marine/satchel/tech
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
+		back_item = /obj/item/storage/backpack/marine/tech
 
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
@@ -152,6 +152,8 @@
 /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
 	paygrade = "ME2"
 
+
+
 //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm/sg
@@ -168,9 +170,9 @@
 	minimap_icon = "smartgunner"
 
 /datum/equipment_preset/uscm/sg/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel
+	var/back_item = /obj/item/storage/backpack/marine/satchel/tech
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
+		back_item = /obj/item/storage/backpack/marine/tech
 
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
@@ -212,6 +214,8 @@
 
 /datum/equipment_preset/uscm/sg/forecon/lesser_rank
 	paygrade = "ME4"
+
+
 
 //*****************************************************************************************************/
 
@@ -394,6 +398,8 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/spec_kit/cryo, WEAR_R_HAND)
 
+
+
 //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm/spec/full_armor
@@ -480,6 +486,7 @@
 /datum/equipment_preset/uscm/medic/forecon/lesser_rank
 	paygrade = "ME4"
 
+
 //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm/tl
@@ -494,10 +501,13 @@
 	skills = /datum/skills/tl
 	minimap_icon = "tl"
 
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues/senior)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/nco)
+
 /datum/equipment_preset/uscm/tl/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel
+	var/back_item = /obj/item/storage/backpack/marine/satchel/tech
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
+		back_item = /obj/item/storage/backpack/marine/tech
 
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
@@ -577,10 +587,13 @@
 
 	minimap_icon = "leader"
 
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues/senior)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/nco)
+
 /datum/equipment_preset/uscm/leader/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel
+	var/back_item = /obj/item/storage/backpack/marine/satchel/tech
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
+		back_item = /obj/item/storage/backpack/marine/tech
 
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 

@@ -33,6 +33,10 @@ AddTimelock(/datum/job/marine/specialist, list(
 	JOB_SQUAD_ROLES = 5 HOURS
 ))
 
+
+/datum/job/marine/specialist/vaipo/get_total_positions(latejoin = 0)
+	return total_positions
+
 /obj/effect/landmark/start/marine/spec
 	name = JOB_SQUAD_SPECIALIST
 	icon_state = "spec_spawn"
@@ -53,3 +57,4 @@ AddTimelock(/datum/job/marine/specialist, list(
 /obj/effect/landmark/start/marine/spec/delta
 	icon_state = "spec_spawn_delta"
 	squad = SQUAD_MARINE_4
+
