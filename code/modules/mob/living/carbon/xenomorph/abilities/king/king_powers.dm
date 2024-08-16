@@ -313,7 +313,7 @@
 	layer = 4.7
 	plane = -4
 	pixel_x = -32
-	duration = 10
+	duration = 5
 	randomdir = FALSE
 
 /obj/effect/temp_visual/king_leap/Initialize(mapload, negative, dir)
