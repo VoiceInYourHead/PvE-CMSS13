@@ -25,10 +25,13 @@
 			humans_near |= inrange
 			continue
 
-		if(length(humans_near) > 1)
-			use_ability_async()
+		if(!DT_PROB(ai_prob_chance, delta_time) || length(humans_near) < 2 || get_dist(X, X.current_target) < 3 || X.action_busy)
 			humans_near.RemoveAll()
 			return
+
+		use_ability_async()
+		humans_near.RemoveAll()
+
 
 /// Screech which puts out lights in a 7 tile radius, slows and dazes.
 /datum/action/xeno_action/onclick/doom
@@ -55,10 +58,8 @@
 			humans_near |= inrange
 			continue
 
-		if(length(humans_near) > 2)
-			continue
-
-		if(!DT_PROB(ai_prob_chance, delta_time) || get_dist(X, X.current_target) < 3 || X.action_busy)
+		if(!DT_PROB(ai_prob_chance, delta_time) || length(humans_near) < 3 || get_dist(X, X.current_target) > 3 || X.action_busy)
+			humans_near.RemoveAll()
 			return
 
 		use_ability_async()
@@ -87,10 +88,11 @@
 	if(distance_check > 7)
 		return
 
-	if(!DT_PROB(ai_prob_chance, delta_time) || get_dist(X, X.current_target) > 2 || X.action_busy)
+	if(!DT_PROB(ai_prob_chance, delta_time) || get_dist(X, X.current_target) < 2 || X.action_busy)
 		return
 
 	use_ability_async()
+
 /// Shield ability, limits the amount of damage from a single instance of damage to 10% of the xenomorph's max health.
 /datum/action/xeno_action/onclick/king_shield
 	name = "Bulwark of the Hive"
@@ -118,10 +120,12 @@
 			xenos_near |= inrange
 			continue
 
-		if(length(xenos_near) > 4)
-			use_ability_async()
+		if(!DT_PROB(ai_prob_chance, delta_time) || length(xenos_near) < 4 || X.action_busy)
 			xenos_near.RemoveAll()
 			return
+
+		use_ability_async()
+		xenos_near.RemoveAll()
 
 /datum/action/xeno_action/onclick/king_frenzy
 	name = "King_frenzy"
@@ -131,11 +135,11 @@
 	ability_primacy = XENO_PRIMARY_ACTION_5
 	action_type = XENO_ACTION_ACTIVATE
 	plasma_cost = 50
-	xeno_cooldown = 7 SECONDS
+	xeno_cooldown = 6 SECONDS
 
 	// Config
-	var/duration = 50
-	var/speed_buff_amount = 1 // Go from shit slow to kindafast
+	var/duration = 40
+	var/speed_buff_amount = 1.2 // Go from shit slow to kindafast
 
 	var/buffs_active = FALSE
 

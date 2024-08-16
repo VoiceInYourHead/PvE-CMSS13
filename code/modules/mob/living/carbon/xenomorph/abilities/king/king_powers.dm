@@ -241,7 +241,7 @@
 		SLEEP_CHECK_DEATH(0.5, owner)
 
 	animate(owner, alpha = 100, transform = matrix()*0.7, time = 7)
-	var/descentTime = 5
+	var/descentTime = 4
 
 	if(negative)
 		if(ISINRANGE(owner.x, initial_x + 1, initial_x + LEAP_DIRECTION_CHANGE_RANGE))
@@ -313,7 +313,7 @@
 	layer = 4.7
 	plane = -4
 	pixel_x = -32
-	duration = 5
+	duration = 2
 	randomdir = FALSE
 
 /obj/effect/temp_visual/king_leap/Initialize(mapload, negative, dir)
@@ -323,20 +323,20 @@
 
 /obj/effect/temp_visual/king_leap/proc/flight(negative)
 	if(negative)
-		animate(src, pixel_x = -LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 1.5, easing = BOUNCE_EASING)
+		animate(src, pixel_x = -LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 6, easing = BOUNCE_EASING)
 	else
-		animate(src, pixel_x = LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 1.5, easing = BOUNCE_EASING)
+		animate(src, pixel_x = LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 6, easing = BOUNCE_EASING)
 	sleep(0.3 SECONDS)
 	icon_state = "Normal King Charging"
 	if(negative)
-		animate(src, pixel_x = -LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 3.5)
+		animate(src, pixel_x = -LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 12)
 	else
-		animate(src, pixel_x = LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 3.5)
+		animate(src, pixel_x = LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 12)
 
 /obj/effect/temp_visual/king_leap/end
 	pixel_x = LEAP_HEIGHT
 	pixel_z = LEAP_HEIGHT
-	duration = 5
+	duration = 2
 
 /obj/effect/temp_visual/king_leap/end/flight(negative)
 	if(negative)
