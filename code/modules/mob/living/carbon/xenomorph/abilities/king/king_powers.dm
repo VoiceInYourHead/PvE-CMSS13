@@ -370,7 +370,7 @@
 
 	zenomorf.create_custom_empower(icolor = "#ec7878", ialpha = 200, small_xeno = FALSE)
 	buffs_active = TRUE
-	owner.add_filter("Enrage", 1, list("type" = "outline", "color" = "#f37777", "size" = 1))
+	owner.add_filter("Enrage", 1, list("type" = "outline", "color" = "#7c3e3e", "size" = 1))
 	zenomorf.speed_modifier -= speed_buff_amount
 	zenomorf.recalculate_speed()
 	owner.visible_message(SPAN_WARNING("[owner] enrages!"))
