@@ -4,7 +4,7 @@
 	melee_damage_lower = XENO_DAMAGE_TIER_1
 	melee_damage_upper = XENO_DAMAGE_TIER_1
 	melee_vehicle_damage = XENO_DAMAGE_TIER_1
-	max_health = XENO_HEALTH_LESSER_DRONE
+	max_health = 80
 	plasma_gain = XENO_PLASMA_GAIN_TIER_7
 	plasma_max = XENO_PLASMA_TIER_3
 	crystal_max = XENO_CRYSTAL_LOW
