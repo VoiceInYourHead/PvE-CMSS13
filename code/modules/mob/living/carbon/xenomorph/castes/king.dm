@@ -53,8 +53,9 @@
 		/datum/action/xeno_action/activable/tail_stab,
 		/datum/action/xeno_action/onclick/rend,
 		/datum/action/xeno_action/onclick/doom,
-		/datum/action/xeno_action/activable/destroy,
+		/datum/action/xeno_action/onclick/destroy,
 		/datum/action/xeno_action/onclick/king_shield,
+		/datum/action/xeno_action/onclick/king_frenzy,
 		/datum/action/xeno_action/onclick/emit_pheromones,
 	)
 

@@ -9,7 +9,7 @@
 
 	xeno.spin_circle()
 	xeno.emote("hiss")
-	for(var/mob/living/carbon/carbon in orange(1, xeno) - xeno)
+	for(var/mob/living/carbon/carbon in orange(2, xeno) - xeno)
 
 		if(carbon.stat == DEAD)
 			continue
@@ -17,8 +17,8 @@
 			continue
 		carbon.apply_armoured_damage(damage)
 		carbon.last_damage_data = create_cause_data(initial(xeno.name), xeno)
-		xeno.flick_attack_overlay(carbon, "slash")
-		to_chat(carbon, SPAN_DANGER("[xeno] slices into you with its razor sharp talons."))
+		xeno.flick_attack_overlay(carbon, "tail")
+		to_chat(carbon, SPAN_DANGER("[xeno] cuts you with its razor sharp tail."))
 		log_attack("[key_name(xeno)] hit [key_name(carbon)] with [name]")
 		playsound(carbon, pick(slash_sounds), 30, TRUE)
 
@@ -142,8 +142,9 @@
 #define LEAP_HEIGHT 210 //how high up leaps go, in pixels
 #define LEAP_DIRECTION_CHANGE_RANGE 5 //the range our x has to be within to not change the direction we slam from
 
-/datum/action/xeno_action/activable/destroy/use_ability(atom/target)
+/datum/action/xeno_action/onclick/destroy/use_ability(mob/living/target)
 	var/mob/living/carbon/xenomorph/xeno = owner
+	target = xeno.current_target
 	XENO_ACTION_CHECK(xeno)
 
 	if(get_dist(owner, target) > range)
@@ -186,8 +187,9 @@
 	var/turf/template_turf = get_step(target_turf, SOUTHWEST)
 
 	to_chat(xeno, SPAN_XENONOTICE("Our muscles tense as we prepare ourself for a giant leap."))
-	xeno.make_jittery(2 SECONDS)
-	if(!do_after(xeno, 2 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
+	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove")
+	xeno.make_jittery(1.5 SECONDS)
+	if(!do_after(xeno, 1.5 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
 		to_chat(xeno, SPAN_XENONOTICE("We relax our muslces and end our leap."))
 		return
 	if(leaping || !target)
@@ -295,13 +297,14 @@
 
 	REMOVE_TRAIT(owner, TRAIT_UNDENSE, "Destroy")
 	REMOVE_TRAIT(owner, TRAIT_IMMOBILIZED, "Destroy")
+	REMOVE_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove")
 
 	SLEEP_CHECK_DEATH(1, owner)
 	leaping = FALSE
 	apply_cooldown()
 	..()
 
-/datum/action/xeno_action/activable/destroy/proc/second_template(turf/template_turf)
+/datum/action/xeno_action/onclick/destroy/proc/second_template(turf/template_turf)
 	new /obj/effect/xenomorph/xeno_telegraph/king_attack_template(template_turf, 10)
 
 /obj/effect/temp_visual/king_leap
@@ -320,20 +323,20 @@
 
 /obj/effect/temp_visual/king_leap/proc/flight(negative)
 	if(negative)
-		animate(src, pixel_x = -LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 3, easing = BOUNCE_EASING)
+		animate(src, pixel_x = -LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 1.5, easing = BOUNCE_EASING)
 	else
-		animate(src, pixel_x = LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 3, easing = BOUNCE_EASING)
+		animate(src, pixel_x = LEAP_HEIGHT*0.1, pixel_z = LEAP_HEIGHT*0.15, time = 1.5, easing = BOUNCE_EASING)
 	sleep(0.3 SECONDS)
 	icon_state = "Normal King Charging"
 	if(negative)
-		animate(src, pixel_x = -LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 7)
+		animate(src, pixel_x = -LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 3.5)
 	else
-		animate(src, pixel_x = LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 7)
+		animate(src, pixel_x = LEAP_HEIGHT, pixel_z = LEAP_HEIGHT, time = 3.5)
 
 /obj/effect/temp_visual/king_leap/end
 	pixel_x = LEAP_HEIGHT
 	pixel_z = LEAP_HEIGHT
-	duration = 10
+	duration = 5
 
 /obj/effect/temp_visual/king_leap/end/flight(negative)
 	if(negative)
@@ -349,3 +352,41 @@
 
 /obj/effect/xenomorph/xeno_telegraph/king_attack_template/yellow
 	icon_state = "xenolandingyellow"
+
+/datum/action/xeno_action/onclick/king_frenzy/use_ability(atom/A)
+	var/mob/living/carbon/xenomorph/zenomorf = owner
+
+	if (!action_cooldown_check())
+		return
+
+	if (!istype(zenomorf) || !zenomorf.check_state())
+		return
+
+	if (buffs_active)
+		return
+
+	if (!check_and_use_plasma_owner())
+		return
+
+	zenomorf.create_custom_empower(icolor = "#ec7878", ialpha = 200, small_xeno = FALSE)
+	buffs_active = TRUE
+	owner.add_filter("Enrage", 1, list("type" = "outline", "color" = "#f37777", "size" = 1))
+	zenomorf.speed_modifier -= speed_buff_amount
+	zenomorf.recalculate_speed()
+	owner.visible_message(SPAN_WARNING("[owner] enrages!"))
+
+	addtimer(CALLBACK(src, PROC_REF(remove_effects)), duration)
+
+	apply_cooldown()
+	return ..()
+
+/datum/action/xeno_action/onclick/king_frenzy/proc/remove_effects()
+	var/mob/living/carbon/xenomorph/zenomorf = owner
+
+	if (!istype(zenomorf))
+		return
+
+	owner.remove_filter("Enrage")
+	zenomorf.speed_modifier += speed_buff_amount
+	zenomorf.recalculate_speed()
+	buffs_active = FALSE
