@@ -34,7 +34,7 @@
 	Medium cooldown soft CC
 */
 
-/datum/action/xeno_action/activable/doom/use_ability(atom/target)
+/datum/action/xeno_action/onclick/doom/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/xeno = owner
 	XENO_ACTION_CHECK_USE_PLASMA(xeno)
 

@@ -10,11 +10,28 @@
 	ability_primacy = XENO_PRIMARY_ACTION_1
 
 	var/damage = 25
+	var/list/humans_near = list()
+
+	default_ai_action = TRUE
+	ai_prob_chance = 100
 
 	var/slash_sounds = list('sound/weapons/alien_claw_flesh1.ogg', 'sound/weapons/alien_claw_flesh2.ogg', 'sound/weapons/alien_claw_flesh3.ogg', 'sound/weapons/alien_claw_flesh4.ogg', 'sound/weapons/alien_claw_flesh5.ogg', 'sound/weapons/alien_claw_flesh6.ogg')
 
+/datum/action/xeno_action/onclick/rend/process_ai(mob/living/carbon/xenomorph/X, delta_time)
+	for(var/mob/living/carbon/human/inrange in view(X))
+		var/distance_check = get_dist(X, inrange)
+
+		if(distance_check < 2)
+			humans_near |= inrange
+			continue
+
+		if(length(humans_near) > 1)
+			use_ability_async()
+			humans_near.RemoveAll()
+			return
+
 /// Screech which puts out lights in a 7 tile radius, slows and dazes.
-/datum/action/xeno_action/activable/doom
+/datum/action/xeno_action/onclick/doom
 	name = "Doom"
 	action_icon_state = "screech"
 	ability_name = "doom"
@@ -25,6 +42,23 @@
 
 	var/daze_length_seconds = 1
 	var/slow_length_seconds = 4
+	var/list/humans_near = list()
+
+	default_ai_action = TRUE
+	ai_prob_chance = 40
+
+/datum/action/xeno_action/onclick/doom/process_ai(mob/living/carbon/xenomorph/X, delta_time)
+	for(var/mob/living/carbon/human/inrange in view(X))
+		var/distance_check = get_dist(X, inrange)
+
+		if(distance_check < 5)
+			humans_near |= inrange
+			continue
+
+		if(length(humans_near) > 2)
+			use_ability_async()
+			humans_near.RemoveAll()
+			return
 
 /// Leap ability, crashing down dealing major damage to mobs and structures in the area.
 /datum/action/xeno_action/activable/destroy
@@ -51,6 +85,23 @@
 	plasma_cost = 0
 	ability_primacy = XENO_PRIMARY_ACTION_4
 
+	default_ai_action = TRUE
+	ai_prob_chance = 80
+
 	var/shield_duration = 10 SECONDS
 	var/area_of_effect = 6
-	var/shield_amount = 200
+	var/shield_amount = 100
+	var/list/xenos_near = list()
+
+/datum/action/xeno_action/onclick/king_shield/process_ai(mob/living/carbon/xenomorph/X, delta_time)
+	for(var/mob/living/carbon/xenomorph/inrange in view(X))
+		var/distance_check = get_dist(X, inrange)
+
+		if(distance_check < 5)
+			xenos_near |= inrange
+			continue
+
+		if(length(xenos_near) > 4)
+			use_ability_async()
+			xenos_near.RemoveAll()
+			return
