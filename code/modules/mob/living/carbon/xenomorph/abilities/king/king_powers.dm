@@ -188,8 +188,8 @@
 
 	to_chat(xeno, SPAN_XENONOTICE("Our muscles tense as we prepare ourself for a giant leap."))
 	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove")
-	xeno.make_jittery(1.5 SECONDS)
-	if(!do_after(xeno, 1.5 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
+	xeno.make_jittery(0.5 SECONDS)
+	if(!do_after(xeno, 0.5 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
 		to_chat(xeno, SPAN_XENONOTICE("We relax our muslces and end our leap."))
 		return
 	if(leaping || !target)

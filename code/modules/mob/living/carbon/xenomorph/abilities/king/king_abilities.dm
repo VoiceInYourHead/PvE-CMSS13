@@ -58,7 +58,7 @@
 		if(length(humans_near) > 2)
 			continue
 
-		if(!DT_PROB(ai_prob_chance, delta_time) || get_dist(X, X.current_target) > 3 || X.action_busy)
+		if(!DT_PROB(ai_prob_chance, delta_time) || get_dist(X, X.current_target) < 3 || X.action_busy)
 			return
 
 		use_ability_async()
