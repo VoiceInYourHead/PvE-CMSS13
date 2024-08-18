@@ -1921,6 +1921,15 @@
 	icon_state = "cargo_arrow"
 	},
 /area/golden_arrow/hangar)
+"hh" = (
+/obj/structure/closet/secure_closet/marine_personal{
+	job = "Section Surgeon";
+	pixel_x = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/cryo_cells)
 "hl" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/supply)
@@ -12596,6 +12605,15 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
+"VY" = (
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/medic/surgeon,
+/obj/effect/landmark/late_join,
+/turf/open/floor/almayer{
+	dir = 4;
+	icon_state = "cargo_arrow"
+	},
+/area/golden_arrow/cryo_cells)
 "VZ" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/plating,
@@ -18167,12 +18185,12 @@ mP
 WK
 Aa
 IE
-It
+VY
 It
 ON
 Aa
 IE
-It
+VY
 It
 UY
 Wh
@@ -18760,7 +18778,7 @@ EG
 EG
 EG
 Wh
-aN
+hh
 aN
 hq
 aN
@@ -18770,7 +18788,7 @@ ne
 aN
 Og
 Yw
-aN
+hh
 bx
 oo
 mk

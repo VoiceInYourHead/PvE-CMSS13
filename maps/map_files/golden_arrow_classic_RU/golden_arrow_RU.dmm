@@ -422,7 +422,7 @@
 "ys" = (/obj/structure/sign/safety/rewire{pixel_x = 14; pixel_y = 29},/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/prep_hallway)
 "yt" = (/obj/structure/window/framed/almayer,/turf/open/floor/almayer{icon_state = "test_floor4"},/area/golden_arrow/platoon_sergeant)
 "yv" = (/obj/structure/machinery/light{dir = 4},/obj/structure/machinery/power/apc/almayer{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/briefing)
-"yx" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/firealarm{pixel_y = 28},/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/dorms)
+"yx" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/firealarm{pixel_y = 28},/obj/structure/closet/secure_closet/marine_personal{job = "Section Surgeon"},/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/dorms)
 "yy" = (/obj/structure/closet/fireaxecabinet{pixel_y = 30},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer{dir = 5; icon_state = "plating"},/area/golden_arrow/engineering)
 "yA" = (/obj/effect/decal/cleanable/dirt,/obj/structure/closet/secure_closet/squad_sergeant{req_access_txt = "32;39"; req_one_access = list()},/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/squad_one)
 "yB" = (/obj/structure/machinery/conveyor{dir = 10},/turf/open/floor/almayer{dir = 5; icon_state = "plating"},/area/golden_arrow/supply)
@@ -847,6 +847,7 @@
 "Uk" = (/obj/structure/surface/table/almayer,/obj/item/spacecash/c10{pixel_x = 5; pixel_y = 7},/turf/open/floor/plating/plating_catwalk,/area/golden_arrow/squad_one)
 "Um" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/cm_vending/clothing/synth{density = 0; pixel_x = -30},/turf/open/floor/almayer{icon_state = "test_floor5"},/area/golden_arrow/synthcloset)
 "Uq" = (/obj/structure/closet/firecloset/full,/turf/open/floor/almayer{icon_state = "test_floor5"},/area/golden_arrow/engineering)
+"Ut" = (/obj/effect/landmark/start/marine/medic/surgeon,/obj/effect/landmark/late_join/alpha,/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/cryo_cells)
 "Uv" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/canteen)
 "UC" = (/obj/structure/machinery/light{dir = 1},/turf/open/floor/almayer{icon_state = "plate"},/area/golden_arrow/engineering)
 "UI" = (/obj/structure/surface/table/almayer,/obj/item/device/cassette_tape/nam{layer = 2.9; pixel_x = -6; pixel_y = 7},/turf/open/floor/plating/plating_catwalk,/area/golden_arrow/squad_one)
@@ -1062,7 +1063,7 @@ CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIHKToToHKHKHKToToHKHKHKToToHKsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIIiBYbhkrHKQTBYZIeLHKQTLfBYeLsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsInRBYRDqmHKnRBYZIqmHKnRLfYXqmsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
-CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIQTcrcreLHKIicrcrkrHKIicrcrkrsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
+CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIQTcrUteLHKIicrcrkrHKIicrUtkrsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsInRBYLLqmHKnRBYBYqmHKnRBYBYqmsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIrbBYLLqfHKrbBYBYqfHKrbBYBYqfsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr
 CrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrsIsIsIsIsIsIsIsIsIsIsIsIsIsIsIsICrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCrCr

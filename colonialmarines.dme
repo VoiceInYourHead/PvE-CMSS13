@@ -2517,5 +2517,7 @@
 #include "void-marines\code\playable_factions\fl_vendors.dm"
 #include "void-marines\code\playable_factions\pmc_presets.dm"
 #include "void-marines\code\playable_factions\shuttles.dm"
+#include "void-marines\code\playable_factions\skills.dm"
 #include "void-marines\code\playable_factions\stuff.dm"
+#include "void-marines\code\playable_factions\uscm_presets.dm"
 // END_INCLUDE
