@@ -188,8 +188,8 @@
 
 	to_chat(xeno, SPAN_XENONOTICE("Our muscles tense as we prepare ourself for a giant leap."))
 	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove")
-	xeno.make_jittery(0.5 SECONDS)
-	if(!do_after(xeno, 0.5 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
+	xeno.make_jittery(1 SECONDS)
+	if(!do_after(xeno, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
 		to_chat(xeno, SPAN_XENONOTICE("We relax our muslces and end our leap."))
 		return
 	if(leaping || !target)
@@ -265,7 +265,7 @@
 	// Actual Damaging Effects - Add stuff for cades - NEED TELEGRAPHS NEED EFFECTS
 
 	// Mobs first high damage and knockback away from centre
-	for(var/mob/living/carbon/carbon in orange(1, owner) - owner)
+	for(var/mob/living/carbon/carbon in orange(2, owner) - owner)
 		if(xeno.can_not_harm(carbon))
 			continue
 		carbon.adjustBruteLoss(75)
@@ -281,7 +281,7 @@
 			xeno.visible_message(SPAN_WARNING("[carbon] is thrown clear of [owner]!"))
 
 	// Any items get thrown away
-	for(var/obj/item/item in orange(1, owner))
+	for(var/obj/item/item in orange(2, owner))
 		if(!QDELETED(item))
 			var/throw_dir = get_dir(owner, item)
 			if(item.loc == owner.loc)
@@ -289,7 +289,7 @@
 			var/throwtarget = get_edge_target_turf(owner, throw_dir)
 			item.throw_atom(throwtarget, 2, SPEED_REALLY_FAST, owner, TRUE)
 
-	for(var/obj/structure/structure in orange(1, owner))
+	for(var/obj/structure/structure in orange(2, owner))
 		structure.ex_act(300, get_dir(owner, structure))
 
 	for(var/mob/living in range(7, owner))
@@ -347,7 +347,7 @@
 
 /obj/effect/xenomorph/xeno_telegraph/king_attack_template
 	icon = 'icons/effects/96x96.dmi'
-	icon_state = "landing2"
+	icon_state = "xenolanding"
 	layer = BELOW_MOB_LAYER
 
 /obj/effect/xenomorph/xeno_telegraph/king_attack_template/yellow
