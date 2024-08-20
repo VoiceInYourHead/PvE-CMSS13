@@ -73,6 +73,13 @@
 	AddComponent(/datum/component/footstep, 2 , 35, 11, 4, "alien_footstep_large")
 	RegisterSignal(src, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(check_block))
 
+	playsound(src, 'sound/voice/alien_death_unused.ogg', 100, TRUE, 30, falloff = 5)
+	playsound(src, 'void-marines/sound/alien/king_background.ogg', 100, TRUE, 30, falloff = 5)
+	for(var/mob/current_mob as anything in get_mobs_in_z_level_range(get_turf(src), 30) - src)
+		var/relative_dir = get_dir(current_mob, src)
+		var/final_dir = dir2text(relative_dir)
+		to_chat(current_mob, SPAN_HIGHDANGER("You hear a terrible roar from [final_dir ? "the [final_dir]" : "nearby"] as the VIOLENTLY ground shakes!"))
+
 /mob/living/carbon/xenomorph/king/proc/check_block(mob/king, turf/new_loc)
 	SIGNAL_HANDLER
 	for(var/mob/living/carbon/carbon in new_loc.contents)
