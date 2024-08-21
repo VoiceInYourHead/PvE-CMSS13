@@ -354,12 +354,12 @@
 	icon_state = "xenolandingyellow"
 
 /datum/action/xeno_action/onclick/king_frenzy/use_ability(atom/A)
-	var/mob/living/carbon/xenomorph/zenomorf = owner
+	var/mob/living/carbon/xenomorph/king = owner
 
 	if (!action_cooldown_check())
 		return
 
-	if (!istype(zenomorf) || !zenomorf.check_state())
+	if (!istype(king) || !king.check_state())
 		return
 
 	if (buffs_active)
@@ -368,11 +368,11 @@
 	if (!check_and_use_plasma_owner())
 		return
 
-	zenomorf.create_custom_empower(icolor = "#ec7878", ialpha = 200, small_xeno = FALSE)
+	king.create_custom_empower(icolor = "#ec7878", ialpha = 200, small_xeno = FALSE)
 	buffs_active = TRUE
 	owner.add_filter("Enrage", 1, list("type" = "outline", "color" = "#7c3e3e", "size" = 1))
-	zenomorf.speed_modifier -= speed_buff_amount
-	zenomorf.recalculate_speed()
+	king.speed_modifier -= speed_buff_amount
+	king.recalculate_speed()
 	owner.visible_message(SPAN_WARNING("[owner] enrages!"))
 
 	addtimer(CALLBACK(src, PROC_REF(remove_effects)), duration)
@@ -381,12 +381,12 @@
 	return ..()
 
 /datum/action/xeno_action/onclick/king_frenzy/proc/remove_effects()
-	var/mob/living/carbon/xenomorph/zenomorf = owner
+	var/mob/living/carbon/xenomorph/king = owner
 
-	if (!istype(zenomorf))
+	if (!istype(king))
 		return
 
 	owner.remove_filter("Enrage")
-	zenomorf.speed_modifier += speed_buff_amount
-	zenomorf.recalculate_speed()
+	king.speed_modifier += speed_buff_amount
+	king.recalculate_speed()
 	buffs_active = FALSE

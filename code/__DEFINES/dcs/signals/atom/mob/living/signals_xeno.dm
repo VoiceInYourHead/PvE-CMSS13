@@ -73,6 +73,3 @@
 
 /// From /mob/living/carbon/xenomorph/proc/handle_ai_shot()
 #define COMSIG_XENO_HANDLE_AI_SHOT "xeno_handle_ai_shot"
-
-/// From /mob/living/carbon/xenomorph/proc/do_evolve()
-#define COMSIG_XENO_EVOLVE_TO_NEW_CASTE "xeno_evolve_to_new_caste"
