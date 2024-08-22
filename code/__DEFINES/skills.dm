@@ -109,12 +109,13 @@
 
 
 //cqc skill
-//higher disarm chance on humans(+5% per level)
-//slight increase in punch damage.
+//higher disarm chance on humans(+10% per level)
+//medium increase in punch damage.
 #define SKILL_CQC_DEFAULT 0
 #define SKILL_CQC_TRAINED 1
-#define SKILL_CQC_SKILLED 2 //no risk of accidental weapon discharge upon disarming (MP)
+#define SKILL_CQC_SKILLED 2
 #define SKILL_CQC_EXPERT 3
+#define SKILL_CQC_ELITE 4 //no risk of accidental weapon discharge upon disarming (MP)
 #define SKILL_CQC_MASTER 5
 #define SKILL_CQC_MAX 5
 

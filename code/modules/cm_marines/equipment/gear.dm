@@ -198,16 +198,16 @@
 
 
 /obj/item/reagent_container/food/snacks/protein_pack
-	name = "stale USCM protein bar"
-	desc = "The most fake-looking protein bar you have ever laid eyes on, covered in a substitution chocolate. The powder used to make these is a substitute of a substitute of whey substitute."
+	name = "USCM protein bar"
+	desc = "Sport nutrition. 1 bar contains 20g protein, 7g fats, 3g carbohydrates and 20g dietary fibers, 153 calories, NO SUGAR."
 	icon_state = "yummers"
 	filling_color = "#ED1169"
 	w_class = SIZE_TINY
 
 /obj/item/reagent_container/food/snacks/protein_pack/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 8)
-	bitesize = 4
+	reagents.add_reagent("nutriment", 15)
+	bitesize = 5
 
 
 /obj/item/reagent_container/food/snacks/mre_pack
@@ -218,54 +218,54 @@
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal1
 	name = "\improper USCM Prepared Meal (cornbread)"
-	desc = "A tray of standard USCM food. Stale cornbread, tomato paste and some green goop fill this tray."
+	desc = "A tray with food for military. Fresh 2 cornbreads, 50g of protein paste with strawberry flavor, and 300g of oatmeal goop fill this tray."
 	icon_state = "MREa"
 	filling_color = "#ED1169"
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal1/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 9)
-	bitesize = 3
+	reagents.add_reagent("nutriment", 25)
+	bitesize = 5
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal2
 	name = "\improper USCM Prepared Meal (pork)"
-	desc = "A tray of standard USCM food. Partially raw pork, goopy corn and some watery mashed potatoes fill this tray."
+	desc = "A tray with food for military. 200g of fried pork, 100g of corn and 100g fried potatoes fill this tray."
 	icon_state = "MREb"
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal2/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 9)
-	bitesize = 2
+	reagents.add_reagent("nutriment", 25)
+	bitesize = 5
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal3
 	name = "\improper USCM Prepared Meal (pasta)"
-	desc = "A tray of standard USCM food. Overcooked spaghetti, waterlogged carrots and two french fries fill this tray."
+	desc = "A tray with food for military. 250g of spaghetti, 2 carrots and 50g french fries fill this tray."
 	icon_state = "MREc"
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal3/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 9)
-	bitesize = 3
+	reagents.add_reagent("nutriment", 25)
+	bitesize = 5
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal4
 	name = "\improper USCM Prepared Meal (pizza)"
-	desc = "A tray of standard USCM food. Cold pizza, wet green beans and a shitty egg fill this tray. Get something other than pizza, lardass."
+	desc = "A tray with food for military. Hot small pizza with 150g of spicy green beans and 1 boiled egg and salt fill this tray."
 	icon_state = "MREd"
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal4/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 8)
-	bitesize = 1
+	reagents.add_reagent("nutriment", 20)
+	bitesize = 5
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal5
 	name = "\improper USCM Prepared Meal (chicken)"
-	desc = "A tray of standard USCM food. Moist chicken, dry rice and a mildly depressed piece of broccoli fill this tray."
+	desc = "A tray with food for military. Spicy 3 chickens, 350g of rice and 1 fresh broccoli fill this tray."
 	icon_state = "MREe"
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal5/Initialize()
 	. = ..()
-	reagents.add_reagent("nutriment", 10)
-	bitesize = 3
+	reagents.add_reagent("nutriment", 25)
+	bitesize = 5
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal6
 	name = "\improper USCM Prepared Meal (tofu)"
