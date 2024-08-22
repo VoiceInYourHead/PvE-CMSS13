@@ -148,36 +148,29 @@
 	XENO_ACTION_CHECK(xeno)
 
 	if(get_dist(owner, target) > range)
-		to_chat(xeno, SPAN_XENONOTICE("We cannot leap that far!"))
+		to_chat(xeno, SPAN_XENONOTICE("Sorry bud, you can't use this ability!"))
 		return
 
 	var/turf/target_turf = get_turf(target)
 
 	if(!target_turf || target_turf.density)
-		to_chat(xeno, SPAN_XENONOTICE("We cannot leap to that!"))
 		return
 
 	if(istype(target_turf, /turf/open/space))
-		to_chat(xeno, SPAN_XENONOTICE("It would not be wise to try to leap there..."))
 		return
 
 	if(istype(target, /obj/vehicle/multitile))
-		to_chat(xeno, SPAN_XENONOTICE("It would not be wise to try to leap there..."))
 		return
 
 	var/area/target_area = get_area(target_turf)
-	if(target_area.flags_area & AREA_NOTUNNEL)
-		to_chat(xeno, SPAN_XENONOTICE("We cannot leap to that area!"))
 
 	var/list/leap_line = get_line(xeno, target)
 	for(var/turf/jump_turf in leap_line)
 		if(jump_turf.density)
-			to_chat(xeno, SPAN_XENONOTICE("We don't have a clear path to leap to that location!"))
 			return
 
 		for(var/obj/structure/possible_blocker in jump_turf)
 			if(possible_blocker.density && !possible_blocker.throwpass)
-				to_chat(xeno, SPAN_XENONOTICE("There's something blocking us from leaping."))
 				return
 
 	if(!check_and_use_plasma_owner())
@@ -187,7 +180,7 @@
 	var/turf/template_turf = get_step(target_turf, SOUTHWEST)
 
 	to_chat(xeno, SPAN_XENONOTICE("Our muscles tense as we prepare ourself for a giant leap."))
-	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove")
+	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "WaitBeforeMove") // idk, that probably works
 	xeno.make_jittery(1 SECONDS)
 	if(!do_after(xeno, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
 		to_chat(xeno, SPAN_XENONOTICE("We relax our muslces and end our leap."))
