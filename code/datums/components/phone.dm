@@ -146,7 +146,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 /// Handles what we want to do when we pick up a phone
 /datum/component/phone/proc/picked_up_call(mob/living/carbon/human/user)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Picked up a call from [calling_phone.phone_id]."))
-	playsound(get_turf(user), "phone_pickup")
+	playsound(get_turf(user), "phone_pickup", 20)
 
 	user.put_in_active_hand(phone_handset)
 	SEND_SIGNAL(holder, COMSIG_ATOM_PHONE_PICKED_UP)
@@ -169,7 +169,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 
 	var/mob/phone_user = phone_handset.loc
 	to_chat(phone_user, SPAN_PURPLE("[icon2html(calling_phone.holder, phone_user)] [calling_phone.phone_id] has picked up."))
-	playsound(get_turf(phone_user), 'sound/machines/telephone/remote_pickup.ogg', 20)
+	playsound(get_turf(phone_user), "phone_pickup", 20)
 
 /// Handles setting a specific phone ID and enabling the phone when the holder is picked up
 /datum/component/phone/proc/holder_picked_up(obj/item/picked_up_holder, mob/user)
@@ -308,7 +308,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 /datum/component/phone/proc/post_call_phone(mob/user, calling_phone_id)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Dialing [calling_phone_id].."))
 	timeout_timer_id = addtimer(CALLBACK(src, PROC_REF(reset_call), TRUE), timeout_duration, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_STOPPABLE)
-	playsound(get_turf(user), "phone_pickup")
+	playsound(get_turf(user), "phone_pickup", 20)
 
 	user.put_in_active_hand(phone_handset)
 	SEND_SIGNAL(holder, COMSIG_ATOM_PHONE_PICKED_UP)
@@ -575,7 +575,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Dialing [calling_phone_id].."))
 	timeout_timer_id = addtimer(CALLBACK(src, PROC_REF(reset_call), TRUE), timeout_duration, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_STOPPABLE)
 
-	playsound_client(user.client, "phone_pickup")
+	playsound_client(user.client, "phone_pickup", 20)
 
 /datum/component/phone/virtual/recall_handset()
 	reset_call() // I don't think this will be possible given like... we don't have a handset but just in case
