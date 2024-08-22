@@ -353,7 +353,7 @@
 
 /obj/item/reagent_container/food/drinks/flask/canteen
 	name = "canteen"
-	desc = "You take a sip from your trusty USCM canteen..."
+	desc = "A ruggedized metal alloy flask. Can hold a good amount of water... Or other liquids."
 	icon_state = "canteen"
 	volume = 60
 	center_of_mass = "x=17;y=8"
@@ -361,6 +361,12 @@
 /obj/item/reagent_container/food/drinks/flask/canteen/Initialize()
 	. = ..()
 	reagents.add_reagent("water", 60)
+
+/obj/item/reagent_container/food/drinks/flask/canteen/empty
+
+/obj/item/reagent_container/food/drinks/flask/canteen/empty/Initialize()
+	. = ..()
+	reagents.clear_reagents()
 
 /obj/item/reagent_container/food/drinks/flask/detflask
 	name = "brown leather flask"
@@ -405,9 +411,3 @@
 	desc = "A matte gray coffee mug bearing the Weyland-Yutani logo on its front. Either issued as corporate standard, or bought as a souvenir for people who love the Company oh so dearly. Probably the former."
 	icon_state = "wycup"
 
-/obj/item/reagent_container/food/drinks/coffee/cuppa_joes
-	name = "Cuppa Joe's coffee"
-	desc = "Have you got the CuppaJoe Smile? Stay perky! Freeze-dried CuppaJoe's Coffee."
-	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
-	icon_state = "coffeecuppajoe"
-	center_of_mass = "x=15;y=10"
