@@ -532,6 +532,17 @@
 //RUCM START
 			if("male_clf_warcry")
 				S = pick('sound/voice/clf_warcry/warcry_male_1.ogg')
+			if("talk_phone")
+				S = pick('sound/machines/telephone/talk_phone1.ogg', 'sound/machines/telephone/talk_phone2.ogg', 'sound/machines/telephone/talk_phone3.ogg', 'sound/machines/telephone/talk_phone4.ogg', 'sound/machines/telephone/talk_phone5.ogg', 'sound/machines/telephone/talk_phone6.ogg', 'sound/machines/telephone/talk_phone7.ogg')
+			if("busy")
+				S = pick('sound/machines/telephone/phone_busy.ogg')
+			if("phone_pickup")
+				S = pick('sound/machines/telephone/remote_pickup.ogg')
+			if("phone_hangup")
+				S = pick('sound/machines/telephone/remote_hangup.ogg')
+			if("timed_out")
+				S = pick('sound/machines/telephone/callstation_unavailable.ogg')
+//RUCM END
 	return S
 
 /client/proc/generate_sound_queues()

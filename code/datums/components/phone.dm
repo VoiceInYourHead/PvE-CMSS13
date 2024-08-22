@@ -146,7 +146,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 /// Handles what we want to do when we pick up a phone
 /datum/component/phone/proc/picked_up_call(mob/living/carbon/human/user)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Picked up a call from [calling_phone.phone_id]."))
-	playsound(get_turf(user), "rtb_handset")
+	playsound(get_turf(user), "phone_pickup")
 
 	user.put_in_active_hand(phone_handset)
 	SEND_SIGNAL(holder, COMSIG_ATOM_PHONE_PICKED_UP)
@@ -169,6 +169,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 
 	var/mob/phone_user = phone_handset.loc
 	to_chat(phone_user, SPAN_PURPLE("[icon2html(calling_phone.holder, phone_user)] [calling_phone.phone_id] has picked up."))
+	playsound(get_turf(phone_user), 'sound/machines/telephone/remote_pickup.ogg', 20)
 
 /// Handles setting a specific phone ID and enabling the phone when the holder is picked up
 /datum/component/phone/proc/holder_picked_up(obj/item/picked_up_holder, mob/user)
@@ -307,7 +308,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 /datum/component/phone/proc/post_call_phone(mob/user, calling_phone_id)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Dialing [calling_phone_id].."))
 	timeout_timer_id = addtimer(CALLBACK(src, PROC_REF(reset_call), TRUE), timeout_duration, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_STOPPABLE)
-	playsound(get_turf(user), "rtb_handset")
+	playsound(get_turf(user), "phone_pickup")
 
 	user.put_in_active_hand(phone_handset)
 	SEND_SIGNAL(holder, COMSIG_ATOM_PHONE_PICKED_UP)
@@ -343,8 +344,10 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 	var/mob/handset_user = phone_handset.loc
 	if(recursed)
 		to_chat(handset_user, SPAN_PURPLE("[icon2html(holder, handset_user)] [calling_phone.phone_id] has hung up on you."))
+		playsound(get_turf(handset_user), "busy", 100, FALSE, 7)
 	else if(timeout)
 		to_chat(handset_user, SPAN_PURPLE("[icon2html(holder, handset_user)] Your call to [calling_phone.phone_id] has reached voicemail, you immediately disconnect the line."))
+		playsound(handset_user, "timed_out", 5)
 	else
 		to_chat(handset_user, SPAN_PURPLE("[icon2html(holder, handset_user)] You have hung up on [calling_phone.phone_id]."))
 
@@ -353,7 +356,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 	if(ismob(phone_handset.loc))
 		var/mob/M = phone_handset.loc
 		M.drop_held_item(phone_handset)
-		playsound(get_turf(M), "rtb_handset", 100, FALSE, 7)
+		playsound(get_turf(M), "phone_hangup", 100, FALSE, 7)
 
 	phone_handset.moveToNullspace()
 	reset_call()
@@ -370,6 +373,8 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 
 	if(direct_talking)
 		handle_hear(message, message_language, speaker, direct_talking)
+
+		playsound(get_turf(speaker), "talk_phone", 5)
 
 		log_say("TELEPHONE: [key_name(speaker)] on Phone '[phone_id]' to '[calling_phone.phone_id]' said '[message]'")
 
@@ -570,7 +575,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 	to_chat(user, SPAN_PURPLE("[icon2html(holder, user)] Dialing [calling_phone_id].."))
 	timeout_timer_id = addtimer(CALLBACK(src, PROC_REF(reset_call), TRUE), timeout_duration, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_STOPPABLE)
 
-	playsound_client(user.client, "rtb_handset")
+	playsound_client(user.client, "phone_pickup")
 
 /datum/component/phone/virtual/recall_handset()
 	reset_call() // I don't think this will be possible given like... we don't have a handset but just in case
