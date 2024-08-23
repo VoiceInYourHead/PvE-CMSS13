@@ -352,15 +352,15 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 
 /obj/item/clothing/head/helmet/marine
 	name = "\improper M10 pattern ballistic helmet"
-	desc = "Standard issue high molecular density polymer combat helmet. Resistant to glancing hits from small arms and shrapnel, incorporates tactical camera, IFF signal transponder, and heads up display eyepiece. Also features white/black hot IR viewing modes from the camera system."
+	desc = "Standard issue high molecular density polymer combat helmet. Resistant to glancing hits from small arms and shrapnel, incorporates tactical camera, IFF signal transponder, and heads up display eyepiece. Also features white/black hot IR viewing modes from the camera system. Have integrated night vision lense"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "helmet"
 	item_state = "helmet"
 	armor_melee = CLOTHING_ARMOR_MEDIUM
-	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
 	armor_energy = CLOTHING_ARMOR_NONE
-	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bio = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
@@ -805,20 +805,35 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 
 /obj/item/clothing/head/helmet/marine/leader
 	name = "\improper M09 pattern helmet"
-	desc = "Back issue model of an older combat helmet. Uncomfortable, but the added protection is supposedly worth it. It's been wired up the same, so it still ties into the sensor matrix fine."
+	desc = "Old USCM combat helmet. Uncomfortable, and don't have integrated night vision, but protection much better from any threats"
 	icon_state = "sl_helmet"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	specialty = "M11 pattern marine"
+	built_in_visors = list(new /obj/item/device/helmet_visor)
 
 /obj/item/clothing/head/helmet/marine/rto
 	name = "\improper M12 pattern helmet"
-	desc = "Failed procurement, limited run successor to the old M10 Ballistic Helmet. New ceramic composites and suspension system show a remarkable increase in blunt impact resistance, while a revamped wiring structure added space for a second optic socket."
+	desc = "Heavy USCM helmet. Have a much better protection then M10 or M11 helmets, but can't hold any visors."
 	icon_state = "io"
 	item_state = "io"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	specialty = "M12 pattern"
-	max_inserted_visors = 2
+	built_in_visors = list(new /obj/item/device/helmet_visor)
+	max_inserted_visors = 0
 
 /obj/item/clothing/head/helmet/marine/rto/intel
 	name = "\improper XM12 pattern intelligence helmet"

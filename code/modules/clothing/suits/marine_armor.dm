@@ -56,7 +56,7 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	movement_compensation = SLOWDOWN_ARMOR_LIGHT
-	storage_slots = 3
+	storage_slots = 4
 	siemens_coefficient = 0.7
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	allowed = list(
@@ -253,9 +253,15 @@
 	icon_state = "io"
 	name = "\improper M4 pattern marine armor"
 	desc = "A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches."
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
-	storage_slots = 4
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	storage_slots = 6
 	light_range = 5 //slightly higher
 	specialty = "M4 pattern marine"
 
@@ -355,7 +361,7 @@
 	icon_state = "co_officer"
 	item_state = "co_officer"
 	armor_bullet = CLOTHING_ARMOR_HIGH
-	storage_slots = 3
+	storage_slots = 4
 	flags_atom = NO_SNOW_TYPE
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 	uniform_restricted = list(/obj/item/clothing/under/marine, /obj/item/clothing/under/rank/qm_suit)
@@ -382,7 +388,7 @@
 	armor_laser = CLOTHING_ARMOR_LOW
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_MEDIUM
-	storage_slots = 2
+	storage_slots = 4
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 	allowed = list(
@@ -492,11 +498,15 @@
 
 /obj/item/clothing/suit/storage/marine/leader
 	name = "\improper B12 pattern marine armor"
-	desc = "Semi-experimental body armor system similar to M3, incorporating primarily carbon fiber instead of boron carbide. \nDesigned in a lovely olive green, slightly improved protection against blunt impact and biological hazards."
+	desc = "Semi-experimental body armor system similar to M3, incorporating primarily carbon fiber instead of boron carbide. \nDesigned in a lovely olive green, slightly improved protection against any threats."
 	icon_state = "7"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	specialty = "B12 pattern marine"
 
@@ -523,11 +533,11 @@
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
-	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bio = CLOTHING_ARMOR_LOW
 	armor_rad = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_internaldamage = CLOTHING_ARMOR_LOW
-	storage_slots = 2
+	storage_slots = 3
 
 /obj/item/clothing/suit/storage/marine/light/padded
 	icon_state = "L1"
@@ -597,7 +607,7 @@
 	armor_bio = CLOTHING_ARMOR_NONE
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_NONE
-	storage_slots = 3
+	storage_slots = 6
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
 	time_to_unequip = 0.5 SECONDS
 	time_to_equip = 1 SECONDS
@@ -629,12 +639,12 @@
 	specialty = "\improper M3-H pattern"
 	icon_state = "H1"
 	armor_variation = 6
-	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
-	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_rad = CLOTHING_ARMOR_MEDIUM
-	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_VERYHIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_VERYHIGH
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	storage_slots = 2
 	slowdown = SLOWDOWN_ARMOR_LOWHEAVY
 	movement_compensation = SLOWDOWN_ARMOR_MEDIUM
@@ -1066,7 +1076,7 @@
 	desc = "A heavily customized suit of M3 armor. Used by Marine Raiders."
 	icon_state = "marsoc"
 	armor_melee = CLOTHING_ARMOR_HIGH
-	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_bomb = CLOTHING_ARMOR_VERYHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
 	armor_rad = CLOTHING_ARMOR_MEDIUMHIGH
@@ -1074,7 +1084,7 @@
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	unacidable = TRUE
 	flags_atom = MOB_LOCK_ON_EQUIP|NO_CRYO_STORE|NO_SNOW_TYPE
-	storage_slots = 4
+	storage_slots = 6
 
 //=============================//pmcS\\==================================\\
 //=======================================================================\\

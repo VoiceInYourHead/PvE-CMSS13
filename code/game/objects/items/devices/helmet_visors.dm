@@ -191,9 +191,9 @@
 //	var/obj/item/cell/high/power_cell //RU-PVE
 	var/obj/item/cell/apc/power_cell
 
-	/// About 5 minutes active use charge (hypothetically)
+	/// About 10 minutes active use charge (hypothetically)
 //	var/power_use = 33 //RU-PVE
-	var/power_use = 16
+	var/power_use = 8
 
 	/// The alpha of darkness we set to for the mob while the visor is on, not completely fullbright but see-able
 	var/lighting_alpha = 100
