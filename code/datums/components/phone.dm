@@ -139,7 +139,7 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 		return
 
 	picked_up_call(user)
-	calling_phone.other_phone_picked_up_call()
+	calling_phone.other_phone_picked_up_call() // XD
 
 	return COMPONENT_CANCEL_HUMAN_ATTACK_HAND
 
