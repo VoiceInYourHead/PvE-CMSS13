@@ -26,6 +26,8 @@
   - rscadd: 'added more cigarette options in the loadout, along with a golden zippo
 
       :cl:'
+
+
 2024-08-10:
   Doubleumc:
   - qol: Adds the ability to hide your action buttons
@@ -104,3 +106,4 @@
   - rscadd: Added something
   private-tristan:
   - rscadd: ports TG strip menu
+
