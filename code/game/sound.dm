@@ -355,6 +355,8 @@
 				S = pick('sound/items/cane_step_1.ogg', 'sound/items/cane_step_2.ogg', 'sound/items/cane_step_3.ogg', 'sound/items/cane_step_4.ogg', 'sound/items/cane_step_5.ogg', )
 			if("match")
 				S = pick('sound/effects/match.ogg')
+			if("throwing")
+				S = pick('sound/effects/throwing/swoosh1.ogg', 'sound/effects/throwing/swoosh2.ogg', 'sound/effects/throwing/swoosh3.ogg', 'sound/effects/throwing/swoosh4.ogg')
 			if("punch")
 				S = pick('sound/weapons/punch1.ogg','sound/weapons/punch2.ogg','sound/weapons/punch3.ogg','sound/weapons/punch4.ogg')
 			if("swing_hit")
@@ -527,6 +529,9 @@
 				S = pick('sound/voice/pred_pain1.ogg','sound/voice/pred_pain2.ogg','sound/voice/pred_pain3.ogg','sound/voice/pred_pain4.ogg','sound/voice/pred_pain5.ogg',5;'sound/voice/pred_pain_rare1.ogg')
 			if("clownstep")
 				S = pick('sound/effects/clownstep1.ogg', 'sound/effects/clownstep2.ogg')
+//RUCM START
+			if("male_clf_warcry")
+				S = pick('sound/voice/clf_warcry/warcry_male_1.ogg')
 	return S
 
 /client/proc/generate_sound_queues()

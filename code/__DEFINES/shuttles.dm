@@ -117,6 +117,13 @@
 #define DROPSHIP_NORMANDY "dropship_normandy"
 #define DROPSHIP_UPP "dropship_upp"
 #define DROPSHIP_CYCLONE "dropship_cyclone"
+#define DROPSHIP_TORNADO "dropship_tornado"
+#define DROPSHIP_TYPHOON "dropship_typhoon"
+#define DROPSHIP_TRIPOLI "dropship_tripoli"
+
+#define DROPSHIP_RASPUTIN "dropship_rasputin" //RU-PVE
+#define DROPSHIP_LANCER "dropship_lancer" //RU-PVE
+#define DROPSHIP_PMC "dropship_pmc" //RU-PVE
 
 #define ALMAYER_DROPSHIP_LZ1 "almayer-hangar-lz1"
 #define ALMAYER_DROPSHIP_LZ2 "almayer-hangar-lz2"
