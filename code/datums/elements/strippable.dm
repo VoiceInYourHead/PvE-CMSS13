@@ -165,7 +165,7 @@
 
 			user.density = TRUE
 			user.anchored = TRUE
-			user.mouse_opacity = TRUE
+			user.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 			user.emote("scream")
 			user.apply_effect(10 SECONDS, STUN)
