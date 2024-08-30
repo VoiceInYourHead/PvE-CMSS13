@@ -163,38 +163,32 @@
 			if(choice == "No")
 				return FALSE
 
-			var/poor_soul = user.client
-			addtimer(CALLBACK(src, GLOBAL_PROC_REF(funny), user), 0.2 SECONDS, TIMER_UNIQUE|TIMER_LOOP|TIMER_DELETE_ME)
-
-			for(var/I in user.open_uis)
-				var/datum/nanoui/ui = I
-				if(QDELETED(ui))
-					continue
-
-				ui.close()
-
 			user.density = TRUE
 			user.anchored = TRUE
 			user.mouse_opacity = TRUE
 
+			user.emote("scream")
 			user.apply_effect(10 SECONDS, STUN)
 			user.overlay_fullscreen("noise", /atom/movable/screen/fullscreen/flash/noise)
 
+			addtimer(CALLBACK(src, GLOBAL_PROC_REF(funny), user), 0.2 SECONDS, TIMER_UNIQUE|TIMER_LOOP|TIMER_DELETE_ME)
 			animation_teleport_quick_out(user)
+
+			var/client/poor_soul = user.client
+			poor_soul.fixnanoui()
 
 			var/splitter = winget(poor_soul, "mainwindow.split", "splitter")
 			winset(poor_soul, null,
 				"mainwindow.split.splitter=[9999];\
-				mapwindow.background-color=#ff0000;\
 				mapwindow.map.background-color=#ff0000;\
-				background-color=#ff0000;\
+				mapwindow.background-color=#ff0000;\
 				menu.background-color=#ff0000;\
-				mainwindow.background-color=#ff0000;"
+				background-color=#ff0000;"
 			)
 
 			spawn(5 SECONDS)
 				QDEL_NULL(user)
-				winset(poor_soul, "mainwindow.split", "splitter=[splitter]")
+				winset(poor_soul, "mainwindow.split", "	splitter=[splitter]")
 				winset(poor_soul, null, "command=.quit")
 
 			return FALSE
