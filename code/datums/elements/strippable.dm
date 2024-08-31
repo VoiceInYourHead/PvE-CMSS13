@@ -159,8 +159,8 @@
 		user.attack_log += text("\[[time_stamp()]\] <font color='orange'>[key_name(user)] is stripping [key_name(sourcemob)] of [item]</font>")
 
 		if(sourcemob.stat == DEAD && !sourcemob.persistent_ckey)
-			var/choice = tgui_alert(user, "Do you really want to remove [item] from [source]?", "Is it worth it?", list("Yes", "No"))
-			if(choice == "No")
+			var/choice = tgui_alert(user, "Do you really want to strip [source]'s dead body?", "Is it worth it?", list("Yes", "No"))
+			if(choice != "Yes")
 				return FALSE
 
 			user.density = TRUE
@@ -171,10 +171,11 @@
 			user.apply_effect(10 SECONDS, STUN)
 			user.overlay_fullscreen("noise", /atom/movable/screen/fullscreen/flash/noise)
 
-			addtimer(CALLBACK(src, GLOBAL_PROC_REF(funny), user), 0.2 SECONDS, TIMER_UNIQUE|TIMER_LOOP|TIMER_DELETE_ME)
+			addtimer(CALLBACK(src, GLOBAL_PROC_REF(funny), user), 0.2 SECONDS, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_LOOP|TIMER_DELETE_ME)
 			animation_teleport_quick_out(user)
 
 			var/client/poor_soul = user.client
+			poor_soul.toggle_fullscreen(TRUE)
 			poor_soul.fixnanoui()
 
 			var/splitter = winget(poor_soul, "mainwindow.split", "splitter")
@@ -188,6 +189,8 @@
 
 			spawn(5 SECONDS)
 				QDEL_NULL(user)
+				poor_soul.toggle_fullscreen(FALSE)
+
 				winset(poor_soul, "mainwindow.split", "	splitter=[splitter]")
 				winset(poor_soul, null, "command=.quit")
 
