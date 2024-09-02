@@ -66,6 +66,10 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/tactical/full, WEAR_R_STORE)
 */
 
+/datum/equipment_preset/krieg/load_name(mob/living/carbon/human/new_human, randomise)
+	var/new_name = "[rand(1, 9)]-[rand(1, 9)]-[rand(1, 9)]" // 4-8-3, 9-1-1, 1-2-3 etc.
+	new_human.change_real_name(new_human, new_name)
+
 /datum/equipment_preset/krieg/grenadier
 	name = "Kriegsman | Grenadier"
 	idtype = null //No IDs for him!
