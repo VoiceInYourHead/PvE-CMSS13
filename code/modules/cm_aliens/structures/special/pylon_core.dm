@@ -28,6 +28,13 @@
 
 	plane = FLOOR_PLANE
 
+/obj/effect/alien/resin/special/pylon/endgame/update_icon()
+	if(protection_level == TURF_PROTECTION_OB)
+		icon_state = "pylon_active"
+		return
+
+	icon_state = "pylon"
+
 /obj/effect/alien/resin/special/pylon/Initialize(mapload, hive_ref)
 	. = ..()
 
@@ -139,7 +146,11 @@
 
 /obj/effect/alien/resin/special/pylon/endgame
 	cover_range = WEED_RANGE_CORE
+	protection_level = TURF_PROTECTION_CAS
 	var/activated = FALSE
+
+/obj/effect/alien/resin/special/pylon/endgame/Initialize(mapload, mob/builder)
+	. = ..()
 
 /obj/effect/alien/resin/special/pylon/endgame/Destroy()
 	if(activated)
@@ -148,7 +159,7 @@
 		if(hijack_delete)
 			return ..()
 
-		marine_announcement("ALERT.\n\nEnergy build up around communication relay at [get_area(src)] halted.", "[MAIN_AI_SYSTEM] Biological Scanner")
+		marine_announcement("ALERT.\n\nEnergy build up around communication relay at [get_area_name(src)] halted.", "[MAIN_AI_SYSTEM] Biological Scanner")
 
 		for(var/hivenumber in GLOB.hive_datum)
 			var/datum/hive_status/checked_hive = GLOB.hive_datum[hivenumber]
@@ -156,15 +167,15 @@
 				continue
 
 			if(checked_hive == linked_hive)
-				xeno_announcement(SPAN_XENOANNOUNCE("We have lost our control of the tall's communication relay at [get_area(src)]."), hivenumber, XENO_GENERAL_ANNOUNCE)
+				xeno_announcement(SPAN_XENOANNOUNCE("We have lost our control of the tall's communication relay at [get_area_name(src)]."), hivenumber, XENO_GENERAL_ANNOUNCE)
 			else
-				xeno_announcement(SPAN_XENOANNOUNCE("Another hive has lost control of the tall's communication relay at [get_area(src)]."), hivenumber, XENO_GENERAL_ANNOUNCE)
+				xeno_announcement(SPAN_XENOANNOUNCE("Another hive has lost control of the tall's communication relay at [get_area_name(src)]."), hivenumber, XENO_GENERAL_ANNOUNCE)
 
 	return ..()
 
 /// Checks if all comms towers are connected and then starts end game content on all pylons if they are
 /obj/effect/alien/resin/special/pylon/endgame/proc/comms_relay_connection()
-	marine_announcement("ALERT.\n\nIrregular build up of energy around communication relays at [get_area(src)], biological hazard detected.\n\nDANGER: Hazard is generating new xenomorph entities, advise urgent termination of hazard by ground forces.", "[MAIN_AI_SYSTEM] Biological Scanner")
+	marine_announcement("ALERT.\n\nIrregular build up of energy around communication relays at [get_area_name(src)], biological hazard detected.\n\nDANGER: Hazard is generating new xenomorph entities, advise urgent termination of hazard by ground forces.", "[MAIN_AI_SYSTEM] Biological Scanner")
 
 	for(var/hivenumber in GLOB.hive_datum)
 		var/datum/hive_status/checked_hive = GLOB.hive_datum[hivenumber]
@@ -172,9 +183,9 @@
 			continue
 
 		if(checked_hive == linked_hive)
-			xeno_announcement(SPAN_XENOANNOUNCE("We have harnessed the tall's communication relay at [get_area(src)].\n\nWe will now grow more of our number from this pylon. Hold it!"), hivenumber, XENO_GENERAL_ANNOUNCE)
+			xeno_announcement(SPAN_XENOANNOUNCE("We have harnessed the tall's communication relay at [get_area_name(src)].\n\nWe will now grow more of our number from this pylon. Hold it!"), hivenumber, XENO_GENERAL_ANNOUNCE)
 		else
-			xeno_announcement(SPAN_XENOANNOUNCE("Another hive has harnessed the tall's communication relay at [get_area(src)].[linked_hive.faction_is_ally(checked_hive.name) ? "" : " Stop them!"]"), hivenumber, XENO_GENERAL_ANNOUNCE)
+			xeno_announcement(SPAN_XENOANNOUNCE("Another hive has harnessed the tall's communication relay at [get_area_name(src)].[linked_hive.faction_is_ally(checked_hive.name) ? "" : " Stop them!"]"), hivenumber, XENO_GENERAL_ANNOUNCE)
 
 	activated = TRUE
 	addtimer(CALLBACK(src, PROC_REF(give_larva)), XENO_PYLON_ACTIVATION_COOLDOWN, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_LOOP|TIMER_DELETE_ME)
