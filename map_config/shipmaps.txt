@@ -30,7 +30,19 @@ map golden_arrow_RU
 endmap
 
 map desert_dam_fob
-	disabled
+endmap
 
 map golden_arrow_classic
+endmap
+
+map lead_hawk
+endmap
+
+map corsair
+endmap
+
+map tortuga
+endmap
+
+map golden_arrow_forecon
 endmap

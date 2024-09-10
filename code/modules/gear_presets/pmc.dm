@@ -18,11 +18,13 @@
 /datum/equipment_preset/pmc/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = pick(MALE,FEMALE)
 	var/random_name
-	var/first_name
-	var/last_name
+//	var/first_name //RU-PVE
+//	var/last_name //RU-PVE
 	var/datum/preferences/A = new()
 	A.randomize_appearance(new_human)
-	if(new_human.gender == MALE)
+
+//RU-PVE ADDITION STARTS
+/*	if(new_human.gender == MALE)
 		if(prob(10))
 			first_name = "[capitalize(randomly_generate_japanese_word(rand(2, 3)))]"
 		else
@@ -37,7 +39,11 @@
 		last_name = "[capitalize(randomly_generate_japanese_word(rand(2, 4)))]"
 	else
 		last_name = "[pick(last_names_pmc)]"
-	random_name = "[first_name] [last_name]"
+	random_name = "[first_name] [last_name]"*/
+//RU-PVE ADDITION ENDS
+
+	random_name = "[pick(first_names_pmc)] [pick(last_names_pmc)]"
+
 	new_human.change_real_name(new_human, random_name)
 	new_human.age = rand(25,35)
 	new_human.h_style = "Shaved Head"
@@ -90,7 +96,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/baton, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar, WEAR_IN_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/mod88, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/vp70, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full, WEAR_R_STORE)
 
 	switch(choice)
@@ -229,7 +235,7 @@ list("POUCHES (CHOOSE 2)", 0, null, null, null),
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/baton, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar, WEAR_IN_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/mod88, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/vp70, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/taser, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full, WEAR_R_STORE)
@@ -1368,7 +1374,7 @@ list("POUCHES (CHOOSE 2)", 0, null, null, null),
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m39/ap, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m39/ap, WEAR_IN_BACK)
 
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/mod88, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/vp70, WEAR_WAIST)
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large/pmc_m39, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full, WEAR_R_STORE)
@@ -1851,16 +1857,24 @@ list("POUCHES (CHOOSE 2)", 0, null, null, null),
 	new_human.gender = pick(50;MALE,50;FEMALE)
 	var/datum/preferences/A = new()
 	A.randomize_appearance(new_human)
-	var/random_name
+//RU-PVE ADDITION STARTS
+/*	var/random_name
 	if(prob(10))
 		random_name = "[capitalize(randomly_generate_japanese_word(rand(2, 3)))]"
 	else if(new_human.gender == MALE)
 		random_name = "[pick(first_names_male_pmc)]"
 	else
-		random_name = "[pick(first_names_female_pmc)]"
+		random_name = "[pick(first_names_female_pmc)]"*/
+//RU-PVE ADDITION ENDS
 
 	if(new_human.gender == MALE)
 		new_human.f_style = "5 O'clock Shadow"
+
+	var/random_name
+	if(prob(50))
+		random_name = pick(first_names_pmc)
+	else
+		random_name = pick(last_names_pmc)
 
 	new_human.change_real_name(new_human, random_name)
 	new_human.r_hair = 15
