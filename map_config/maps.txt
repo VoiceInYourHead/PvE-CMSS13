@@ -91,5 +91,8 @@ endmap
 map lv759_hybrisa_prospera
 endmap
 
+map lv759_hybrisa_prospera_NoShip
+endmap
+
 map whiskey_outpost_ru
 endmap
