@@ -4111,7 +4111,9 @@
 /obj/structure/machinery/firealarm{
 	pixel_y = 28
 	},
-/obj/structure/machinery/computer/arcade,
+/obj/structure/closet/secure_closet/marine_personal{
+	job = "Section Surgeon"
+	},
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -6844,6 +6846,13 @@
 	icon_state = "dark_sterile"
 	},
 /area/golden_arrow/platoon_commander_rooms)
+"NF" = (
+/obj/effect/landmark/start/marine/medic/surgeon,
+/obj/effect/landmark/late_join/alpha,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/cryo_cells)
 "NI" = (
 /obj/structure/machinery/cm_vending/clothing/synth/snowflake{
 	density = 0;
@@ -20515,7 +20524,7 @@ gg
 To
 bh
 RD
-cr
+NF
 LL
 LL
 sI
@@ -22035,7 +22044,7 @@ Bi
 To
 BY
 YX
-cr
+NF
 BY
 BY
 sI

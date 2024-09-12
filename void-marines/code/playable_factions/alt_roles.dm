@@ -136,3 +136,12 @@
 	name = JOB_SQUAD_TEAM_LEADER_FL
 	squad = SQUAD_MERC
 	job = /datum/job/marine/tl/ai/lancer
+
+/datum/job/marine/medic/ai/surgeon
+	title = JOB_SQUAD_SURGEON
+	gear_preset = /datum/equipment_preset/uscm/medic/surgeon
+	job_options = null
+
+/obj/effect/landmark/start/marine/medic/surgeon
+	name = JOB_SQUAD_SURGEON
+	job = /datum/job/marine/medic/ai/surgeon
