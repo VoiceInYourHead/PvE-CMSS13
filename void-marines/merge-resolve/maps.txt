@@ -78,3 +78,6 @@ endmap
 
 map whiskey_outpost_ru
 endmap
+
+map malinovka
+endmap

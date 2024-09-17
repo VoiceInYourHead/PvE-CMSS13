@@ -246,20 +246,22 @@
 		bound_x = bound_y
 		bound_y = pixel_swapped
 
-/obj/vehicle/multitile/proc/interior_crash_effect()
+/obj/vehicle/multitile/proc/interior_crash_effect(ignore_momentum)
 	if(!interior)
 		return
 
 	// Not enough momentum for anything serious
-	if(abs(move_momentum) < 1)
+	if(abs(move_momentum) < 1 && !ignore_momentum)
 		return
 
-	var/fling_distance = Ceiling(abs(move_momentum)/move_max_momentum) * 2
+	var/shake = ignore_momentum ? 2 : move_momentum
+
+	var/fling_distance = Ceiling(abs(shake)/move_max_momentum) * 2
 	var/turf/target = interior.get_middle_turf()
 
 	for (var/x in 0 to fling_distance-1)
 		// NOTE: We fling east/west because all interiors are front-facing east
-		target = get_step(target, move_momentum > 0 ? EAST : WEST)
+		target = get_step(target, shake > 0 ? EAST : WEST)
 		if (!target)
 			break
 
@@ -272,14 +274,14 @@
 			if(isliving(A))
 				var/mob/living/M = A
 
-				shake_camera(M, 2, Ceiling(abs(move_momentum)/move_max_momentum) * 1)
+				shake_camera(M, 2, Ceiling(abs(shake)/move_max_momentum) * 1)
 				if(!M.buckled)
 					M.apply_effect(1, STUN)
 					M.apply_effect(2, WEAKEN)
 
 			// YOU'RE LIKE A CAR CRASH IN SLOW MOTION!
 			// IT'S LIKE I'M WATCHIN' YA FLY THROUGH A WINDSHIELD!
-			INVOKE_ASYNC(A, TYPE_PROC_REF(/atom/movable, throw_atom), target, fling_distance, SPEED_VERY_FAST, src, TRUE)
+			INVOKE_ASYNC(A, TYPE_PROC_REF(/atom/movable, throw_atom), target, fling_distance, SPEED_AVERAGE, src, TRUE)
 
 /obj/vehicle/multitile/proc/at_munition_interior_explosion_effect(explosion_strength = 75, explosion_falloff = 50, shrapnel = TRUE, shrapnel_count = 48, datum/cause_data/cause_data)
 	if(!interior)

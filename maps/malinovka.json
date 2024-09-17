@@ -1,0 +1,21 @@
+{
+    "map_name": "Malinovka",
+    "map_path": "map_files/malinovka",
+    "map_file": "Malinovka.dmm",
+    "webmap_url": "Malinovka",
+    "map_item_type": "/obj/item/map/whiskey_outpost_map",
+    "announce_text": "AHYET, ETO ZHE MALINOVKA",
+    "monkey_types": [
+        "monkey"
+    ],
+    "traits": [{ "Ground": true }],
+    "nightmare_path": "maps/Nightmare/maps/malinovka/",
+    "camouflage": "classic",
+	"gamemodes": [
+        "Distress Signal",
+        "Hunter Games",
+        "Hive Wars",
+        "Faction Clash",
+        "Infection"
+    ]
+}
