@@ -185,6 +185,13 @@
 	icon_state = "floor_3_9"
 	},
 /area/vehicle/tank)
+"V" = (
+/obj/structure/interior_wall/tank{
+	layer = 2
+	},
+/obj/effect/landmark/interior/spawn/interior_viewport/simple,
+/turf/open/void/vehicle,
+/area/space)
 "Z" = (
 /obj/structure/vehicle_locker/tank{
 	pixel_y = 11
@@ -218,7 +225,7 @@ e
 g
 "}
 (3,1,1) = {"
-v
+V
 G
 c
 f

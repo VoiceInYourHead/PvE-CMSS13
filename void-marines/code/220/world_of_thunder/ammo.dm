@@ -29,7 +29,7 @@
 /datum/ammo/rocket/old_cannon
 	name = "cannon round"
 	icon_state = "ltb"
-	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_STRIKES_SURFACE
+	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET//|AMMO_STRIKES_SURFACE
 
 	accuracy = HIT_ACCURACY_TIER_3
 	accurate_range = 32
@@ -53,21 +53,18 @@
 			playsound(M, 'sound/effects/meteorimpact.ogg', 35)
 			new /obj/flamer_fire(centre, P.weapon_cause_data, new /datum/reagent/fuel(), 5, , FLAMESHAPE_DEFAULT, , , , FIRE_VARIANT_DEFAULT)
 			M.next_move += 10 SECONDS
-			smoke.set_up(2, 0, get_turf(M), null, 20 SECONDS)
+			smoke.set_up(1, 0, get_turf(M), null, 20 SECONDS)
 			smoke.start()
-			message_admins("ДВИГЛО ГОРИТ")
 
 		if(prob(SHANS_PODRYVA_BOEKOMPLEKTA))
 			playsound(M, 'sound/effects/meteorimpact.ogg', 35)
 			create_shrapnel(centre, 64, , ,/datum/ammo/bullet/shrapnel, P.weapon_cause_data)
 			cell_explosion(centre, 200, 10, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, P.weapon_cause_data)
-			message_admins("БОЕКОМПЛЕКТ БАЙБАЙ")
 
 		if(prob(SHANS_PROBITIYA))
 			playsound(M, 'sound/effects/meteorimpact.ogg', 35)
 			create_shrapnel(centre, 16, , ,/datum/ammo/bullet/shrapnel, P.weapon_cause_data)
 			cell_explosion(centre, 75, 10, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, P.weapon_cause_data)
-			message_admins("ПРОБИЛО")
 
 /datum/ammo/rocket/old_cannon/on_hit_mob(mob/M, obj/projectile/P)
 	cell_explosion(get_turf(M), explosion_power + 20, explosion_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, P.weapon_cause_data)
