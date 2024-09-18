@@ -2,7 +2,9 @@
 "af" = (
 /obj/effect/landmark/corpsespawner/russian,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ai" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -11,7 +13,9 @@
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ap" = (
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 1
@@ -20,25 +24,35 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ar" = (
 /obj/structure/cargo_container/kelland/left,
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "au" = (
 /obj/structure/barricade/metal,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aw" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ay" = (
 /obj/structure/flora/grass/desert/heavygrass_8,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aB" = (
 /obj/structure/prop/rock/black_ground/dense,
 /obj/structure/platform/kutjevo/rock{
@@ -50,12 +64,16 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aN" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aT" = (
 /obj/structure/largecrate/random/case/small{
 	pixel_x = 2;
@@ -65,7 +83,9 @@
 	pixel_y = 20
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aU" = (
 /obj/structure/surface/table/woodentable,
 /obj/item/prop/folded_anti_tank_sadar,
@@ -75,13 +95,17 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aV" = (
 /turf/closed/shuttle{
 	dir = 1;
 	icon_state = "pwall"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aW" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -91,12 +115,16 @@
 	pixel_y = 12
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "aX" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bh" = (
 /obj/structure/largecrate/supply/supplies/mre{
 	layer = 4.5;
@@ -107,31 +135,43 @@
 	pixel_y = -8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bq" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "br" = (
 /obj/structure/flora/grass/desert/heavygrass_8,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bu" = (
 /obj/structure/surface/table/holotable/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bv" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bz" = (
 /obj/effect/landmark/corpsespawner/clf,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bD" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
@@ -140,15 +180,21 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bL" = (
 /obj/effect/landmark/corpsespawner/upp,
 /turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bO" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bP" = (
 /obj/structure/prop/invuln/minecart_tracks/bumper{
 	dir = 5
@@ -158,20 +204,26 @@
 	},
 /obj/effect/hybrisa/decal/road/lines3,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "bW" = (
 /obj/structure/prop/vehicles/crawler{
 	icon_state = "crawler_crate_alt2";
 	layer = 3.1
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cc" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cl" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -180,29 +232,39 @@
 	dir = 6
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cm" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cq" = (
 /obj/structure/bed/hybrisa/bunkbed4,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cr" = (
 /obj/structure/flora/grass/tallgrass/desert/corner,
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cy" = (
 /obj/effect/landmark/corpsespawner/clf,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cD" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -211,13 +273,17 @@
 	dir = 10
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cF" = (
 /turf/closed/shuttle/dropship2/WY/HorizonRunner{
 	color = "#613522";
 	icon_state = "rightengine_1"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cH" = (
 /obj/item/tool/warning_cone{
 	pixel_x = -12;
@@ -233,18 +299,24 @@
 	},
 /obj/item/tool/warning_cone,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cI" = (
 /turf/closed/wall/rock/brown{
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cK" = (
 /obj/structure/flora/bush/ausbushes,
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cM" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -253,14 +325,18 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "cQ" = (
 /obj/structure/prop/fishing/line/long/part2,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dd" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -269,7 +345,9 @@
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "de" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -288,32 +366,42 @@
 	pixel_y = 15
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "di" = (
 /obj/structure/surface/table/holotable/wood,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dp" = (
 /obj/structure/prop/hybrisa/misc/machinery/screens/bluemultimonitorbig_on{
 	pixel_y = 31
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dx" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
 	layer = 2.99
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dz" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -323,20 +411,26 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dL" = (
 /obj/item/reagent_container/food/snacks/grown/watermelon{
 	pixel_y = 9
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dM" = (
 /obj/item/mortar_kit{
 	pixel_x = 5;
 	pixel_y = 14
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dS" = (
 /obj/structure/prop/invuln/fire{
 	density = 0;
@@ -345,7 +439,9 @@
 	pixel_y = -15
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dT" = (
 /obj/effect/decal/cleanable/blackgoo{
 	alpha = 50;
@@ -356,22 +452,30 @@
 	pixel_y = 8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dW" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /obj/item/storage/beer_pack,
 /obj/item/storage/beer_pack,
 /obj/item/storage/beer_pack,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dX" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "dZ" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eb" = (
 /obj/structure/machinery/light/double{
 	dir = 4;
@@ -379,18 +483,26 @@
 	pixel_y = -1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eg" = (
 /turf/open/gm/coast/north,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "el" = (
 /obj/effect/overlay/palmtree_r,
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eq" = (
 /obj/item/paper/flag,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "er" = (
 /obj/structure/curtain/red{
 	layer = 3.9
@@ -398,27 +510,37 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "es" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eA" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eB" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eH" = (
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eI" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 6
@@ -427,17 +549,23 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eJ" = (
 /obj/structure/surface/rack,
 /obj/item/tool/crowbar,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eL" = (
 /turf/open/auto_turf/sand_white/layer0{
 	icon = 'icons/turf/floors/hybrisa_dirt.dmi'
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eW" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -445,8 +573,10 @@
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 8
 	},
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "eX" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
@@ -454,11 +584,15 @@
 	},
 /obj/structure/bed/roller/hospital_empty/bigrollerbloodempty,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fb" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack1,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fg" = (
 /obj/effect/vehicle_spawner/van/decrepit{
 	layer = 3.1
@@ -469,51 +603,72 @@
 	pixel_x = -5;
 	pixel_y = -15
 	},
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fm" = (
 /obj/vehicle/multitile/apc/medical{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fA" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
 /obj/structure/prop/rock/black_ground,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fB" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
 	},
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fD" = (
 /obj/effect/landmark/corpsespawner/commander,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fH" = (
 /obj/structure/window/framed/wood,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"fK" = (
+/obj/effect/decal/grass_overlay/grass1/inner{
+	dir = 10
+	},
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fM" = (
 /obj/structure/flora/grass/tallgrass/desert/corner,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fY" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
 	name = "impact"
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "fZ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
@@ -525,42 +680,60 @@
 	pixel_y = -15
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gd" = (
 /obj/structure/prop/rock/black_ground,
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gg" = (
 /obj/structure/tent/cmd,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gl" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /turf/closed/wall/rock/brown,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gn" = (
 /turf/open/hybrisa/street/roadlines3,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "go" = (
 /turf/open/gm/coast/west{
 	dir = 1
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gt" = (
 /obj/structure/closet/crate/medical,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gu" = (
 /obj/structure/tent/big,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gv" = (
 /obj/effect/vehicle_spawner/arc/decrepit,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gw" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -571,7 +744,9 @@
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gy" = (
 /obj/structure/prop/structure_lattice{
 	dir = 1;
@@ -589,21 +764,29 @@
 /turf/open/floor/plating/icefloor{
 	icon_state = "asteroidplating"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gE" = (
 /turf/closed/wall/rock/brown,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gH" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gJ" = (
 /obj/structure/shuttle/part/rasputin/transparent/window{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gS" = (
 /obj/structure/bed/chair/comfy/teal{
 	dir = 4
@@ -611,20 +794,28 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "gU" = (
 /turf/open/gm/grass/gbcorner,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "he" = (
 /obj/structure/surface/rack,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hg" = (
 /obj/item/fishing_pole{
 	anchored = 1
 	},
 /turf/open/gm/coast/beachcorner/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hh" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -632,32 +823,46 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hl" = (
 /obj/structure/largecrate/random/mini/wooden{
 	pixel_x = 7
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ho" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hr" = (
 /turf/open/gm/coast/beachcorner2/north_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hu" = (
 /obj/effect/landmark/corpsespawner/engineer,
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hB" = (
 /turf/open/gm/grass/gbcorner/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hP" = (
 /obj/item/toy/plush/rock,
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hQ" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -667,29 +872,39 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hU" = (
 /obj/effect/overlay/palmtree_r{
 	icon_state = "palm2"
 	},
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hW" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "hY" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ib" = (
 /obj/structure/tent/reqs,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "if" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -708,7 +923,9 @@
 	pixel_y = 15
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ir" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -716,18 +933,26 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iw" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iy" = (
 /obj/structure/barricade/sandbags,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iz" = (
 /obj/structure/curtain/red,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iA" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -746,27 +971,37 @@
 	name = "support struts"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iB" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iC" = (
 /obj/structure/prop/rock,
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iD" = (
 /obj/structure/surface/table/holotable/wood,
 /obj/item/ammo_box/magazine/misc/mre,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iO" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iU" = (
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 1
@@ -775,28 +1010,30 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "iW" = (
 /obj/effect/landmark/corpsespawner/russian,
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jc" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
 	},
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jg" = (
 /obj/structure/stairs,
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jj" = (
 /obj/structure/barricade/metal/wired{
 	dir = 4
@@ -804,7 +1041,9 @@
 /obj/effect/landmark/corpsespawner/upp,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jk" = (
 /obj/item/reagent_container/food/snacks/grown/watermelon{
 	pixel_y = -10
@@ -813,7 +1052,9 @@
 	pixel_y = -8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jm" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
@@ -821,19 +1062,25 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jq" = (
 /turf/closed/shuttle/dropship2/WY/HorizonRunner{
 	color = "#613522";
 	icon_state = "leftengine_1"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jt" = (
 /obj/structure/machinery/m56d_hmg/auto,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jv" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -845,19 +1092,25 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jx" = (
 /turf/open/gm/coast/beachcorner2{
 	dir = 1
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jC" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jE" = (
 /obj/structure/platform_decoration/kutjevo{
 	dir = 1
@@ -866,25 +1119,35 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jN" = (
 /obj/structure/flora/jungle/thickbush/jungle_plant,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jS" = (
 /obj/effect/landmark/corpsespawner/clf,
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jT" = (
 /turf/open/floor/hybrisa/carpet/carpetbeige,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jV" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
 	},
 /turf/open/gm/coast/east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jW" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -895,24 +1158,34 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "jY" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kb" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/sand_white/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kc" = (
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ke" = (
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "km" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -920,18 +1193,24 @@
 	},
 /obj/item/stack/sheet/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kn" = (
 /obj/structure/barricade/sandbags{
 	dir = 4
 	},
 /obj/structure/barricade/sandbags,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ko" = (
 /obj/structure/flora/bush/ausbushes/genericbush,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kp" = (
 /obj/structure/bed/hybrisa/prisonbed,
 /obj/item/prop/folded_anti_tank_sadar{
@@ -942,26 +1221,34 @@
 	pixel_y = -4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kr" = (
 /obj/structure/largecrate/supply/supplies/metal{
 	pixel_x = -4;
 	pixel_y = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ks" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/gm/grass/gbcorner/north_east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ku" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
 	},
 /obj/item/ammo_box/magazine/misc/mre,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kv" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /obj/item/stack/sheet/wood{
@@ -975,11 +1262,15 @@
 	pixel_y = 16
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kw" = (
 /obj/structure/largecrate/random/mini/med,
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kA" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -990,7 +1281,9 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kB" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -999,13 +1292,17 @@
 /turf/open/gm/coast/west{
 	dir = 5
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kC" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack6{
 	pixel_y = -4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kE" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -1022,7 +1319,9 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kG" = (
 /obj/structure/barricade/handrail/wire{
 	layer = 3.1
@@ -1035,52 +1334,70 @@
 /turf/open/floor/plating/icefloor{
 	icon_state = "asteroidplating"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kJ" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kM" = (
 /turf/closed/shuttle/dropship2/WY/HorizonRunner{
 	color = "#613522";
 	icon_state = "rightengine_3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kQ" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/sand_white/layer0{
 	icon = 'icons/turf/floors/hybrisa_dirt.dmi'
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kY" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "kZ" = (
 /obj/structure/barricade/deployable,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lc" = (
 /obj/structure/flora/grass/tallgrass/desert/corner,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "le" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lh" = (
 /obj/structure/bed/hybrisa/bunkbed4,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "li" = (
 /obj/structure/largecrate/supply/supplies/tables_racks,
 /obj/item/storage/firstaid{
@@ -1092,28 +1409,36 @@
 	pixel_y = 10
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lj" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 1
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ll" = (
 /obj/structure/largecrate/random/mini/med,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lr" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
 	name = "impact"
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lt" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -1123,74 +1448,100 @@
 	},
 /obj/effect/decal/grass_overlay/grass1/inner,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lA" = (
 /obj/item/stack/sheet/metal,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lC" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
 	name = "impact"
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lD" = (
 /turf/closed/wall/rock/brown{
 	density = 0;
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lE" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lJ" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lQ" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 1
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lV" = (
 /obj/item/stack/tile/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "lY" = (
 /obj/structure/largecrate/random/case/double{
 	pixel_x = -3;
 	pixel_y = 13
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "md" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mh" = (
 /turf/open/gm/coast/south,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mk" = (
 /obj/item/clothing/mask/pig,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mm" = (
 /turf/open/gm/coast/beachcorner{
 	dir = 1
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mp" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -1201,12 +1552,16 @@
 	pixel_y = 30
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mq" = (
 /turf/open/gm/coast/beachcorner{
 	dir = 4
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mB" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -1220,54 +1575,72 @@
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mD" = (
 /obj/structure/prop/turbine_extras/left,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mF" = (
 /obj/structure/flora/jungle/thickbush/jungle_plant,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mG" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/computer/overwatch/clf{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mK" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mQ" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 8
 	},
 /turf/open/gm/coast/beachcorner/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mR" = (
 /turf/open/gm/coast/beachcorner2{
 	dir = 8
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mT" = (
 /obj/effect/spawner/random/claymore,
 /obj/structure/flora/bush/ausbushes/grassybush,
-/turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mX" = (
 /obj/structure/sign/poster/clf{
 	name = "D point";
 	pixel_y = 35
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "mY" = (
 /obj/structure/largecrate/random/mini,
 /obj/effect/decal/cleanable/dirt,
@@ -1275,7 +1648,9 @@
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nb" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/structure/platform/kutjevo/rock{
@@ -1283,25 +1658,42 @@
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nl" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack3,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nq" = (
 /obj/structure/surface/table/woodentable,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nv" = (
 /obj/structure/prop/turbine_extras,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"nx" = (
+/obj/structure/flora/bush/ausbushes/grassybush,
+/obj/effect/decal/strata_decals/grasses,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nz" = (
 /obj/structure/machinery/door/poddoor/shutters{
 	dir = 2
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nA" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -1310,14 +1702,18 @@
 	dir = 9
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nB" = (
 /obj/structure/largecrate/black_market/clf_supplies{
 	pixel_x = -5;
 	pixel_y = 5
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nD" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -1327,37 +1723,51 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nE" = (
 /turf/open/gm/riverdeep,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nK" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /obj/effect/spawner/random/claymore{
 	dir = 1
 	},
-/turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nM" = (
 /turf/open/auto_turf/sand_white/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nN" = (
 /obj/structure/window/framed/wood,
 /turf/open/space/basic,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "nX" = (
 /obj/structure/stairs/perspective/kutjevo{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "os" = (
 /obj/structure/prop/rock/black_ground/dense,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ou" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -1365,7 +1775,9 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/coast/west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "oC" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -1374,13 +1786,17 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "oG" = (
 /obj/structure/barricade/sandbags{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "oH" = (
 /obj/structure/tunnel{
 	name = "ochko UZHASA"
@@ -1391,7 +1807,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "oQ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
@@ -1400,37 +1818,49 @@
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "oZ" = (
 /obj/structure/machinery/door/poddoor/shutters{
 	dir = 8
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pc" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
 	},
 /obj/structure/prop/hybrisa/furniture/tables/tablewood/woodtablecomputer,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pg" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "po" = (
 /obj/structure/cargo_container/kelland/right,
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pq" = (
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med/tent{
 	pixel_x = -4;
 	pixel_y = 24
 	},
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pv" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -1439,25 +1869,35 @@
 /obj/effect/hybrisa/decal/road/lines3,
 /obj/effect/hybrisa/decal/road/lines1,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pE" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pG" = (
 /obj/structure/flora/bush/ausbushes,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "pX" = (
 /obj/flamer_fire,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qa" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -1485,11 +1925,15 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qd" = (
 /obj/item/prop/tableflag/uscm2,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qe" = (
 /obj/structure/largecrate/random/barrel/black{
 	pixel_x = 13;
@@ -1498,7 +1942,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qo" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -1508,14 +1954,18 @@
 	dir = 6
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qq" = (
 /obj/structure/ice/ice_rock/cornerOverlay{
 	pixel_x = -9;
 	pixel_y = 3
 	},
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qx" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -1524,7 +1974,9 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qA" = (
 /obj/structure/bed/sofa/pews/flipped{
 	dir = 8;
@@ -1532,7 +1984,9 @@
 	pixel_y = -3
 	},
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qD" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -1540,11 +1994,15 @@
 	},
 /obj/structure/machinery/light/double,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qF" = (
 /obj/effect/landmark/corpsespawner/hybrisa_goon,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qJ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -1552,37 +2010,55 @@
 /turf/open/gm/coast/beachcorner2{
 	dir = 8
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qR" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"qV" = (
+/obj/structure/flora/grass/tallgrass/desert,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "qW" = (
 /obj/structure/barricade/sandbags{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rf" = (
 /obj/item/toy/beach_ball,
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rg" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ri" = (
 /obj/item/reagent_container/food/snacks/bloodsoup,
 /obj/structure/prop/hybrisa/misc/blood/blood2,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rj" = (
 /obj/structure/closet/toolcloset{
 	pixel_x = 9;
@@ -1593,33 +2069,45 @@
 	icon_state = "stop_decal5"
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rn" = (
 /obj/structure/largecrate/random/barrel,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rw" = (
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rC" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rD" = (
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rN" = (
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "rU" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -1633,17 +2121,23 @@
 	name = "support struts"
 	},
 /turf/open/gm/coast/east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "se" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/desert,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sm" = (
 /obj/effect/decal/warning_stripes,
 /obj/structure/machinery/floodlight/landing,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sq" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -1652,25 +2146,33 @@
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sy" = (
 /obj/structure/largecrate/supply/explosives/mortar_flare{
 	pixel_x = 1;
 	pixel_y = 3
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sB" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sC" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sF" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -1681,75 +2183,103 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sJ" = (
 /turf/open/gm/coast/beachcorner/south_east{
 	dir = 8
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sQ" = (
 /obj/structure/flora/bush/ausbushes/genericbush,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sS" = (
 /turf/open/floor/plating/icefloor{
 	icon_state = "asteroidplating"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "sU" = (
 /obj/effect/landmark/wo_supplies/storage/grenades{
 	pixel_x = -6;
 	pixel_y = -2
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tb" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "th" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tz" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tJ" = (
 /obj/structure/flora/jungle/planttop1,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tQ" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tT" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tU" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "tV" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ug" = (
 /obj/effect/spawner/random/claymore{
 	dir = 1
 	},
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uk" = (
 /obj/structure/prop/invuln/minecart_tracks/bumper,
 /obj/effect/decal/cleanable/dirt{
@@ -1757,26 +2287,34 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "un" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 4
 	},
 /obj/effect/decal/strata_decals/grasses,
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uz" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
 	plane = -6
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uF" = (
 /obj/item/ammo_box/magazine/misc/mre,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uK" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -1784,68 +2322,89 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uN" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "uP" = (
 /obj/structure/bed/hybrisa/bunkbed4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "va" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ve" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vf" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
 	},
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vm" = (
 /obj/effect/decal/cleanable/blood/drip{
 	pixel_x = 10;
 	pixel_y = 21
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vn" = (
 /obj/structure/machinery/power/apc/almayer{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vs" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vu" = (
 /obj/structure/bed/chair/comfy/teal{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vw" = (
 /obj/structure/closet/crate/explosives,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vA" = (
 /obj/item/stack/sheet/wood,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vC" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -1853,42 +2412,55 @@
 	},
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vD" = (
 /obj/structure/flora/bush/ausbushes/genericbush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vE" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vG" = (
 /turf/closed/wall/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vJ" = (
 /obj/effect/hybrisa/decal/road/road_stop{
 	icon_state = "stop_decal3"
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vK" = (
 /obj/structure/surface/table/holotable/wood,
 /obj/item/device/flashlight/lamp/on,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vL" = (
 /obj/structure/flora/jungle/planttop1,
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "vO" = (
 /obj/item/stack/sheet/wood,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wb" = (
 /obj/structure/flora/jungle/plantbot1,
 /obj/structure/platform/kutjevo/rock{
@@ -1896,22 +2468,38 @@
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wc" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wd" = (
 /obj/structure/tent/big,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"wf" = (
+/obj/effect/vehicle_spawner/tank/fixed/armata{
+	dir = 4
+	},
+/turf/open/auto_turf/strata_grass/layer1,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/hybrisa/bunkbed4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wk" = (
 /obj/structure/barricade/sandbags{
 	dir = 8
@@ -1920,13 +2508,17 @@
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wn" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wD" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -1937,42 +2529,56 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wF" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wK" = (
 /obj/structure/barricade/metal/wired,
 /obj/effect/landmark/corpsespawner/upp,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wP" = (
 /obj/structure/barricade/metal/wired{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wQ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wV" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wW" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 6
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wX" = (
 /obj/effect/overlay/palmtree_r{
 	icon_state = "palm2";
@@ -1983,61 +2589,80 @@
 	pixel_y = 15
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "wZ" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xa" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xs" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/desert/lightgrass_12,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xt" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xy" = (
 /obj/structure/prop/invuln/static_corpse/afric_zimmer{
 	layer = 8;
 	pixel_y = 31
 	},
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xA" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xE" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
 	},
 /obj/structure/bed/hybrisa/bunkbed4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xM" = (
 /obj/structure/prop/turbine,
 /obj/structure/prop/turbine_extras/border,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "xU" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 6
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ye" = (
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yf" = (
 /obj/structure/largecrate/supply/supplies/plasteel{
 	pixel_x = 4;
@@ -2048,19 +2673,25 @@
 	pixel_y = 23
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yk" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
 	layer = 2.99
 	},
 /turf/open/gm/coast/east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yn" = (
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/tool,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yo" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -2075,41 +2706,55 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yq" = (
 /obj/structure/flora/bush/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yt" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yv" = (
 /obj/structure/prop/invuln/minecart_tracks/bumper,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yB" = (
 /obj/structure/flora/grass/desert/lightgrass_12,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yL" = (
 /obj/structure/surface/table/holotable/wood,
 /obj/item/device/flashlight/lamp/green,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yN" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
 	layer = 2.99
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yO" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2120,14 +2765,18 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yQ" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yR" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -2141,18 +2790,24 @@
 	dir = 1
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yT" = (
 /turf/open/gm/coast/west{
 	dir = 5
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yW" = (
 /obj/structure/platform_decoration/kutjevo{
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "yY" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2163,7 +2818,20 @@
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"za" = (
+/obj/structure/prop/invuln/fire{
+	density = 0;
+	layer = 4.1;
+	pixel_x = -5;
+	pixel_y = -15
+	},
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zf" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /obj/structure/platform/kutjevo/rock{
@@ -2171,14 +2839,29 @@
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zi" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"zn" = (
+/obj/effect/spawner/random/claymore{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/grassybush,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zo" = (
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zz" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
@@ -2187,7 +2870,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zB" = (
 /obj/effect/hybrisa/decal/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -2195,55 +2880,79 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zF" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zS" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zX" = (
 /turf/open/gm/coast/beachcorner2/south_east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "zY" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ac" = (
 /obj/item/stool,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ae" = (
 /obj/structure/flora/jungle/thickbush/jungle_plant,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ak" = (
 /obj/structure/flora/jungle/plantbot1,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Al" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Am" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ao" = (
 /obj/structure/largecrate/random,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Av" = (
 /obj/structure/flora/grass/desert/lightgrass_11,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ax" = (
 /obj/structure/largecrate/random/barrel/medical{
 	layer = 4.5;
@@ -2251,18 +2960,24 @@
 	pixel_y = -7
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Az" = (
 /obj/structure/gun_rack/type71{
 	pixel_x = 6;
 	pixel_y = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AD" = (
 /obj/item/stack/sheet/metal,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AE" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -2279,19 +2994,25 @@
 	name = "support struts"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AG" = (
 /obj/item/stack/sheet/cardboard/small_stack{
 	layer = 2
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AI" = (
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AL" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -2300,11 +3021,15 @@
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AQ" = (
 /obj/effect/landmark/corpsespawner/colonist,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "AV" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2319,14 +3044,18 @@
 	dir = 8;
 	icon_state = "kutjevo_rock_decodark"
 	},
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ba" = (
 /obj/structure/prop/hybrisa/vehicles/Armored_Truck/Teal{
 	pixel_y = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bb" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
@@ -2335,14 +3064,28 @@
 	density = 0;
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bc" = (
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"Bd" = (
+/obj/structure/flora/grass/tallgrass/desert/corner{
+	dir = 4
+	},
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Be" = (
 /obj/structure/prop/rock/black_ground/dense,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bg" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2352,7 +3095,9 @@
 	color = "#7d6868"
 	},
 /turf/open/gm/coast/beachcorner/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bk" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -2361,33 +3106,45 @@
 	dir = 5
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bl" = (
 /obj/effect/spawner/random/claymore{
 	dir = 8
 	},
 /obj/structure/flora/bush/ausbushes/grassybush,
-/turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Bo" = (
 /obj/structure/barricade/metal/wired{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Br" = (
 /obj/structure/stairs/perspective/kutjevo,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "BB" = (
 /turf/open/gm/grass/gbcorner/south_east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "BE" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "BI" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
@@ -2396,7 +3153,9 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "BL" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /obj/effect/decal/grass_overlay/grass1/inner{
@@ -2409,7 +3168,9 @@
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "BT" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2419,11 +3180,15 @@
 	color = "#7d6868"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ca" = (
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Cd" = (
 /obj/structure/largecrate/supply/explosives/mortar_he{
 	pixel_x = 5;
@@ -2432,7 +3197,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ch" = (
 /obj/structure/largecrate/supply/explosives/mortar_he{
 	pixel_x = 2;
@@ -2445,7 +3212,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ck" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2455,20 +3224,26 @@
 /turf/open/gm/coast/west{
 	dir = 5
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Co" = (
 /obj/structure/prop/hybrisa/fakeplatforms/platform2{
 	color = "#613522";
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Cs" = (
 /obj/structure/largecrate/random/mini/wooden{
 	pixel_x = -7
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "CD" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -2476,7 +3251,9 @@
 /turf/open/gm/dirt{
 	icon_state = "desert1"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "CG" = (
 /obj/structure/prop/invuln/minecart_tracks,
 /obj/effect/decal/cleanable/dirt{
@@ -2484,22 +3261,30 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "CH" = (
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "CR" = (
 /obj/item/stack/sheet/wood,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Dl" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Do" = (
 /obj/structure/barricade/metal/wired{
 	dir = 4
@@ -2507,28 +3292,38 @@
 /obj/structure/barricade/metal/wired,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Dr" = (
 /obj/structure/largecrate/supply/supplies/tables_racks,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ds" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Dw" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DC" = (
 /obj/structure/prop/rock/black_ground,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DE" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -2536,13 +3331,17 @@
 	},
 /obj/structure/prop/invuln/fire,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DG" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DJ" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2550,7 +3349,16 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"DO" = (
+/obj/flamer_fire,
+/obj/structure/blocker/invisible_wall,
+/turf/open/auto_turf/strata_grass/layer1,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DS" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2561,13 +3369,17 @@
 	dir = 1
 	},
 /turf/open/gm/coast/west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DT" = (
 /obj/structure/barricade/sandbags{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "DV" = (
 /obj/structure/largecrate/random/secure,
 /obj/effect/decal/cleanable/dirt,
@@ -2575,19 +3387,27 @@
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Eb" = (
 /obj/item/stack/sheet/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Eq" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Es" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Eu" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 9
@@ -2596,27 +3416,34 @@
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ex" = (
 /obj/structure/closet/secure_closet/bar,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ez" = (
 /obj/item/device/flashlight/lamp/tripod,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "EF" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "EM" = (
 /turf/open/gm/coast/beachcorner2/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "EX" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -2626,7 +3453,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "EZ" = (
 /obj/structure/prop/turbine_extras/left,
 /obj/effect/decal/cleanable/dirt{
@@ -2634,23 +3463,31 @@
 	plane = -6
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fd" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fe" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ff" = (
 /obj/structure/mineral_door/wood/open,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fk" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /obj/item/reagent_container/food/drinks/bottle/kahlua{
@@ -2677,11 +3514,15 @@
 	pixel_x = -7
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fm" = (
 /obj/structure/closet/secure_closet/freezer/fridge/full,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fo" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2691,16 +3532,22 @@
 /turf/open/gm/coast/west{
 	dir = 6
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fw" = (
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/toolbox,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Fy" = (
 /obj/structure/flora/grass/desert/lightgrass_11,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "FB" = (
 /obj/effect/decal/cleanable/blackgoo{
 	alpha = 50;
@@ -2717,20 +3564,26 @@
 	pixel_y = -1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "FF" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/computer/overwatch/upp{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "FI" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "FL" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -2740,13 +3593,17 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "FY" = (
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Gc" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /obj/item/storage/toolbox/mechanical{
@@ -2757,32 +3614,42 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Gg" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
 	plane = -6
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Gh" = (
 /obj/structure/flora/bush/ausbushes,
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Gj" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Gq" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GC" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2793,22 +3660,30 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GJ" = (
 /obj/structure/prop/turbine_extras,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GK" = (
 /obj/structure/prop/rock/black_ground,
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GN" = (
 /obj/structure/prop/invuln/minecart_tracks/bumper{
 	dir = 1
 	},
 /obj/effect/hybrisa/decal/road/lines3,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GP" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -2819,73 +3694,99 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GQ" = (
 /obj/item/reagent_container/food/drinks/bottle/whiskey{
 	pixel_x = 9;
 	pixel_y = 5
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GR" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GS" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/closed/wall/rock/brown{
 	density = 0;
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "GT" = (
 /obj/structure/largecrate/black_market/clf_supplies{
 	pixel_x = -5;
 	pixel_y = -8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "He" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hg" = (
 /turf/open/floor/carpet{
 	color = "#1bde25"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hi" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
 	name = "impact"
 	},
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hq" = (
 /obj/item/weapon/twohanded/folded_metal_chair,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hu" = (
 /turf/open/gm/dirt{
 	icon_state = "desert1"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hx" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/closed/wall/rock/brown,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Hy" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HC" = (
 /obj/structure/barricade/deployable,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HJ" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -2896,7 +3797,9 @@
 	dir = 1
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HM" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -2908,7 +3811,9 @@
 /obj/effect/landmark/corpsespawner/colonist,
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/sand_white/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HN" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -2916,7 +3821,9 @@
 /turf/open/floor/plating/icefloor{
 	icon_state = "asteroidplating"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HS" = (
 /obj/structure/barricade/metal/wired{
 	dir = 8
@@ -2925,30 +3832,42 @@
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "HY" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ic" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Is" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/clothing/mask/cigarette/cigar,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "It" = (
 /obj/item/device/binoculars/designator,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Iy" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "IE" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -2957,11 +3876,15 @@
 	dir = 5
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "II" = (
 /obj/structure/tent/med,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "IM" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -2970,11 +3893,15 @@
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "IX" = (
 /obj/structure/prop/hybrisa/supermart/rack,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ja" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -2982,31 +3909,43 @@
 /turf/open/gm/dirt{
 	icon_state = "desert1"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Je" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack5,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Jh" = (
 /turf/open/gm/coast/east{
 	dir = 2
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Jl" = (
 /obj/structure/barricade/sandbags{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Jm" = (
 /obj/structure/closet,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Jo" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/landmark/corpsespawner/clf,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Js" = (
 /obj/structure/bed/stool{
 	pixel_x = -8;
@@ -3017,7 +3956,9 @@
 	},
 /obj/effect/hybrisa/decal/dirt,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Jw" = (
 /obj/structure/largecrate/supply/generator,
 /obj/structure/largecrate/random/mini/wooden{
@@ -3029,7 +3970,9 @@
 	icon_state = "stop_decal5"
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "JA" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -3037,7 +3980,9 @@
 	},
 /obj/item/stack/sheet/wood,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "JB" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt{
@@ -3045,19 +3990,25 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "JK" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "JQ" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /obj/structure/platform/hybrisa/metalplatform2{
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Kk" = (
 /obj/effect/hybrisa/decal/dirt,
 /obj/structure/machinery/light/double{
@@ -3066,68 +4017,96 @@
 	pixel_y = -1
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ku" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Kw" = (
 /obj/item/stack/tile/wood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KD" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KH" = (
 /turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KI" = (
 /obj/effect/spawner/random/claymore{
 	dir = 4
 	},
 /obj/structure/flora/bush/ausbushes/grassybush,
-/turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KU" = (
 /obj/effect/landmark/corpsespawner/upp,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KW" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "KY" = (
 /obj/structure/prop/vehicles/crawler,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Le" = (
 /obj/item/stool,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Li" = (
 /obj/effect/hybrisa/decal/dirt,
 /obj/effect/hybrisa/decal/road/road_stop{
 	icon_state = "stop_decal3"
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Lk" = (
 /obj/item/paper/flag{
 	color = "#1bde25"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ln" = (
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Lv" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -3136,13 +4115,17 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "LA" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "LB" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
@@ -3150,11 +4133,15 @@
 	},
 /obj/item/stack/sheet/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "LG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "LY" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -3164,48 +4151,66 @@
 	name = "SLEDY"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ma" = (
 /obj/structure/prop/rock/brown,
 /turf/open/gm/river{
 	default_name = "shallow ocean";
 	name = "shallow ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Me" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Mk" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
 	plane = -6
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Mm" = (
 /obj/item/weapon/pole/wooden_cane,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Mn" = (
 /obj/structure/flora/jungle/planttop1,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Mt" = (
 /turf/open/gm/coast/beachcorner2/north_east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MB" = (
 /turf/closed/wall/strata_ice/jungle,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MH" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MK" = (
 /obj/structure/prop/invuln/fire{
 	density = 0;
@@ -3214,18 +4219,24 @@
 	pixel_y = -15
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MM" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MQ" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MS" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/reagent_container/food/drinks/bottle/whiskey{
@@ -3237,22 +4248,30 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MT" = (
 /obj/structure/blocker/invisible_wall,
 /turf/open/gm/riverdeep,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "MX" = (
 /turf/open/beach/sand{
 	color = "#704f3e"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Na" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack4{
 	pixel_y = 8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nf" = (
 /obj/effect/overlay/palmtree_r{
 	icon_state = "palm2";
@@ -3261,32 +4280,44 @@
 	},
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nl" = (
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nn" = (
 /obj/structure/window/framed/wood,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "No" = (
 /obj/structure/machinery/deployable/barrier,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nq" = (
-/obj/item/weapon/gun/revolver/spearhead,
-/turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/obj/effect/decal/strata_decals/grasses,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nu" = (
 /obj/structure/flora/grass/desert/lightgrass_11,
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nv" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -3295,7 +4326,9 @@
 	dir = 9
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Nz" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 1
@@ -3307,7 +4340,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NE" = (
 /obj/structure/surface/table,
 /obj/item/tool/kitchen/knife{
@@ -3320,46 +4355,81 @@
 	pixel_y = 9
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NH" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"NI" = (
+/obj/effect/decal/grass_overlay/grass1/inner{
+	dir = 8
+	},
+/obj/structure/platform/hybrisa/metalplatform2{
+	dir = 4
+	},
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NM" = (
 /turf/open/floor/carpet,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NR" = (
 /obj/structure/flora/grass/desert/lightgrass_11,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NS" = (
 /obj/structure/flora/jungle/thickbush/jungle_plant,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "NT" = (
 /obj/structure/barricade/sandbags{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"NW" = (
+/obj/structure/flora/bush/ausbushes/lavendergrass,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ob" = (
 /obj/structure/vulture_spotter_tripod,
 /obj/item/prop/folded_anti_tank_sadar,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Oc" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/closed/wall/rock/brown{
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Oh" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Oi" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
@@ -3367,71 +4437,105 @@
 	},
 /obj/structure/prop/invuln/fire,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Oj" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "On" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite";
 	name = "impact"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Oy" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OA" = (
 /turf/open/gm/coast/west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OB" = (
 /obj/structure/barricade/metal/wired{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OD" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack2,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OI" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OL" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OR" = (
 /obj/effect/decal/cleanable/blood/splatter{
 	icon_state = "gib4"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "OU" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"OY" = (
+/obj/structure/flora/grass/tallgrass/desert/corner,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pc" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ph" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pl" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pq" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
@@ -3440,45 +4544,63 @@
 	dir = 9
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pr" = (
 /obj/flamer_fire,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pu" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Pv" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /turf/closed/wall/rock/brown{
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Py" = (
 /obj/effect/landmark/corpsespawner/upp,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PD" = (
 /obj/structure/machinery/light/double,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PG" = (
 /obj/item/stack/sheet/wood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PJ" = (
 /obj/structure/prop/invuln/minecart_tracks,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PW" = (
 /obj/structure/flora/jungle/thickbush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PY" = (
 /obj/structure/prop/invuln/fire{
 	density = 0;
@@ -3487,7 +4609,9 @@
 	pixel_y = -15
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "PZ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 4
@@ -3496,41 +4620,55 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qb" = (
 /obj/effect/decal/cleanable/blood/oil/streak,
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qc" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 6
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qe" = (
 /obj/item/prop/folded_anti_tank_sadar,
 /obj/structure/vulture_spotter_tripod,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qj" = (
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qn" = (
 /obj/structure/surface/table/woodentable,
 /obj/item/weapon/twohanded/lungemine,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qu" = (
 /obj/structure/prop/hybrisa/fakeplatforms/platform2{
 	color = "#613522";
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qx" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -3542,21 +4680,29 @@
 /turf/open/gm/coast/beachcorner/south_east{
 	dir = 2
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Qz" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QC" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QD" = (
 /obj/structure/gun_rack/m41,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QF" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
@@ -3565,25 +4711,35 @@
 /turf/open/floor/plating/icefloor{
 	icon_state = "asteroidplating"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QL" = (
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QO" = (
 /obj/structure/prop/rock/black_ground,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QX" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/tool/kitchen/knife/butcher,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QY" = (
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "QZ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
@@ -3592,10 +4748,14 @@
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Rb" = (
 /turf/open/gm/coast/east,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Rf" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 6
@@ -3607,7 +4767,9 @@
 	dir = 10
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Rh" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -3618,18 +4780,24 @@
 	pixel_y = 15
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Rp" = (
 /obj/structure/flora/grass/tallgrass/desert/corner,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ru" = (
 /obj/structure/largecrate/random/barrel/green,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Rx" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrackempty,
 /obj/item/storage/toolbox/mechanical{
@@ -3643,67 +4811,97 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "RJ" = (
 /obj/structure/flora/bush/ausbushes/palebush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "RR" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "RV" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"Sc" = (
+/obj/structure/flora/bush/ausbushes/grassybush,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Sm" = (
 /obj/structure/platform/kutjevo/smooth{
 	climb_delay = 1;
 	dir = 1;
 	layer = 2.99
 	},
-/turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Sp" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Sr" = (
 /obj/structure/largecrate/random/barrel/red,
 /turf/open/floor/prison,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "St" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Sv" = (
 /obj/item/storage/beer_pack,
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Sy" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "SA" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/closed/wall/rock/brown{
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "SH" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "SQ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -3711,44 +4909,60 @@
 	},
 /obj/structure/surface/table/woodentable,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "SU" = (
 /obj/structure/prop/hybrisa/vehicles/Small_Truck/Brown_Cargo_Barrels{
 	dir = 1
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "SX" = (
 /obj/item/paper/flag{
 	color = "#ff0808"
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ta" = (
 /obj/structure/sink{
 	pixel_y = 26
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Tb" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Tf" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Th" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Tm" = (
 /obj/item/prop/folded_anti_tank_sadar,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Tp" = (
 /obj/structure/prop/invuln/minecart_tracks,
 /obj/effect/decal/cleanable/dirt{
@@ -3758,32 +4972,46 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TA" = (
 /obj/structure/prop/fishing/line/long,
 /turf/open/gm/coast/beachcorner2/south_west,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TF" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TH" = (
 /obj/item/storage/box/czsp/medical,
 /turf/open/floor/hybrisa/wood/redwood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TJ" = (
 /obj/structure/prop/hybrisa/furniture/tables/tablewood{
 	dir = 4
 	},
 /turf/open/auto_turf/sand_white,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TL" = (
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TR" = (
 /obj/structure/machinery/deployable/barrier,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TS" = (
 /obj/structure/largecrate/supply/supplies/plasteel{
 	pixel_x = 4;
@@ -3794,17 +5022,23 @@
 	pixel_y = 23
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TW" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TX" = (
 /obj/structure/flora/bush/desert,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "TZ" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -3812,28 +5046,28 @@
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
 	},
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ud" = (
 /obj/structure/largecrate/random/secure,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Uf" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 5
 	},
 /obj/structure/stairs,
-/turf/closed/wall/rock/brown{
-	density = 0;
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/turf/closed/wall/rock/brown,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ui" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack4,
 /obj/item/reagent_container/food/snacks/tomatosoup{
@@ -3842,13 +5076,17 @@
 	pixel_y = 20
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Uo" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 10
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Up" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -3856,25 +5094,33 @@
 	icon_state = "kutjevo_rock_decodark"
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ut" = (
 /obj/structure/barricade/sandbags{
 	dir = 8
 	},
 /obj/structure/barricade/sandbags,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "UB" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "UF" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
 	plane = -6
 	},
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "UK" = (
 /obj/effect/decal/grass_overlay/grass1/inner{
 	dir = 8
@@ -3883,21 +5129,29 @@
 	color = "#473131";
 	opacity = 0
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "UL" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "UT" = (
 /obj/structure/flora/bush/ausbushes/palebush,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Vd" = (
 /obj/structure/barricade/metal/wired,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Vi" = (
 /obj/structure/largecrate/random,
 /obj/effect/decal/cleanable/dirt{
@@ -3908,7 +5162,9 @@
 	dir = 10;
 	icon_state = "floor_marked"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Vj" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -3917,7 +5173,9 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Vo" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -3939,29 +5197,39 @@
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Vx" = (
 /turf/open/gm/dirt{
 	icon_state = "desert0"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "VB" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "VG" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 10
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "VQ" = (
 /obj/structure/prop/hybrisa/supermart/rack/longrack5{
 	pixel_y = -4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wb" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -3972,12 +5240,16 @@
 	dir = 4
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wn" = (
 /obj/effect/decal/strata_decals/grasses,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wo" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868"
@@ -3987,18 +5259,24 @@
 	dir = 8
 	},
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wq" = (
 /obj/effect/decal/grass_overlay/grass1/inner,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wx" = (
 /obj/structure/blocker/invisible_wall,
 /turf/open/gm/river/ocean{
 	default_name = "deep ocean";
 	name = "deep ocean"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Wy" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -4010,87 +5288,128 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "WB" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "WH" = (
 /obj/item/stack/sheet/wood,
 /turf/open/auto_turf/sand_white/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "WN" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 4
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "WW" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 10
 	},
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "WZ" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Xb" = (
 /obj/effect/hybrisa/decal/road/lines3,
 /obj/effect/hybrisa/decal/road/lines1,
 /obj/effect/hybrisa/decal/road/lines4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Xd" = (
 /obj/structure/flora/grass/desert/lightgrass_12,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Xh" = (
 /obj/effect/landmark/corpsespawner/forecon_spotter,
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Xk" = (
 /obj/structure/flora/grass/desert/heavygrass_8,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "XC" = (
 /obj/structure/prop/hybrisa/misc/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "XF" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
+"XK" = (
+/obj/structure/flora/grass/tallgrass/desert,
+/obj/structure/flora/grass/tallgrass/desert,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "XR" = (
 /obj/structure/largecrate/supply/supplies/metal{
 	pixel_x = -4;
 	pixel_y = 8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "XS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/hybrisa/supermart/rack/longrack5,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "XU" = (
 /obj/effect/decal/grass_overlay/grass1,
 /turf/open/gm/river,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yb" = (
 /obj/effect/decal/strata_decals/grasses,
 /turf/open/auto_turf/strata_grass/layer0_mud,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yc" = (
-/turf/closed/wall/rock/brown{
-	opacity = 0
-	},
-/area/bigred/ground/toilet)
+/obj/effect/decal/strata_decals/grasses,
+/obj/effect/decal/strata_decals/grasses,
+/turf/open/gm/dirt,
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Ye" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#7d6868";
@@ -4098,11 +5417,15 @@
 	},
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yi" = (
 /obj/effect/landmark/corpsespawner/hybrisa/weymart,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yk" = (
 /obj/structure/prop/hybrisa/furniture/tables,
 /obj/item/ammo_magazine/m2c{
@@ -4114,11 +5437,15 @@
 	pixel_y = 3
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yl" = (
 /obj/structure/prop/brazier/campfire,
 /turf/open/gm/dirt2,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Yz" = (
 /obj/item/reagent_container/glass/paint/blue{
 	pixel_x = 8;
@@ -4140,7 +5467,9 @@
 	pixel_y = 2
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "YI" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 5
@@ -4150,18 +5479,24 @@
 	pixel_y = 29
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "YR" = (
 /obj/effect/hybrisa/decal/road/lines3,
 /obj/effect/hybrisa/decal/road/lines4,
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "YX" = (
 /turf/closed/shuttle/dropship2/WY/HorizonRunner{
 	color = "#613522";
 	icon_state = "leftengine_3"
 	},
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "YZ" = (
 /obj/item/ammo_casing/bullet{
 	dir = 8;
@@ -4192,13 +5527,17 @@
 	pixel_y = -4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Zc" = (
 /obj/vehicle/powerloader/jd{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Zf" = (
 /obj/structure/mineral_door/wood/open,
 /obj/effect/decal/cleanable/dirt{
@@ -4206,7 +5545,9 @@
 	plane = -6
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Zm" = (
 /obj/structure/prop/wooden_cross{
 	desc = "A grave to a fishing buddy, long gone"
@@ -4215,27 +5556,37 @@
 	pixel_y = 5
 	},
 /turf/open/gm/dirt,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Zp" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 9
 	},
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "Zt" = (
 /obj/structure/prop/wooden_cross,
 /turf/open/auto_turf/strata_grass/layer0,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ZH" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ZT" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 "ZY" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 4;
@@ -4243,7 +5594,9 @@
 	},
 /obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/strata_grass/layer1,
-/area/bigred/ground/toilet)
+/area/bigred/ground/toilet{
+	daytime_affected = 1
+	})
 
 (1,1,1) = {"
 aV
@@ -4564,7 +5917,7 @@ Ic
 Ic
 Ic
 Fd
-QL
+zo
 QL
 QL
 QL
@@ -4676,12 +6029,12 @@ rN
 MM
 cI
 cI
-lD
+gE
 wW
 FI
 FI
 dd
-lD
+gE
 vf
 sF
 DJ
@@ -4716,7 +6069,7 @@ le
 rN
 nE
 OL
-QL
+zo
 QL
 QL
 Oj
@@ -4828,13 +6181,13 @@ rN
 yO
 Wo
 cI
-lD
+gE
 Oy
 nM
 Bc
 jY
 jc
-lD
+gE
 vL
 wb
 QL
@@ -4848,7 +6201,7 @@ gE
 gE
 gE
 Tm
-QL
+wf
 QL
 MB
 aV
@@ -4868,8 +6221,8 @@ os
 nE
 nE
 OL
-QL
-QL
+zo
+zo
 Bc
 Es
 TF
@@ -4980,7 +6333,7 @@ rN
 TL
 uK
 Wo
-lD
+eL
 Wq
 Bc
 nM
@@ -5021,7 +6374,7 @@ rN
 nE
 TL
 Fd
-QL
+zo
 Bc
 TF
 Qz
@@ -5117,8 +6470,8 @@ TL
 TL
 TL
 eB
-Bc
-Es
+zo
+Nq
 Uo
 TL
 TL
@@ -5132,7 +6485,7 @@ rN
 TL
 TL
 MM
-Yc
+nM
 va
 iw
 nM
@@ -5150,8 +6503,8 @@ QL
 QL
 MB
 gE
-Pr
-Pr
+DO
+DO
 QL
 KU
 MB
@@ -5173,7 +6526,7 @@ le
 nE
 TL
 eB
-QL
+zo
 Bc
 Es
 Es
@@ -5269,9 +6622,9 @@ TL
 TL
 OL
 mT
-xt
+NW
 KI
-Oj
+Sc
 cD
 rC
 TL
@@ -5285,7 +6638,7 @@ rN
 TL
 MM
 cI
-lD
+gE
 va
 nM
 nM
@@ -5303,7 +6656,7 @@ TF
 QL
 QL
 QL
-Pr
+DO
 gE
 gE
 MB
@@ -5324,10 +6677,10 @@ DC
 os
 rN
 OL
-QL
-QL
-QL
-QL
+zo
+zo
+zo
+zo
 QL
 TF
 TF
@@ -5420,12 +6773,12 @@ OI
 TL
 TL
 OL
-Bc
+zo
 Yb
 bL
-Yb
-ug
-Bc
+Nq
+zn
+zo
 XU
 TL
 TL
@@ -5436,9 +6789,9 @@ rN
 rN
 TL
 MM
-Yc
+gE
 cI
-lD
+gE
 va
 Bc
 jY
@@ -5477,10 +6830,10 @@ nE
 rN
 rN
 Fd
-QL
+zo
 cl
-QL
-QL
+zo
+zo
 TF
 QL
 QL
@@ -5555,7 +6908,7 @@ Bc
 iw
 iw
 wQ
-lD
+gE
 cI
 cI
 cI
@@ -5572,12 +6925,12 @@ OI
 TL
 TL
 OL
-Es
+Nq
 Bl
 Qe
 KH
 xt
-Bc
+zo
 XU
 TL
 TL
@@ -5590,14 +6943,14 @@ TL
 MM
 cI
 cI
-lD
-lD
+gE
+gE
 va
 iw
 sC
-lD
-lD
-lD
+gE
+gE
+gE
 sF
 ir
 Pu
@@ -5632,7 +6985,7 @@ TL
 Ic
 TL
 Fd
-QL
+zo
 TF
 TF
 Bc
@@ -5706,7 +7059,7 @@ eL
 eL
 iw
 Sp
-lD
+gE
 cI
 cI
 cI
@@ -5725,10 +7078,10 @@ TL
 TL
 TL
 Fd
-Bc
+zo
 nK
 ug
-Yb
+Nq
 Bl
 XU
 TL
@@ -5743,8 +7096,8 @@ uK
 md
 md
 Wo
-lD
-lD
+gE
+eL
 va
 IM
 yt
@@ -5784,7 +7137,7 @@ QO
 TL
 TL
 OL
-QL
+zo
 QL
 TF
 QL
@@ -5858,11 +7211,11 @@ nM
 eL
 Bc
 Sp
-lD
-lD
-lD
-cI
-cI
+gE
+gE
+gE
+nM
+eL
 gE
 cI
 cI
@@ -5878,9 +7231,9 @@ TL
 TL
 TL
 Fd
-Yb
-Es
-Bc
+Nq
+Nq
+zo
 xU
 TL
 TL
@@ -5896,13 +7249,13 @@ TL
 TL
 uK
 Wo
-cI
-lD
-lD
+nM
+eL
+gE
 cM
 cI
 cI
-lD
+gE
 nb
 tJ
 Ak
@@ -5936,7 +7289,7 @@ TL
 Ku
 TL
 nA
-QL
+zo
 QL
 QL
 Es
@@ -6010,11 +7363,11 @@ eL
 eL
 nM
 jY
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+nM
+nM
+nM
 gE
 gE
 cI
@@ -6031,8 +7384,8 @@ TL
 TL
 TL
 Fd
-Bc
-Yb
+zo
+Nq
 XU
 TL
 TL
@@ -6087,8 +7440,8 @@ rN
 rN
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 QL
 Wn
@@ -6164,12 +7517,12 @@ nM
 iw
 FI
 Pl
-lD
-lD
-lD
-lD
-lD
-lD
+nM
+nM
+nM
+nM
+nM
+cI
 eL
 QL
 Es
@@ -6204,7 +7557,7 @@ TL
 Ck
 mQ
 Qx
-lD
+gE
 DS
 ou
 sJ
@@ -6224,7 +7577,7 @@ aV
 (14,1,1) = {"
 aV
 MB
-QL
+zo
 Uo
 TL
 TL
@@ -6239,9 +7592,9 @@ os
 rN
 TL
 OL
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 QL
 QL
@@ -6316,12 +7669,12 @@ nM
 nM
 iw
 Sp
-lD
-lD
-lD
-lD
-lD
-lD
+nM
+eL
+nM
+eL
+nM
+nM
 eL
 QL
 QL
@@ -6376,8 +7729,8 @@ aV
 (15,1,1) = {"
 aV
 MB
-QL
-QL
+zo
+zo
 OI
 TL
 Ku
@@ -6393,7 +7746,7 @@ Be
 TL
 Ic
 Fd
-QL
+zo
 QL
 QL
 QL
@@ -6469,11 +7822,11 @@ eL
 iw
 Bc
 QZ
-lD
-lD
-lD
-lD
-lD
+nM
+eL
+nM
+nM
+gE
 nM
 QL
 WN
@@ -6529,7 +7882,7 @@ aV
 aV
 MB
 QL
-QL
+zo
 Uo
 TL
 TL
@@ -6545,7 +7898,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -6620,10 +7973,10 @@ Bc
 Bc
 iw
 Sp
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 cI
 cI
 nM
@@ -6681,8 +8034,8 @@ aV
 aV
 MB
 QL
-QL
-QL
+zo
+zo
 Uo
 rC
 TL
@@ -6697,8 +8050,8 @@ rN
 rN
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -6757,11 +8110,11 @@ QL
 Bc
 QL
 eL
-lD
-lD
-lD
-lD
-lD
+nM
+gE
+nM
+eL
+nM
 Oy
 iw
 eL
@@ -6772,10 +8125,10 @@ eL
 iw
 iw
 jY
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 nM
 nM
 QL
@@ -6834,9 +8187,9 @@ aV
 MB
 QL
 QL
-QL
-QL
-QL
+zo
+zo
+zo
 OI
 nE
 nE
@@ -6850,9 +8203,9 @@ rN
 TL
 TL
 IE
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 QL
 Bc
@@ -6909,11 +8262,11 @@ QL
 Es
 QL
 eL
-lD
-lD
-lD
-lD
-lD
+nM
+nM
+eL
+nM
+eL
 Wq
 iw
 iw
@@ -6988,7 +8341,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -7004,8 +8357,8 @@ rN
 TL
 Ic
 Fd
-QL
-TF
+zo
+Nq
 QL
 QL
 QL
@@ -7061,11 +8414,11 @@ Bc
 gH
 QL
 nM
-lD
-lD
-lD
-lD
-lD
+nM
+gE
+gE
+eL
+eL
 vE
 RR
 RR
@@ -7140,7 +8493,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -7157,7 +8510,7 @@ TL
 TL
 TL
 Fd
-QL
+zo
 QL
 QL
 vG
@@ -7292,7 +8645,7 @@ QL
 Es
 Es
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -7309,8 +8662,8 @@ rN
 rN
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 vG
 uN
@@ -7444,7 +8797,7 @@ QL
 QL
 TF
 Oj
-QL
+zo
 Uo
 TL
 TL
@@ -7462,7 +8815,7 @@ rN
 rN
 TL
 Fd
-QL
+zo
 QL
 vG
 vn
@@ -7527,9 +8880,9 @@ cI
 cI
 gE
 gE
-lD
-lD
-lD
+eL
+nM
+eL
 gE
 gE
 cI
@@ -7596,8 +8949,8 @@ QL
 QL
 Es
 Tf
-QL
-QL
+zo
+zo
 Uo
 rC
 TL
@@ -7614,7 +8967,7 @@ QO
 rN
 TL
 OL
-QL
+zo
 QL
 vG
 EX
@@ -7679,9 +9032,9 @@ nM
 cI
 cI
 gE
-lD
-lD
-lD
+nM
+eL
+nM
 gE
 gE
 cI
@@ -7749,25 +9102,25 @@ QL
 Es
 TF
 Tf
-QL
-QL
-QL
+zo
+zo
+zo
 Uo
 eB
-QL
-QL
-QL
+zo
+zo
+zo
 Uo
 rC
 nA
-QL
+zo
 OI
 TL
 le
 TL
 OL
-QL
-QL
+zo
+zo
 vG
 TS
 uk
@@ -7831,9 +9184,9 @@ QL
 nM
 cI
 cI
-lD
-lD
-lD
+nM
+nM
+nM
 gE
 cI
 cI
@@ -7908,18 +9261,18 @@ eL
 eL
 QL
 QL
-QL
-QL
-QL
-QL
-QL
+zo
+zo
+zo
+zo
+zo
 OI
 TL
 rN
 TL
 TL
 Fd
-QL
+zo
 vG
 XR
 ho
@@ -7983,9 +9336,9 @@ iw
 nM
 nM
 cI
-lD
-lD
-lD
+gE
+eL
+gE
 cI
 cI
 nM
@@ -8062,8 +9415,8 @@ nM
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 xU
 TL
 TL
@@ -8071,7 +9424,7 @@ rN
 rN
 TL
 OL
-QL
+zo
 vG
 vG
 vG
@@ -8214,7 +9567,7 @@ nM
 nM
 QL
 QL
-QL
+zo
 xU
 TL
 TL
@@ -8223,7 +9576,7 @@ DC
 rN
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -8366,7 +9719,7 @@ cI
 cI
 eL
 QL
-QL
+zo
 OI
 TL
 rN
@@ -8375,7 +9728,7 @@ TL
 TL
 TL
 eB
-QL
+zo
 QL
 QL
 QL
@@ -8518,7 +9871,7 @@ Hx
 SA
 nM
 QL
-QL
+zo
 Uo
 TL
 TL
@@ -8526,8 +9879,8 @@ TL
 TL
 TL
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -8670,15 +10023,15 @@ gE
 gE
 gE
 QL
-QL
-QL
+zo
+zo
 Uo
 TL
 TL
 rC
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -8823,13 +10176,13 @@ gE
 gE
 nM
 QL
-QL
-QL
+zo
+zo
 Uo
 eB
-QL
-QL
-Tf
+zo
+zo
+Yc
 Es
 QL
 Bc
@@ -8976,10 +10329,10 @@ gE
 nM
 QL
 QL
-QL
-QL
-QL
-QL
+zo
+zo
+zo
+zo
 QL
 Es
 Qz
@@ -9757,8 +11110,8 @@ eL
 eL
 eL
 iw
-QL
-Es
+zo
+Nq
 iw
 cI
 cI
@@ -9904,14 +11257,14 @@ QL
 QL
 Es
 Es
-QL
-QL
+zo
+zo
 xU
 Ic
 Ic
 IE
-QL
-Es
+zo
+Nq
 nM
 cI
 cI
@@ -10055,15 +11408,15 @@ QL
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 xU
 TL
 TL
 TL
 TL
 Fd
-QL
+zo
 Es
 eL
 cI
@@ -10205,9 +11558,9 @@ QL
 QL
 QL
 QL
-Oj
-QL
-QL
+Sc
+zo
+zo
 xU
 TL
 TL
@@ -10215,8 +11568,8 @@ TL
 Ku
 TL
 OL
-QL
-Bc
+zo
+zo
 TF
 eL
 cI
@@ -10356,8 +11709,8 @@ Ff
 vG
 vG
 vG
-QL
-QL
+zo
+zo
 xU
 Ic
 TL
@@ -10368,7 +11721,7 @@ TL
 QO
 TL
 Fd
-QL
+zo
 Bc
 nM
 cI
@@ -10508,7 +11861,7 @@ rD
 MQ
 Gj
 vG
-QL
+zo
 xU
 TL
 TL
@@ -10520,7 +11873,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 Es
 nM
 cI
@@ -10660,7 +12013,7 @@ Eb
 rD
 kp
 vG
-QL
+zo
 Uo
 TL
 TL
@@ -10672,7 +12025,7 @@ rN
 TL
 TL
 OL
-QL
+zo
 QL
 iw
 cI
@@ -10812,8 +12165,8 @@ Gj
 Gj
 MQ
 vG
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -10824,7 +12177,7 @@ rN
 rN
 TL
 OL
-QL
+zo
 Es
 QL
 iw
@@ -10965,7 +12318,7 @@ Eb
 Eb
 vG
 QL
-QL
+zo
 OI
 TL
 TL
@@ -10976,7 +12329,7 @@ DC
 rN
 Be
 OL
-QL
+zo
 TF
 Es
 QL
@@ -11117,7 +12470,7 @@ Oi
 rD
 vG
 qx
-qx
+NI
 JQ
 CH
 aB
@@ -11128,7 +12481,7 @@ DC
 le
 TL
 OL
-QL
+zo
 QL
 Es
 Bc
@@ -11280,8 +12633,8 @@ rN
 rN
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 Es
 QL
@@ -11433,9 +12786,9 @@ rN
 rN
 rN
 Fd
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 QL
 iw
@@ -11587,8 +12940,8 @@ rN
 TL
 Ic
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -11740,8 +13093,8 @@ rN
 rN
 TL
 IE
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -11876,7 +13229,7 @@ Bc
 QL
 Pc
 TF
-QL
+zo
 OI
 TL
 QO
@@ -11893,8 +13246,8 @@ os
 rN
 TL
 IE
-QL
-QL
+zo
+zo
 Bc
 Es
 QL
@@ -12027,8 +13380,8 @@ Es
 Pc
 QL
 TF
-Pc
-QL
+Sc
+zo
 OI
 TL
 QO
@@ -12046,8 +13399,8 @@ rN
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 Bc
@@ -12179,7 +13532,7 @@ QL
 QL
 Es
 Pc
-QL
+zo
 xU
 TL
 TL
@@ -12199,8 +13552,8 @@ DC
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 TF
@@ -12331,7 +13684,7 @@ QL
 QL
 QL
 Pc
-QL
+zo
 OI
 TL
 TL
@@ -12342,8 +13695,8 @@ TL
 Be
 TL
 eB
-QL
-QL
+zo
+zo
 OI
 rN
 rN
@@ -12352,8 +13705,8 @@ rN
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -12483,7 +13836,7 @@ QL
 QL
 Bc
 Es
-QL
+zo
 Uo
 TL
 TL
@@ -12493,9 +13846,9 @@ gd
 TL
 TL
 OL
-QL
-Qz
-QL
+zo
+nx
+zo
 Uo
 TL
 Ku
@@ -12505,8 +13858,8 @@ rN
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -12635,8 +13988,8 @@ QL
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -12645,10 +13998,10 @@ QO
 TL
 TL
 OL
+zo
 QL
-QL
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -12658,9 +14011,9 @@ rN
 TL
 dx
 HN
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 iw
 QL
@@ -12788,7 +14141,7 @@ QL
 QL
 Bc
 Es
-QL
+zo
 OI
 TL
 TL
@@ -12797,10 +14150,10 @@ TL
 TL
 TL
 OL
+zo
 QL
 QL
-QL
-QL
+zo
 Uo
 TL
 TL
@@ -12813,7 +14166,7 @@ sS
 gy
 HN
 Sm
-QL
+zo
 iw
 QL
 QL
@@ -12940,7 +14293,7 @@ ke
 QL
 QL
 Bc
-Pc
+Sc
 Uo
 TL
 TL
@@ -12949,11 +14302,11 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 Es
-Tf
-QL
+Yc
+zo
 Uo
 TL
 TL
@@ -12965,8 +14318,8 @@ sS
 sS
 sS
 AE
-QL
-QL
+zo
+zo
 iw
 iw
 QL
@@ -13092,8 +14445,8 @@ ke
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 Uo
 rC
 TL
@@ -13101,12 +14454,12 @@ TL
 TL
 TL
 eB
-TF
+Nq
 Es
 Oj
 XF
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -13118,8 +14471,8 @@ QF
 iA
 yW
 Fd
-QL
-QL
+zo
+zo
 QL
 iw
 Bc
@@ -13245,19 +14598,19 @@ ke
 QL
 QL
 Es
-QL
-QL
-QL
+zo
+zo
+zo
 Uo
 rC
 rC
 eB
+zo
+Nq
 QL
-TF
 QL
 QL
-QL
-Oj
+Sc
 xU
 TL
 TL
@@ -13271,7 +14624,7 @@ kE
 TL
 TL
 Fd
-QL
+zo
 QL
 Iy
 QL
@@ -13399,17 +14752,17 @@ QL
 QL
 QL
 QL
-Bc
-QL
-QL
-QL
-Pc
-QL
+zo
+zo
+zo
+zo
+Sc
+zo
 Es
 QL
 QL
 QL
-QL
+zo
 Uo
 TL
 TL
@@ -13423,7 +14776,7 @@ kE
 TL
 TL
 OL
-QL
+zo
 iw
 Wn
 TF
@@ -13559,10 +14912,10 @@ QL
 TF
 TF
 cI
+nM
+eL
 cI
-cI
-cI
-QL
+zo
 OI
 TL
 TL
@@ -13575,8 +14928,8 @@ kE
 rN
 TL
 OL
-QL
-iw
+zo
+zo
 Bc
 Es
 TF
@@ -13710,11 +15063,11 @@ QL
 Pc
 QL
 cI
-lD
-cI
-cI
-lD
-lD
+gE
+nM
+nM
+gE
+gE
 EF
 QO
 TL
@@ -13728,7 +15081,7 @@ rN
 TL
 TL
 Fd
-iw
+zo
 iw
 Iy
 Bc
@@ -13861,13 +15214,13 @@ Pc
 TF
 QL
 QL
-lD
+gE
 cI
 wW
 FI
 sC
 eI
-lD
+gE
 TL
 TL
 TL
@@ -13880,7 +15233,7 @@ rN
 TL
 TL
 OL
-QL
+zo
 QL
 Bc
 Bc
@@ -14032,8 +15385,8 @@ rN
 TL
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -14171,7 +15524,7 @@ Bc
 nM
 Bc
 Eu
-cI
+nM
 TL
 TL
 Ku
@@ -14185,8 +15538,8 @@ TL
 TL
 TL
 AL
-QL
-QL
+zo
+zo
 QL
 QL
 Bc
@@ -14322,8 +15675,8 @@ QL
 nM
 nM
 jY
-lD
-lD
+nM
+eL
 TL
 TL
 TL
@@ -14338,8 +15691,8 @@ Ku
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 iw
@@ -14474,7 +15827,7 @@ QL
 Bc
 Bc
 ai
-lD
+gE
 TL
 TL
 TL
@@ -14491,8 +15844,8 @@ TL
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 iw
 iw
 Bc
@@ -14620,7 +15973,7 @@ QL
 TF
 QL
 QL
-lD
+gE
 cI
 va
 RR
@@ -14644,9 +15997,9 @@ TL
 Be
 TL
 Fd
-QL
-QL
-QL
+zo
+zo
+zo
 hu
 QL
 QL
@@ -14773,9 +16126,9 @@ XF
 QL
 QL
 QL
-lD
-lD
-lD
+gE
+eL
+nM
 cI
 EF
 TL
@@ -14799,8 +16152,8 @@ TL
 Ic
 Ic
 Fd
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -14908,7 +16261,7 @@ ke
 ke
 ke
 eH
-Nq
+eH
 gu
 WB
 ke
@@ -14927,8 +16280,8 @@ QL
 Pc
 QL
 QL
-cI
-lD
+eL
+gE
 OI
 TL
 TL
@@ -15078,9 +16431,9 @@ TF
 Qz
 Bc
 QL
-Pc
-QL
-QL
+Sc
+zo
+zo
 OI
 TL
 Ku
@@ -15104,7 +16457,7 @@ TL
 TL
 TL
 eB
-QL
+zo
 MK
 QL
 QL
@@ -15228,9 +16581,9 @@ QL
 QL
 TF
 Tf
-Oj
-QL
-QL
+Sc
+zo
+zo
 xU
 Ic
 TL
@@ -15256,7 +16609,7 @@ TL
 TL
 OL
 Qb
-dS
+za
 Bc
 QL
 QL
@@ -15380,7 +16733,7 @@ QL
 Es
 TF
 TF
-QL
+zo
 xU
 Ic
 TL
@@ -15407,7 +16760,7 @@ QO
 TL
 TL
 eB
-QL
+zo
 Bc
 zY
 QL
@@ -15531,8 +16884,8 @@ QL
 Bc
 Tf
 Es
-TF
-QL
+Nq
+zo
 OI
 TL
 TL
@@ -15558,8 +16911,8 @@ TL
 TL
 TL
 OL
-QL
-QL
+zo
+zo
 Bc
 iw
 QL
@@ -15683,7 +17036,7 @@ QL
 QL
 Es
 QL
-QL
+zo
 xU
 TL
 TL
@@ -15711,8 +17064,8 @@ TL
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 iw
 Bc
 QL
@@ -15834,8 +17187,8 @@ QL
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -15864,9 +17217,9 @@ TL
 TL
 TL
 Fd
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 QL
 QL
@@ -15986,7 +17339,7 @@ QL
 QL
 QL
 Bc
-Es
+Nq
 xU
 TL
 TL
@@ -16016,11 +17369,11 @@ rN
 TL
 TL
 TL
-TL
+Ic
 Fd
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 iw
 QL
@@ -16138,7 +17491,7 @@ QL
 QL
 Bc
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -16172,7 +17525,7 @@ TL
 TL
 Ic
 Bk
-QL
+zo
 QL
 QL
 QL
@@ -16290,7 +17643,7 @@ QL
 QL
 Bc
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -16324,7 +17677,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 iw
 Bc
 iw
@@ -16442,7 +17795,7 @@ QL
 QL
 QL
 TF
-QL
+zo
 OI
 TL
 TL
@@ -16476,7 +17829,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 iw
 QL
 QL
@@ -16594,7 +17947,7 @@ QL
 QL
 TF
 QL
-Wn
+Yc
 OI
 TL
 TL
@@ -16628,7 +17981,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 iw
 QL
 Wn
@@ -16780,7 +18133,7 @@ TL
 TL
 Ku
 OL
-QL
+zo
 iw
 QL
 iw
@@ -16932,7 +18285,7 @@ TL
 TL
 TL
 Pq
-QL
+zo
 QL
 QL
 QL
@@ -17051,7 +18404,7 @@ QL
 eL
 cI
 cI
-lD
+gE
 bD
 HJ
 hh
@@ -17083,19 +18436,19 @@ rN
 TL
 TL
 OL
-QL
-QL
-QL
-Bc
+zo
+zo
 QL
 Bc
+QL
 Bc
-iw
-iw
+zo
+zo
+zo
 cl
-QL
-OU
-QL
+zo
+qV
+zo
 iw
 iw
 Bc
@@ -17202,9 +18555,9 @@ Es
 QL
 cI
 cI
-lD
-lD
-lD
+gE
+gE
+gE
 bD
 HJ
 hh
@@ -17235,20 +18588,20 @@ rN
 rN
 TL
 OL
-QL
+zo
 QL
 Bc
 iw
 QL
-QL
-Bc
+zo
+zo
 xU
 Ic
 TL
 Ic
 Fd
-QL
-iw
+zo
+zo
 Bc
 Av
 Bc
@@ -17353,11 +18706,11 @@ QL
 QL
 nM
 cI
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
 Pv
 lj
 TL
@@ -17387,12 +18740,12 @@ rN
 le
 Be
 OL
-QL
+zo
 Bc
 iw
 iw
 Bc
-QL
+zo
 xU
 TL
 TL
@@ -17400,8 +18753,8 @@ TL
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 iw
 Bc
 iw
@@ -17506,10 +18859,10 @@ QL
 nM
 cI
 cI
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 Pv
 HJ
 hh
@@ -17539,13 +18892,13 @@ rN
 rN
 rN
 OL
-QL
+zo
 QL
 Bc
 Bc
-QL
-QL
-TL
+zo
+zo
+OI
 TL
 TL
 TL
@@ -17553,8 +18906,8 @@ TL
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 tQ
 OU
 OU
@@ -17661,7 +19014,7 @@ cI
 cI
 cI
 cI
-lD
+gE
 EF
 cI
 HJ
@@ -17691,11 +19044,11 @@ rN
 rN
 TL
 OL
-QL
-QL
+zo
+zo
 Bc
 QL
-QL
+zo
 xU
 TL
 TL
@@ -17706,9 +19059,9 @@ TL
 TL
 TL
 Fd
-QL
-lc
-OU
+zo
+OY
+qV
 OU
 OU
 OU
@@ -17812,9 +19165,9 @@ Bc
 nM
 nM
 cI
-lD
-lD
-Bb
+gE
+gE
+fK
 fB
 cI
 HJ
@@ -17844,10 +19197,10 @@ rN
 TL
 TL
 Fd
+zo
 QL
 QL
-QL
-QL
+zo
 OI
 TL
 TL
@@ -17860,11 +19213,11 @@ TL
 TL
 Ic
 Fd
-OU
-OU
-OU
-OU
-OU
+qV
+qV
+qV
+qV
+qV
 iw
 iw
 tQ
@@ -17964,11 +19317,11 @@ iw
 iw
 nM
 cI
-lD
-lD
-lD
-lD
-Bb
+gE
+gE
+gE
+gE
+fK
 cI
 HJ
 hh
@@ -17996,10 +19349,10 @@ rN
 QO
 TL
 OL
-QL
-QL
-QL
-QL
+zo
+zo
+zo
+zo
 OI
 TL
 QO
@@ -18016,7 +19369,7 @@ Ic
 Ic
 Ic
 Fd
-iw
+zo
 tQ
 OU
 OU
@@ -18116,12 +19469,12 @@ eL
 iw
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-Bb
+gE
+gE
+gE
+gE
+gE
+fK
 UK
 HJ
 RV
@@ -18149,8 +19502,8 @@ TL
 TL
 TL
 Fd
-QL
-QL
+zo
+zo
 xU
 TL
 TL
@@ -18168,8 +19521,8 @@ TL
 TL
 TL
 OL
-OU
-OU
+qV
+qV
 OU
 OU
 OU
@@ -18271,10 +19624,10 @@ cI
 cI
 cI
 cI
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 Pv
 cI
 Wb
@@ -18321,7 +19674,7 @@ TL
 TL
 TL
 Nv
-OU
+qV
 OU
 OU
 OU
@@ -18426,7 +19779,7 @@ cI
 cI
 cI
 cI
-lD
+gE
 TZ
 fB
 BI
@@ -18472,8 +19825,8 @@ TL
 TL
 TL
 OL
-OU
-OU
+qV
+qV
 OU
 OU
 OU
@@ -18579,9 +19932,9 @@ nM
 nM
 cI
 cI
-lD
-lD
-lD
+gE
+gE
+gE
 cI
 cI
 cI
@@ -18625,8 +19978,8 @@ Be
 TL
 TL
 Fd
-OU
-OU
+qV
+qV
 xa
 Al
 iw
@@ -18733,11 +20086,11 @@ nM
 cI
 cI
 cI
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
 Pv
 cI
 TL
@@ -18778,7 +20131,7 @@ TL
 TL
 TL
 Fd
-iw
+zo
 iw
 Bc
 Bc
@@ -18885,11 +20238,11 @@ iw
 nM
 cI
 cI
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
 Bb
 cI
 cI
@@ -18930,7 +20283,7 @@ TL
 TL
 TL
 OL
-iw
+zo
 Bc
 Bc
 iw
@@ -19038,10 +20391,10 @@ iw
 nM
 cI
 cI
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 lD
 bD
 cI
@@ -19082,7 +20435,7 @@ TL
 TL
 TL
 OL
-pg
+Bd
 pg
 pg
 OU
@@ -19190,10 +20543,10 @@ Bc
 nM
 cI
 cI
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 lD
 lD
 Bb
@@ -19234,7 +20587,7 @@ TL
 rC
 rC
 eB
-OU
+qV
 OU
 JK
 JK
@@ -19343,9 +20696,9 @@ iw
 nM
 cI
 cI
-lD
-lD
-lD
+gE
+gE
+gE
 lD
 lD
 lD
@@ -19383,10 +20736,10 @@ TL
 TL
 TL
 eB
-OU
-OU
-JK
-OU
+qV
+qV
+XK
+qV
 OU
 OU
 JK
@@ -19496,15 +20849,15 @@ Bc
 nM
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 cI
-QL
+zo
 OI
 TL
 TL
@@ -19534,8 +20887,8 @@ TL
 TL
 TL
 OL
-OU
-OU
+qV
+qV
 wn
 JK
 OU
@@ -19648,13 +21001,13 @@ eL
 Bc
 nM
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 cI
 cI
 OI
@@ -19686,8 +21039,8 @@ TL
 TL
 TL
 OL
-OU
-OU
+qV
+qV
 tT
 OU
 OU
@@ -19800,13 +21153,13 @@ eL
 nM
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 cI
 cI
 Pv
@@ -19839,7 +21192,7 @@ TL
 TL
 TL
 Nv
-iw
+zo
 iw
 Bc
 iw
@@ -19952,24 +21305,24 @@ Es
 nM
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-Bb
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+fK
 cI
 cI
 rC
 rC
 rC
 eB
-QL
-QL
+zo
+zo
 ye
 iC
 ye
@@ -19990,8 +21343,8 @@ TL
 TL
 TL
 OL
-QL
-QL
+zo
+zo
 Bc
 iw
 iw
@@ -20104,23 +21457,23 @@ iw
 cI
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 bD
 BI
 cI
 cI
-QL
-QL
-QL
+zo
+zo
+zo
 zF
 MX
 ye
@@ -20142,7 +21495,7 @@ TL
 TL
 TL
 eB
-QL
+zo
 Bc
 Bc
 Bc
@@ -20256,19 +21609,19 @@ iw
 cI
 cI
 cI
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 cI
 cI
 QL
@@ -20293,8 +21646,8 @@ jx
 mR
 Rb
 jV
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -20408,19 +21761,19 @@ iw
 eL
 nM
 cI
-lD
-lD
+gE
+gE
 cI
 cI
 cI
-lD
-lD
-lD
-lD
+gE
+gE
+gE
+gE
 cI
-lD
-lD
-lD
+gE
+gE
+gE
 cI
 cI
 QL
@@ -20445,7 +21798,7 @@ mm
 mq
 qq
 ye
-QL
+zo
 QL
 QL
 QL
@@ -20475,7 +21828,7 @@ QL
 QL
 iw
 Bc
-QL
+zo
 vG
 vG
 vG
@@ -20571,8 +21924,8 @@ cI
 cI
 cI
 cI
-lD
-lD
+gE
+gE
 cI
 Bc
 QL
@@ -20626,12 +21979,12 @@ QL
 QL
 QL
 ke
-iw
-QL
+zo
+zo
 xU
 Fd
-QL
-QL
+zo
+zo
 QL
 Bc
 QL
@@ -20777,15 +22130,15 @@ QL
 QL
 Bc
 QL
-QL
-QL
+zo
+zo
 xU
 TL
 TL
 Fd
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 QL
 QL
@@ -20928,8 +22281,8 @@ QL
 QL
 Bc
 QL
-QL
-QL
+zo
+zo
 xU
 TL
 TL
@@ -20937,8 +22290,8 @@ TL
 TL
 Ic
 Fd
-QL
-QL
+zo
+zo
 Bc
 QL
 QL
@@ -21079,8 +22432,8 @@ Bc
 QL
 Bc
 Bc
-QL
-QL
+zo
+zo
 xU
 TL
 TL
@@ -21090,7 +22443,7 @@ TL
 TL
 TL
 Fd
-QL
+zo
 QL
 QL
 QL
@@ -21231,7 +22584,7 @@ Bc
 QL
 Bc
 QL
-QL
+zo
 xU
 TL
 TL
@@ -21242,8 +22595,8 @@ TL
 TL
 TL
 OL
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -21383,7 +22736,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -21395,7 +22748,7 @@ TL
 TL
 TL
 Bk
-QL
+zo
 QL
 QL
 Bc
@@ -21534,8 +22887,8 @@ ke
 QL
 QL
 Bc
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -21547,7 +22900,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -21686,7 +23039,7 @@ iw
 QL
 QL
 Bc
-QL
+zo
 qo
 TL
 TL
@@ -21699,7 +23052,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 Bc
@@ -21838,7 +23191,7 @@ iw
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -21851,7 +23204,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -21990,7 +23343,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -22003,7 +23356,7 @@ TL
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -22142,7 +23495,7 @@ QL
 Bc
 Bc
 QL
-QL
+zo
 OI
 TL
 TL
@@ -22155,7 +23508,7 @@ rN
 TL
 TL
 OL
-QL
+zo
 Bc
 QL
 Bc
@@ -22294,7 +23647,7 @@ QL
 QL
 QL
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -22307,7 +23660,7 @@ rN
 TL
 TL
 OL
-QL
+zo
 QL
 QL
 QL
@@ -22446,7 +23799,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -22459,8 +23812,8 @@ DC
 TL
 TL
 OL
-QL
-Bc
+zo
+zo
 QL
 QL
 QL
@@ -22598,7 +23951,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -22612,7 +23965,7 @@ TL
 TL
 TL
 Fd
-QL
+zo
 QL
 QL
 Bc
@@ -22749,8 +24102,8 @@ QL
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -22764,7 +24117,7 @@ rN
 TL
 TL
 OL
-QL
+zo
 QL
 Bc
 Bc
@@ -22901,7 +24254,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 xU
 TL
 TL
@@ -22916,7 +24269,7 @@ le
 TL
 TL
 OL
-QL
+zo
 QL
 Bc
 Bc
@@ -23053,7 +24406,7 @@ QL
 Bc
 QL
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -23068,8 +24421,8 @@ rN
 TL
 TL
 OL
-QL
-QL
+zo
+zo
 Bc
 QL
 QL
@@ -23205,7 +24558,7 @@ Bc
 Bc
 QL
 Bc
-QL
+zo
 OI
 TL
 TL
@@ -23221,7 +24574,7 @@ TL
 TL
 TL
 Fd
-QL
+zo
 QL
 Bc
 QL
@@ -23357,7 +24710,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 OI
 TL
 TL
@@ -23373,7 +24726,7 @@ TL
 TL
 TL
 eB
-QL
+zo
 QL
 QL
 QL
@@ -23509,7 +24862,7 @@ Bc
 QL
 QL
 QL
-QL
+zo
 es
 TL
 TL
@@ -23524,8 +24877,8 @@ TL
 TL
 TL
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -23661,8 +25014,8 @@ Bc
 Bc
 QL
 QL
-Bc
-QL
+zo
+zo
 Uo
 TL
 TL
@@ -23675,8 +25028,8 @@ TL
 TL
 TL
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 Bc
@@ -23814,8 +25167,8 @@ QL
 QL
 QL
 Bc
-QL
-QL
+zo
+zo
 OI
 TL
 TL
@@ -23826,8 +25179,8 @@ TL
 TL
 TL
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 QL
@@ -23967,7 +25320,7 @@ QL
 QL
 QL
 QL
-QL
+zo
 Uo
 TL
 TL
@@ -23977,8 +25330,8 @@ TL
 TL
 rC
 eB
-QL
-QL
+zo
+zo
 QL
 QL
 Kw
@@ -24119,17 +25472,17 @@ iw
 QL
 QL
 QL
-QL
-QL
+zo
+zo
 OI
 TL
 TL
 TL
 TL
 eB
-QL
-QL
-QL
+zo
+zo
+zo
 QL
 Kw
 QL
@@ -24272,14 +25625,14 @@ QL
 QL
 QL
 Bc
-Bc
+zo
 Uo
 TL
 TL
 TL
 eB
-QL
-QL
+zo
+zo
 QL
 vG
 vG
@@ -24424,13 +25777,13 @@ Bc
 QL
 QL
 QL
-Bc
-QL
+zo
+zo
 Uo
 rC
 eB
-QL
-Bc
+zo
+zo
 QL
 QL
 vG
@@ -24577,11 +25930,11 @@ QL
 QL
 QL
 QL
-QL
-QL
-QL
-QL
-QL
+zo
+zo
+zo
+zo
+zo
 QL
 QL
 QL
