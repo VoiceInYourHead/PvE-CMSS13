@@ -5,7 +5,7 @@
 
 	role_comm_title = "CLF"
 
-	faction = FACTION_MARINE
+	faction = FACTION_CLF
 
 /datum/equipment_preset/other/tank/clf/load_gear(mob/living/carbon/human/new_human)
 
@@ -20,7 +20,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/tank(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/tech/tanker(new_human), WEAR_HEAD)
 
-	spawn_weapon(/obj/item/weapon/gun/smg/ppsh, /obj/item/ammo_magazine/smg/ppsh, new_human, 0, 3)
+	spawn_weapon(/obj/item/weapon/gun/smg/nailgun, /obj/item/ammo_magazine/smg/nailgun, new_human, 0, 3)
 
 /// UPP
 /datum/equipment_preset/other/tank/upp
@@ -44,7 +44,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/tank(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/tech/tanker(new_human), WEAR_HEAD)
 
-	spawn_weapon(/obj/item/weapon/gun/smg/nailgun, /obj/item/ammo_magazine/smg/nailgun, new_human, 0, 3)
+	spawn_weapon(/obj/item/weapon/gun/smg/ppsh, /obj/item/ammo_magazine/smg/ppsh, new_human, 0, 3)
 
 /// USCM
 /datum/equipment_preset/other/tank/marine
@@ -92,4 +92,4 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/tank(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/tech/tanker(new_human), WEAR_HEAD)
 
-	spawn_weapon(/obj/item/ammo_magazine/smg/p90/p90_twe, /obj/item/ammo_magazine/smg/p90/p90_twe, new_human, 0, 3)
+	spawn_weapon(/obj/item/weapon/gun/smg/p90, /obj/item/ammo_magazine/smg/p90/p90_twe, new_human, 0, 3)

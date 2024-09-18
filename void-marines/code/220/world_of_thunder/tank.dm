@@ -47,3 +47,7 @@
 /obj/vehicle/multitile/tank/old/ex_act(severity)
 	. = ..()
 	interior_crash_effect(TRUE)
+
+/obj/vehicle/multitile/tank/old/name_vehicle()
+	to_chat(usr, SPAN_WARNING("ты чё какие имена у нас реалистичная игра"))
+	return
