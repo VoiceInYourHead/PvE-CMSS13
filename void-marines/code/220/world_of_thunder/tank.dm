@@ -35,7 +35,7 @@
 	)
 
 	dmg_multipliers = list(
-		"all" = 4,
+		"all" = 3,
 		"acid" = 0.5,
 		"slash" = 1.2,
 		"bullet" = 0.4,
