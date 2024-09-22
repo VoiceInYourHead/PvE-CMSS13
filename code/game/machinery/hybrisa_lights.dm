@@ -1,10 +1,23 @@
+// Some overrides.
+
+/obj/structure/machinery
+	var/is_on = TRUE
+/// Reverse lookup for a breaker_switch that if specified is controlling us
+	var/obj/structure/machinery/colony_floodlight_switch/breaker_switch
+
+/obj/structure/machinery/Destroy()
+	if(breaker_switch)
+		breaker_switch.floodlist -= src
+		breaker_switch = null
+	. = ..()
+
 // Hybrisa Electrical Stuff
 /obj/structure/machinery/colony_floodlight_switch/electrified_fence_switch
 	name = "colony electrified fence switch"
 	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
 	icon_state = "panelnopower"
 	desc = "This switch controls the electrified fences. It only functions when there is power."
-	machinery_type_whitelist = null
+	floodlist = null
 	/// The power each fence takes up per process
 	var/power_usage_per_fence = 5
 
@@ -108,7 +121,7 @@
 	use_power = USE_POWER_NONE
 	needs_power = FALSE
 	ispowered = TRUE
-	machinery_type_whitelist = list(/obj/structure/machinery/colony_floodlight/engineer_circular)
+	floodlist = list(/obj/structure/machinery/colony_floodlight/engineer_circular)
 
 /obj/structure/machinery/colony_floodlight_switch/engineerconsole_switch/LateInitialize()
 	. = ..()

@@ -1,6 +1,6 @@
 /datum/equipment_preset/uscm/lancer
 	name = "Freelancer Marauder"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_S = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FL"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP)
 	faction_group = list(FACTION_FREELANCER)
@@ -24,7 +24,7 @@
 
 /datum/equipment_preset/uscm/lancer/smartgunner
 	name = "Freelancer Machinegunner"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_S = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP, ACCESS_ILLEGAL_PIRATE_SMARTGUNNER)
 	assignment = "Machinegunner"
@@ -43,7 +43,7 @@
 
 /datum/equipment_preset/uscm/lancer/rto
 	name = "Radio Jockey"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_S = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RJ"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP, ACCESS_ILLEGAL_PIRATE_CO)
 	assignment = "Radio Jokey"
@@ -62,7 +62,7 @@
 
 /datum/equipment_preset/uscm/lancer/med
 	name = "Freelancer Surgeon"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_M = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Srg"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP, ACCESS_ILLEGAL_PIRATE_MEDICAL)
 	assignment = "Surgeon"
@@ -81,7 +81,7 @@
 
 /datum/equipment_preset/uscm/lancer/tl
 	name = "Freelancer Bruiser"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_H = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Bruiser"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP, ACCESS_ILLEGAL_PIRATE_TEAMLEAD)
 	assignment = "Bruiser"
@@ -100,7 +100,7 @@
 
 /datum/equipment_preset/uscm/lancer/sl
 	name = "Freelancer Warlord"
-	paygrade = "Freelancer"
+	paygrades = list(PAY_SHORT_FL_W = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Warlord"
 	access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_ILLEGAL_PIRATE_PREP, ACCESS_ILLEGAL_PIRATE_SENIOR_LEAD)
 	assignment = "Warlord"

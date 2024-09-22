@@ -100,7 +100,7 @@
 	if(M.get_target_lock(faction))
 		return
 
-	var/list/turf/path = getline2(src, linked_bell2, include_from_atom = TRUE)
+	var/list/turf/path = get_line(src, linked_bell2, include_start_atom = TRUE)
 	for(var/turf/PT in path)
 		if(PT.density)
 			return

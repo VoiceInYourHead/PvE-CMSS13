@@ -569,7 +569,7 @@
 "UN" = (/obj/structure/flora/grass/tallgrass/desert/corner{dir = 10},/turf/open/desert/dirt,/area/desert_dam/exterior/valley/valley_cargo)
 "UP" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/desertdam/decals/road_stop{dir = 8; icon_state = "stop_decal5"},/obj/item/device/flashlight/lamp/tripod,/turf/open/asphalt,/area/desert_dam/building/warehouse/loading)
 "UQ" = (/turf/open/floor/prison{icon_state = "bright_clean2"},/area/desert_dam/building/warehouse/warehouse)
-"UR" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/power/geothermal,/turf/open/floor/prison{dir = 10; icon_state = "floor_marked"},/area/desert_dam/building/warehouse/loading)
+"UR" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/power/reactor/colony,/turf/open/floor/prison{dir = 10; icon_state = "floor_marked"},/area/desert_dam/building/warehouse/loading)
 "Vq" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/prison{dir = 8; icon_state = "darkbrowncorners2"},/area/desert_dam/building/warehouse/loading)
 "Vr" = (/obj/structure/machinery/conveyor{dir = 8; id = "cargo_container"},/obj/effect/decal/warning_stripes{icon_state = "N"},/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/plasticflaps,/turf/open/floor/plating,/area/desert_dam/building/warehouse/warehouse)
 "Vs" = (/obj/structure/surface/table/woodentable/poor,/obj/item/storage/backpack/marine/satchel/rto{pixel_x = -5; pixel_y = 8},/turf/open/floor/prison{dir = 1; icon_state = "cell_stripe"},/area/desert_dam/building/warehouse/warehouse)

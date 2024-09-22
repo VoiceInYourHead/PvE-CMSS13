@@ -18,37 +18,39 @@
 	service_hat = list(/obj/item/clothing/head/cmcap)
 	service_shoes = list(/obj/item/clothing/shoes/dress)
 
-	dress_under = list(/obj/item/clothing/under/marine/dress)
-	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress)
-	dress_hat = list(/obj/item/clothing/head/marine/peaked)
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues/senior)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/nco)
+	dress_hat = list(/obj/item/clothing/head/marine/dress_cover)
 	dress_gloves = list(/obj/item/clothing/gloves/marine/dress)
 	dress_shoes = list(/obj/item/clothing/shoes/dress)
+/*
 	var/auto_squad_name
 	///Allows the squad to be set even if spawned on admin z level
 	var/ert_squad = FALSE
+*/
 
 /datum/equipment_preset/uscm/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = rand(NUTRITION_VERYLOW, NUTRITION_LOW)
 
 /datum/equipment_preset/uscm/load_preset(mob/living/carbon/human/new_human, randomise, count_participant)
 	. = ..()
-	if(!auto_squad_name || (is_admin_level(new_human.z) && !ert_squad))
+	if(!auto_squad_name || (should_block_game_interaction(new_human) && !ert_squad))
 		return
 	if(!GLOB.data_core.manifest_modify(new_human.real_name, WEAKREF(new_human), assignment, rank))
 		GLOB.data_core.manifest_inject(new_human)
 
-	var/obj/item/card/id/ID = new_human.wear_id
+	var/obj/item/card/id/ID = new_human.get_idcard()
 	var/datum/money_account/acct = create_account(new_human, rand(30, 50), GLOB.paygrades[ID.paygrade])
 	ID.associated_account_number = acct.account_number
 
 	var/datum/squad/auto_squad = get_squad_by_name(auto_squad_name)
 	if(auto_squad)
-		transfer_marine_to_squad(new_human, auto_squad, new_human.assigned_squad, new_human.wear_id)
+		transfer_marine_to_squad(new_human, auto_squad, new_human.assigned_squad, ID)
 	if(!ert_squad && !auto_squad.active)
 		auto_squad.engage_squad(FALSE)
 
 	if(!auto_squad)
-		transfer_marine_to_squad(new_human, pick(RoleAuthority.squads), new_human.assigned_squad, new_human.wear_id)
+		transfer_marine_to_squad(new_human, pick(GLOB.RoleAuthority.squads), new_human.assigned_squad, new_human.wear_id)
 
 	new_human.marine_buyable_categories[MARINE_CAN_BUY_EAR] = 0
 	new_human.sec_hud_set_ID()
@@ -72,18 +74,11 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME1 = JOB_PLAYTIME_TIER_0, PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_1, PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_3)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
 	minimap_icon = "private"
-
-/datum/equipment_preset/uscm/pfc/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel
-	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
-
-	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/pfc/cryo
 	name = "USCM Cryo Squad Rifleman"
@@ -102,40 +97,26 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/uscm/pfc/lesser_rank
-	paygrade = "ME1"
+	paygrades = list(PAY_SHORT_ME1 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/pfc/upp
 	name = "UPP Squad Rifleman"
-	paygrade = "UE2"
+	paygrades = list(PAY_SHORT_UE2 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL)
 	languages = list(LANGUAGE_RUSSIAN)
 	faction_group = list(FACTION_UPP)
 	faction = FACTION_UPP
 
-/datum/equipment_preset/uscm/pfc/upp/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/lightpack/upp
-	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine
-
-	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
-
 /datum/equipment_preset/uscm/pfc/upp/lesser_rank
-	paygrade = "UE1"
+	paygrades = list(PAY_SHORT_UE1 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/pfc/forecon
 	name = "FORECON Squad Rifleman"
-	paygrade = "ME3"
-
-/datum/equipment_preset/uscm/pfc/forecon/load_gear(mob/living/carbon/human/new_human)
-	var/back_item = /obj/item/storage/backpack/marine/satchel/standard
-	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
-		back_item = /obj/item/storage/backpack/marine/standard
-
-	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
-
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/pfc/recon
 
 /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -146,7 +127,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_SMARTGUN
 	rank = JOB_SQUAD_SMARTGUN
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SG"
 	skills = /datum/skills/smartgunner
 
@@ -168,13 +149,13 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/uscm/sg/lesser_rank
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/sg/upp
 	name = "UPP Squad Machinegunner"
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_MACHINEGUN)
 	assignment = "Machinegunner"
-	paygrade = "UE4"
+	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	languages = list(LANGUAGE_RUSSIAN)
 	faction_group = list(FACTION_UPP)
@@ -188,11 +169,11 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/sg/upp/lesser_rank
-	paygrade = "UE3"
+	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/sg/forecon
 	name = "FORECON Squad Smartgunner"
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/sg/forecon/load_gear(mob/living/carbon/human/new_human)
 	var/back_item = /obj/item/storage/backpack/marine/satchel/standard
@@ -202,7 +183,7 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/sg/forecon/lesser_rank
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -229,7 +210,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_SQUAD_RTO
 	rank = JOB_SQUAD_RTO
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RTO"
 	skills = /datum/skills/pfc
 
@@ -243,7 +224,7 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/rto/lesser_rank
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -261,7 +242,7 @@
 	)
 	assignment = JOB_CREWMAN
 	rank = JOB_CREWMAN
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "CRMN"
 	minimum_age = 30
 	skills = /datum/skills/tank_crew
@@ -312,7 +293,7 @@
 
 	assignment = "Reconnaissance Vehicle Operator"
 	role_comm_title = "RVO"
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
 	utility_under = list(/obj/item/clothing/under/marine/officer/tanker)
 
@@ -361,7 +342,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_SQUAD_SPECIALIST
 	rank = JOB_SQUAD_SPECIALIST
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
 
@@ -417,7 +398,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_SQUAD_MEDIC
 	rank = JOB_SQUAD_MEDIC
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FM"
 	skills = /datum/skills/combat_medic
 
@@ -441,11 +422,11 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo/med(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/uscm/medic/lesser_rank
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/medic/upp
 	name = "UPP Sanitar"
-	paygrade = "UE4"
+	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_MEDPREP, ACCESS_UPP_MEDICAL)
 	assignment = "Sanitar"
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
@@ -460,12 +441,12 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/medic/upp/lesser_rank
-	paygrade = "UE3"
+	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/medic/forecon
 	name = "FORECON Squad Corpsman"
 	assignment = "Squad Corpsman"
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/medic/forecon/load_gear(mob/living/carbon/human/new_human)
 	var/back_item = /obj/item/storage/backpack/marine/satchel/medic/standard
@@ -475,7 +456,7 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/medic/forecon/lesser_rank
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -486,7 +467,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_SQUAD_TEAM_LEADER
 	rank = JOB_SQUAD_TEAM_LEADER
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 	minimap_icon = "tl"
@@ -508,7 +489,7 @@
 
 /datum/equipment_preset/uscm/tl/upp
 	name = "UPP Squad Sergeant"
-	paygrade = "UE5"
+	paygrades = list(PAY_SHORT_UE5 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_TLPREP)
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	faction_group = list(FACTION_UPP)
@@ -524,7 +505,7 @@
 /datum/equipment_preset/uscm/tl/forecon
 	name = "FORECON Assistant Squad Leader"
 	assignment = "Assistant Squad Leader"
-	paygrade = "ME6"
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/tl/forecon/load_gear(mob/living/carbon/human/new_human)
 	var/back_item = /obj/item/storage/backpack/marine/satchel/standard
@@ -542,7 +523,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
 	assignment = JOB_SQUAD_ENGI
 	rank = JOB_SQUAD_ENGI
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ComTech"
 	skills = /datum/skills/combat_engineer
 
@@ -573,7 +554,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltSGT"
 	minimum_age = 27
 	skills = /datum/skills/SL
@@ -596,13 +577,13 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo/lead(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/uscm/leader/lesser_rank
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/leader/upp
 	name = "UPP Platoon Sergeant"
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_FLIGHT)
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH) //ground commander and stuff
-	paygrade = "UE7"
+	paygrades = list(PAY_SHORT_UE7 = JOB_PLAYTIME_TIER_0)
 	faction_group = list(FACTION_UPP)
 	faction = FACTION_UPP
 
@@ -614,12 +595,12 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/leader/upp/lesser_rank
-	paygrade = "UE6"
+	paygrades = list(PAY_SHORT_UE6 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/leader/forecon
 	name = "FORECON Squad Sergeant"
 	assignment = "Squad Sergeant"
-	paygrade = "ME8"
+	paygrades = list(PAY_SHORT_ME8 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/leader/forecon/load_gear(mob/living/carbon/human/new_human)
 	var/back_item = /obj/item/storage/backpack/marine/satchel/standard
@@ -629,7 +610,7 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 
 /datum/equipment_preset/uscm/leader/forecon/lesser_rank
-	paygrade = "ME7"
+	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 // ERT members that spawn with full gear from DEFCON
@@ -641,7 +622,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
@@ -653,8 +634,8 @@
 /datum/equipment_preset/uscm/private_equipped/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) < JOB_PLAYTIME_TIER_1)
-			return "ME1"
-	return paygrade
+			return list(PAY_SHORT_ME1 = JOB_PLAYTIME_TIER_0)
+	return paygrades
 
 /datum/equipment_preset/uscm/private_equipped/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
@@ -689,7 +670,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltSGT"
 	minimum_age = 27
 	skills = /datum/skills/SL
@@ -704,7 +685,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/leader(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo/lead(new_human), WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/leader(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/medium/leader(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range(new_human), WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full(new_human), WEAR_L_STORE)
@@ -731,11 +712,13 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_SMARTGUN
 	rank = JOB_SQUAD_SMARTGUN
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0, PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_1, PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_3)
 	role_comm_title = "SG"
 	skills = /datum/skills/smartgunner
 
 	minimap_icon = "smartgunner"
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues)
 
 /datum/equipment_preset/uscm/smartgunner_equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_NORMAL
@@ -767,13 +750,15 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
 	assignment = JOB_SQUAD_ENGI
 	rank = JOB_SQUAD_ENGI
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0, PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_1, PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_3)
 	role_comm_title = "ComTech"
 	skills = /datum/skills/combat_engineer
 
 	minimap_icon = "engi"
 
 	utility_under = list(/obj/item/clothing/under/marine/engineer)
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues)
 
 /datum/equipment_preset/uscm/engineer_equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_NORMAL
@@ -813,7 +798,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_SQUAD_MEDIC
 	rank = JOB_SQUAD_MEDIC
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "HM"
 	skills = /datum/skills/combat_medic
 
@@ -867,7 +852,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_SQUAD_SPECIALIST
 	rank = JOB_SQUAD_SPECIALIST
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
 
@@ -937,7 +922,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_SQUAD_TEAM_LEADER
 	rank = JOB_SQUAD_TEAM_LEADER
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 
@@ -980,7 +965,7 @@
 	skills = /datum/skills/commando/deathsquad
 	auto_squad_name = SQUAD_SOF
 	ert_squad = TRUE
-	paygrade = "ME6"
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
 
 	minimap_icon = "private"
 
@@ -1033,8 +1018,8 @@
 /datum/equipment_preset/uscm/marsoc/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) > JOB_PLAYTIME_TIER_2)
-			return "ME7"
-	return paygrade
+			return list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
+	return paygrades
 
 //Covert Raiders
 /datum/equipment_preset/uscm/marsoc/covert
@@ -1042,7 +1027,7 @@
 	uses_special_name = TRUE
 /datum/equipment_preset/uscm/marsoc/covert/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = MALE
-	new_human.change_real_name(new_human, "[pick(nato_phonetic_alphabet)]")
+	new_human.change_real_name(new_human, "[pick(GLOB.nato_phonetic_alphabet)]")
 	new_human.age = rand(20,30)
 /datum/equipment_preset/uscm/marsoc/covert/load_rank(mob/living/carbon/human/new_human)
 	return "O"
@@ -1053,7 +1038,7 @@
 	assignment = JOB_MARINE_RAIDER_SL
 	rank = JOB_MARINE_RAIDER_SL
 	role_comm_title = "TL."
-	paygrade = "MO1"
+	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 	skills = /datum/skills/commando/deathsquad/leader
 
 	minimap_icon = "leader"
@@ -1061,8 +1046,8 @@
 /datum/equipment_preset/uscm/marsoc/sl/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) > JOB_PLAYTIME_TIER_2)
-			return "MO2"
-	return paygrade
+			return list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
+	return paygrades
 
 //Codenamed Team Leader
 /datum/equipment_preset/uscm/marsoc/sl/covert
@@ -1070,24 +1055,24 @@
 	uses_special_name = TRUE
 /datum/equipment_preset/uscm/marsoc/sl/covert/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = MALE
-	new_human.change_real_name(new_human, "[pick(nato_phonetic_alphabet)]")
+	new_human.change_real_name(new_human, "[pick(GLOB.nato_phonetic_alphabet)]")
 	new_human.age = rand(20,30)
 /datum/equipment_preset/uscm/marsoc/sl/covert/load_rank(mob/living/carbon/human/new_human)
-	return "O"
+	return PAY_SHORT_CDNM
 //Officer
 /datum/equipment_preset/uscm/marsoc/cmd
 	name = "Marine Raider Officer (!DEATHSQUAD!)"
 	assignment = JOB_MARINE_RAIDER_CMD
 	rank = JOB_MARINE_RAIDER_CMD
 	role_comm_title = "CMD."
-	paygrade = "MO3"
+	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)
 	skills = /datum/skills/commando/deathsquad/officer
 
 /datum/equipment_preset/uscm/marsoc/cmd/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) > JOB_PLAYTIME_TIER_3)
-			return "MO4"
-	return paygrade
+			return list(PAY_SHORT_MO4 = JOB_PLAYTIME_TIER_0)
+	return paygrades
 
 /datum/equipment_preset/uscm/marsoc/low_threat
 	name = "Marine Raider"
@@ -1136,7 +1121,7 @@
 	assignment = JOB_MARINE_RAIDER_SL
 	rank = JOB_MARINE_RAIDER_SL
 	role_comm_title = "TL."
-	paygrade = "MO1"
+	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 	skills = /datum/skills/commando/deathsquad/leader
 
 	minimap_icon = "leader"
@@ -1144,8 +1129,8 @@
 /datum/equipment_preset/uscm/marsoc/sl/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) > JOB_PLAYTIME_TIER_2)
-			return "MO2"
-	return paygrade
+			return list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
+	return paygrades
 
 /// LAST STAND OP PRESETS ///
 
@@ -1156,11 +1141,11 @@
 	idtype = /obj/item/card/id/silver
 	assignment = JOB_SO
 	rank = JOB_SO
-	paygrade = "MO2"
+	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltCo"
 	minimum_age = 25
 	skills = /datum/skills/SO
-	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_SILVER)
+	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_COMMANDER)
 	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 	var/access_list = ACCESS_LIST_MARINE_MAIN
 
@@ -1200,7 +1185,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
@@ -1237,7 +1222,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
@@ -1279,7 +1264,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
@@ -1317,7 +1302,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
-	paygrade = "ME2"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 
@@ -1359,7 +1344,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_SQUAD_TEAM_LEADER
 	rank = JOB_SQUAD_TEAM_LEADER
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 
@@ -1397,7 +1382,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_SQUAD_TEAM_LEADER
 	rank = JOB_SQUAD_TEAM_LEADER
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 
@@ -1436,7 +1421,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_SMARTGUN
 	rank = JOB_SQUAD_SMARTGUN
-	paygrade = "ME3"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SG"
 	skills = /datum/skills/smartgunner
 
@@ -1465,7 +1450,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrade = "ME5"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltSGT"
 	minimum_age = 27
 	skills = /datum/skills/SL
@@ -1480,7 +1465,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/intel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/leader(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/cryo/lead(new_human), WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/leader(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/medium/leader(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range(new_human), WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full(new_human), WEAR_L_STORE)
@@ -1500,7 +1485,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_SQUAD_MEDIC
 	rank = JOB_SQUAD_MEDIC
-	paygrade = "ME4"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "HM"
 	skills = /datum/skills/combat_medic
 
