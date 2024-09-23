@@ -225,6 +225,8 @@
 #define TRAIT_VULTURE_USER "t_vulture_user"
 /// If the mob is cloaked in any form
 #define TRAIT_CLOAKED "t_cloaked"
+/// If the mob won't drop items held in face slot when downed
+#define TRAIT_HUD_SIGHT "t_hud_sight
 
 // -- ability traits --
 /// Xenos with this trait cannot have plasma transfered to them
