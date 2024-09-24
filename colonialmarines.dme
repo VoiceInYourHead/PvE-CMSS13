@@ -2512,6 +2512,7 @@
 #include "maps\map_files\USCSS_Tortuga\tortuga_areas.dm"
 #include "void-marines\code\admin_tools.dm"
 #include "void-marines\code\chair_shifting.dm"
+#include "void-marines\code\combat_mechs.dm"
 #include "void-marines\code\factory_areas.dm"
 #include "void-marines\code\light_change.dm"
 #include "void-marines\code\loadouts.dm"
