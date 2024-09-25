@@ -17,17 +17,17 @@
 	..()
 
 /obj/item/weapon/gun/rifle/m41aMK1/mech/attack_self(mob/user)
-	..()
+	SHOULD_CALL_PARENT(FALSE)
 	if(linked_powerloader)
 		linked_powerloader.unbuckle()
 
 /obj/item/weapon/gun/rifle/m41aMK1/mech/dropped(mob/user)
 	if(!linked_powerloader)
 		qdel(src)
-	..()
 	forceMove(linked_powerloader)
 	if(linked_powerloader.buckled_mob && linked_powerloader.buckled_mob == user)
 		linked_powerloader.unbuckle() //drop a clamp, you auto unbuckle from the powerloader.
+	..()
 
 /obj/item/weapon/gun/rifle/m41aMK1/mech/set_gun_config_values()
 	..()
