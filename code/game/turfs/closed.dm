@@ -15,6 +15,21 @@
 	icon_state = "black"
 	mouse_opacity = FALSE
 
+/// Cordon turf marking z-level boundaries and surrounding reservations
+/turf/closed/cordon
+	name = "world border"
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "pclosed"
+	layer = ABOVE_TURF_LAYER
+	baseturfs = /turf/closed/cordon
+
+/// Used as placeholder turf when something went really wrong, as per /tg/ string lists handler
+/turf/closed/cordon/debug
+	name = "debug turf"
+	desc = "This turf shouldn't be here and probably result of incorrect turf replacement. Adminhelp about it or report it in an issue."
+	color = "#660088"
+	baseturfs = /turf/closed/cordon/debug
+
 /turf/closed/mineral //mineral deposits
 	name = "Rock"
 	icon = 'icons/turf/walls/walls.dmi'
@@ -261,7 +276,7 @@
 
 /turf/closed/shuttle/midway
 	name = "\improper Midway"
-	icon = 'icons/turf/dropship.dmi'
+	icon = 'icons/turf/dropship4.dmi'
 	icon_state = "1"
 
 /turf/closed/shuttle/midway/transparent
@@ -273,6 +288,30 @@
 	icon_state = "1"
 
 /turf/closed/shuttle/cyclone/transparent
+	opacity = FALSE
+
+/turf/closed/shuttle/typhoon
+	name = "\improper Typhoon"
+	icon = 'icons/turf/dropship3.dmi'
+	icon_state = "1"
+
+/turf/closed/shuttle/typhoon/transparent
+	opacity = FALSE
+
+/turf/closed/shuttle/tornado
+	name = "\improper Tornado"
+	icon = 'icons/turf/dropship3.dmi'
+	icon_state = "1"
+
+/turf/closed/shuttle/tornado/transparent
+	opacity = FALSE
+
+/turf/closed/shuttle/tripoli
+	name = "\improper Tripoli"
+	icon = 'icons/turf/dropship.dmi'
+	icon_state = "1"
+
+/turf/closed/shuttle/tripoli/transparent
 	opacity = FALSE
 
 /turf/closed/shuttle/twe_dropship
@@ -389,9 +428,9 @@
 /turf/closed/shuttle/dropship2/WY/HorizonRunner
 	name = "\improper WY-LWI Horizon Runner HR-150"
 	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
-	icon = 'icons/turf/dropship4.dmi'
+	icon = 'icons/turf/dropship5.dmi'
 
 /turf/closed/shuttle/dropship2/WY/StarGlider
 	name = "\improper WY-LWI StarGlider SG-200"
 	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, This small dropship is designed for short-range commercial transport."
-	icon = 'icons/turf/dropship4.dmi'
+	icon = 'icons/turf/dropship5.dmi'

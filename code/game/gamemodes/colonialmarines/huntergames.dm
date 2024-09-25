@@ -66,7 +66,7 @@
 \
 								75; /obj/item/stack/medical/bruise_pack, \
 								75; /obj/item/stack/medical/ointment, \
-								75; /obj/item/reagent_container/food/snacks/donkpocket, \
+								75; /obj/item/reagent_container/food/snacks/microwavable/donkpocket, \
 \
 								100; /obj/item/cell/high, \
 								100; /obj/item/tool/wirecutters, \
@@ -244,7 +244,8 @@ var/waiting_for_drop_votes = 0
 
 	H.skills = null //no restriction on what the contestants can do
 
-	H.apply_effect(15, WEAKEN)
+	H.KnockDown(15)
+	H.Stun(15)
 	H.nutrition = NUTRITION_NORMAL
 
 	var/randjob = rand(0,10)

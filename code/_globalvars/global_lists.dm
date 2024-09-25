@@ -37,6 +37,9 @@ GLOBAL_LIST_EMPTY(minimap_icons)
 
 GLOBAL_LIST_EMPTY(mainship_pipes)
 
+/// List of all the maps that have been cached for /proc/load_map
+GLOBAL_LIST_EMPTY(cached_maps)
+
 /proc/initiate_minimap_icons()
 	var/list/icons = list()
 	for(var/iconstate in icon_states('icons/UI_icons/map_blips.dmi'))
@@ -208,6 +211,9 @@ GLOBAL_REFERENCE_LIST_INDEXED(hair_styles_list, /datum/sprite_accessory/hair, na
 GLOBAL_REFERENCE_LIST_INDEXED(facial_hair_styles_list, /datum/sprite_accessory/facial_hair, name) //stores /datum/sprite_accessory/facial_hair indexed by name
 GLOBAL_REFERENCE_LIST_INDEXED(hair_gradient_list, /datum/sprite_accessory/hair_gradient, name)
 GLOBAL_REFERENCE_LIST_INDEXED(yautja_hair_styles_list, /datum/sprite_accessory/yautja_hair, name)
+	//Dropship camos
+
+GLOBAL_LIST_INIT(dropship_camos, list(DROPSHIP_CAMO_TAN, DROPSHIP_CAMO_NAVY, DROPSHIP_CAMO_URBAN, DROPSHIP_CAMO_JUNGLE))
 
 	//Backpacks
 var/global/list/backbaglist = list("Backpack", "Satchel")

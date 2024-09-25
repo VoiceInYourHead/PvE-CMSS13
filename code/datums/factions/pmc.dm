@@ -11,7 +11,7 @@
 	else if(ID)
 		_role = ID.rank
 	switch(_role)
-		if(JOB_PMC_DIRECTOR)
+		if(JOB_PMC_DIRECTOR, JOB_SO) //RU-PVE ADDITION
 			hud_icon_state = "sd"
 		if(JOB_PMC_LEADER, JOB_PMC_LEAD_INVEST)
 			hud_icon_state = "ld"
@@ -25,6 +25,40 @@
 			hud_icon_state = "syn"
 	if(hud_icon_state)
 		holder.overlays += image('icons/mob/hud/marine_hud.dmi', H, "pmc_[hud_icon_state]")
+
+//RU-PVE ADDITION STARTS
+	var/datum/squad/squad = H.assigned_squad
+	if(istype(squad, /datum/squad/marine/pmc))
+		var/squad_clr = H.assigned_squad.equipment_color
+		switch(GET_DEFAULT_ROLE(_role))
+			if(JOB_SQUAD_MEDIC) hud_icon_state = "med"
+			if(JOB_SQUAD_SMARTGUN) hud_icon_state = "gun"
+			if(JOB_SQUAD_TEAM_LEADER) hud_icon_state = "tl"
+			if(JOB_SQUAD_LEADER) hud_icon_state = "leader_a"
+		if(squad.fireteam_leaders["SQ1"] == H || squad.fireteam_leaders["SQ2"] == H)
+			H.langchat_styles = "langchat_smaller_bolded"
+		else
+			H.langchat_styles = initial(H.langchat_styles)
+		H.langchat_color = H.assigned_squad.chat_color
+
+		if(!hud_icon_state) hud_icon_state = H.rank_fallback
+		if(hud_icon_state)
+			var/image/IMG = image('icons/mob/hud/marine_hud.dmi', H, "hudsquad")
+			if(squad_clr)
+				IMG.color = squad_clr
+			else
+				IMG.color = "#5A934A"
+			holder.overlays += IMG
+			holder.overlays += image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_[hud_icon_state]")
+		if(H.assigned_squad && H.assigned_fireteam)
+			var/image/IMG2 = image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_[H.assigned_fireteam]")
+			IMG2.color = squad_clr
+			holder.overlays += IMG2
+			if(H.assigned_squad.fireteam_leaders[H.assigned_fireteam] == H)
+				var/image/IMG3 = image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_ftl")
+				IMG3.color = squad_clr
+				holder.overlays += IMG3
+//RU-PVE ADDITION ENDS
 
 /datum/faction/pmc/get_antag_guns_snowflake_equipment()
 	return list(
@@ -43,11 +77,11 @@
 
 		list("SIDEARMS", 0, null, null, null),
 		list("VP78 pistol", 20, /obj/item/weapon/gun/pistol/vp78, null, VENDOR_ITEM_REGULAR),
-		list("88 Mod 4 Combat Pistol", 15, /obj/item/weapon/gun/pistol/mod88, null, VENDOR_ITEM_REGULAR),
+		list("VP70 Combat Pistol", 15, /obj/item/weapon/gun/pistol/vp70, null, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARM AMMUNITION", 0, null, null, null),
 		list("VP78 magazine (9mm)", 5, /obj/item/ammo_magazine/pistol/vp78, null, VENDOR_ITEM_REGULAR),
-		list("88M4 AP Magazine (9mm)", 5, /obj/item/ammo_magazine/pistol/mod88, null, VENDOR_ITEM_REGULAR),
+		list("VP70 Magazine (9mm)", 5, /obj/item/ammo_magazine/pistol/vp70, null, VENDOR_ITEM_REGULAR),
 
 		list("ATTACHMENTS", 0, null, null, null),
 		list("Angled Grip", 15, /obj/item/attachable/angledgrip, null, VENDOR_ITEM_REGULAR),
@@ -83,11 +117,11 @@
 
 		list("SIDEARMS", 0, null, null, null),
 		list("VP78 pistol", 20, /obj/item/weapon/gun/pistol/vp78, null, VENDOR_ITEM_REGULAR),
-		list("88 Mod 4 Combat Pistol", 30, /obj/item/weapon/gun/pistol/mod88, null, VENDOR_ITEM_REGULAR),
+		list("VP70 Combat Pistol", 30, /obj/item/weapon/gun/pistol/vp70, null, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARM AMMUNITION", 0, null, null, null),
 		list("VP78 magazine (9mm)", 50, /obj/item/ammo_magazine/pistol/vp78, null, VENDOR_ITEM_REGULAR),
-		list("88M4 AP Magazine (9mm)", 50, /obj/item/ammo_magazine/pistol/mod88, null, VENDOR_ITEM_REGULAR),
+		list("VP70 Magazine (9mm)", 50, /obj/item/ammo_magazine/pistol/vp70, null, VENDOR_ITEM_REGULAR),
 
 		list("UTILITIES", 0, null, null, null),
 		list("M94 Marking Flare Pack", 30, /obj/item/storage/box/m94, null, VENDOR_ITEM_RECOMMENDED),
