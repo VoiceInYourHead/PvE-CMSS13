@@ -72,6 +72,9 @@ endmap
 map whiskey_outpost_v2
 endmap
 
+map delta_bunker
+endmap
+
 map lv671
 	default
 endmap
