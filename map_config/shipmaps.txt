@@ -13,7 +13,6 @@ Format:
 endmap
 
 map almayer
-	disabled
 endmap
 
 map golden_arrow
@@ -42,4 +41,7 @@ map tortuga
 endmap
 
 map golden_arrow_forecon
+endmap
+
+map hyperion
 endmap

@@ -1,0 +1,636 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bG" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,4"
+	},
+/area/shuttle/piercer)
+"bV" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,3"
+	},
+/area/shuttle/piercer)
+"bW" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "3,14"
+	},
+/area/shuttle/piercer)
+"cd" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "6,2"
+	},
+/area/shuttle/piercer)
+"db" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating/kutjevo,
+/area/shuttle/piercer)
+"dR" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8;
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin8"
+	},
+/area/shuttle/piercer)
+"dS" = (
+/obj/structure/stairs/perspective,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating/kutjevo,
+/area/shuttle/piercer)
+"dV" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,5"
+	},
+/area/shuttle/piercer)
+"eb" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/structure/platform_decoration,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin5"
+	},
+/area/shuttle/piercer)
+"ef" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "2,0"
+	},
+/area/shuttle/piercer)
+"fm" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,0"
+	},
+/area/shuttle/piercer)
+"fL" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,4"
+	},
+/area/shuttle/piercer)
+"hg" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,1"
+	},
+/area/shuttle/piercer)
+"hO" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,12"
+	},
+/area/shuttle/piercer)
+"jD" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,4"
+	},
+/area/shuttle/piercer)
+"km" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "2,2"
+	},
+/area/shuttle/piercer)
+"ku" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,0"
+	},
+/area/shuttle/piercer)
+"kJ" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,6"
+	},
+/area/shuttle/piercer)
+"kX" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "5,14"
+	},
+/area/shuttle/piercer)
+"lp" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/two,
+/obj/structure/machinery/door/poddoor/almayer{
+	id = "piercer_cockpit";
+	name = "Cockpit";
+	color = "#728382"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/shuttle/piercer)
+"lv" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "6,0"
+	},
+/area/shuttle/piercer)
+"mm" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,11"
+	},
+/area/shuttle/piercer)
+"ms" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8;
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin7"
+	},
+/area/shuttle/piercer)
+"oU" = (
+/obj/structure/platform_decoration,
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4;
+	pixel_y = 13;
+	pixel_x = -2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin4"
+	},
+/area/shuttle/piercer)
+"pt" = (
+/turf/open/shuttle/dropship,
+/area/shuttle/piercer)
+"py" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,7"
+	},
+/area/shuttle/piercer)
+"qP" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,0"
+	},
+/area/shuttle/piercer)
+"sA" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "5,13"
+	},
+/area/shuttle/piercer)
+"tM" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "6,12"
+	},
+/area/shuttle/piercer)
+"vc" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4;
+	pixel_y = 13;
+	pixel_x = -2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin6"
+	},
+/area/shuttle/piercer)
+"vY" = (
+/obj/structure/platform_decoration{
+	dir = 4;
+	layer = 2.85
+	},
+/obj/structure/platform_decoration{
+	dir = 8;
+	layer = 2.85
+	},
+/obj/structure/machinery/door/airlock/hatch/cockpit/two{
+	pixel_y = -3
+	},
+/obj/structure/machinery/door/poddoor/almayer{
+	id = "piercer_exit";
+	name = "Exit";
+	color = "#728382";
+	pixel_y = -3
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/shuttle/piercer)
+"xV" = (
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	density = 0;
+	pixel_y = 16
+	},
+/obj/structure/phone_base{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = 12;
+	layer = 3.1;
+	phone_category = "Dropship";
+	name = "Piercer telephone receiver";
+	phone_id = "Piercer"
+	},
+/obj/structure/prop/ice_colony/hula_girl{
+	pixel_x = -10;
+	pixel_y = 32
+	},
+/obj/structure/bed/chair/vehicle/dropship_cockpit/pilot{
+	dir = 1;
+	layer = 3.5
+	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 18;
+	pixel_x = -9;
+	name = "Cockpit Door Control";
+	id = "piercer_cockpit"
+	},
+/obj/structure/machinery/computer/shuttle/dropship/flight/remote_control/piercer{
+	layer = 3;
+	pixel_y = 14;
+	pixel_x = 6
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/shuttle/piercer)
+"zw" = (
+/obj/structure/prop/almayer/cannon_cable_connector{
+	pixel_y = -3
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_x = -9;
+	pixel_y = 8;
+	id = "piercer_exit";
+	name = "Exit";
+	layer = 5
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"zU" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,4"
+	},
+/area/shuttle/piercer)
+"zW" = (
+/obj/docking_port/mobile/marine_dropship/piercer{
+	layer = 5
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/item/rappel_harness/extract{
+	shuttle_id = "dropship_cyclone"
+	},
+/obj/structure/closet/crate/green,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"Ai" = (
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/shuttle/piercer)
+"Al" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/barricade/handrail{
+	dir = 4;
+	layer = 4
+	},
+/obj/item/prop/almayer/comp_open{
+	pixel_y = 0;
+	pixel_x = -3
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"Bn" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8;
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/shuttle/piercer)
+"BS" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "5,15"
+	},
+/area/shuttle/piercer)
+"Dk" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "6,1"
+	},
+/area/shuttle/piercer)
+"Dq" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,6"
+	},
+/area/shuttle/piercer)
+"En" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,8"
+	},
+/area/shuttle/piercer)
+"Gb" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "4,15"
+	},
+/area/shuttle/piercer)
+"Gj" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,6"
+	},
+/area/shuttle/piercer)
+"GW" = (
+/turf/template_noop,
+/area/space)
+"Hq" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,8"
+	},
+/area/shuttle/piercer)
+"HS" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,2"
+	},
+/area/shuttle/piercer)
+"IM" = (
+/obj/effect/attach_point/crew_weapon/typhoon,
+/obj/structure/dropship_equipment/paradrop_system,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"Jk" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,2"
+	},
+/area/shuttle/piercer)
+"Ld" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4;
+	pixel_y = 13;
+	pixel_x = -2
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/shuttle/piercer)
+"Lk" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "8,3"
+	},
+/area/shuttle/piercer)
+"MY" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,0"
+	},
+/area/shuttle/piercer)
+"NU" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "2,1"
+	},
+/area/shuttle/piercer)
+"OW" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,7"
+	},
+/area/shuttle/piercer)
+"OZ" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,5"
+	},
+/area/shuttle/piercer)
+"PE" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "7,12"
+	},
+/area/shuttle/piercer)
+"Sg" = (
+/obj/structure/prop/almayer/cannon_cable_connector{
+	pixel_y = -3
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"Sk" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "0,3"
+	},
+/area/shuttle/piercer)
+"Tr" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
+/obj/structure/largecrate/random/case/double,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/shuttle/piercer)
+"UZ" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "3,15"
+	},
+/area/shuttle/piercer)
+"Yc" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "4,14"
+	},
+/area/shuttle/piercer)
+"YV" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "3,13"
+	},
+/area/shuttle/piercer)
+"ZL" = (
+/turf/closed/shuttle/twe_dropship{
+	icon_state = "1,1"
+	},
+/area/shuttle/piercer)
+
+(1,1,1) = {"
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+"}
+(2,1,1) = {"
+GW
+GW
+GW
+GW
+GW
+En
+OW
+fL
+Sk
+GW
+GW
+GW
+GW
+"}
+(3,1,1) = {"
+GW
+GW
+GW
+GW
+En
+OW
+Gj
+OZ
+fL
+Sk
+GW
+GW
+fm
+"}
+(4,1,1) = {"
+GW
+GW
+GW
+hO
+mm
+mm
+zU
+mm
+zU
+mm
+HS
+ZL
+MY
+"}
+(5,1,1) = {"
+UZ
+bW
+YV
+tM
+vc
+Ai
+Ld
+oU
+Al
+Sg
+km
+NU
+ef
+"}
+(6,1,1) = {"
+Gb
+Yc
+xV
+lp
+pt
+IM
+zW
+eb
+dS
+db
+vY
+GW
+GW
+"}
+(7,1,1) = {"
+BS
+kX
+sA
+tM
+ms
+Ai
+Bn
+dR
+Tr
+zw
+cd
+Dk
+lv
+"}
+(8,1,1) = {"
+GW
+GW
+GW
+PE
+bV
+bV
+jD
+bV
+kJ
+bV
+Jk
+hg
+qP
+"}
+(9,1,1) = {"
+GW
+GW
+GW
+GW
+Hq
+py
+Dq
+dV
+bG
+Lk
+GW
+GW
+ku
+"}
+(10,1,1) = {"
+GW
+GW
+GW
+GW
+GW
+Hq
+py
+bG
+Lk
+GW
+GW
+GW
+GW
+"}
+(11,1,1) = {"
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+GW
+"}
