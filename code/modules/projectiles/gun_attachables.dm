@@ -250,7 +250,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/suppressor
 	name = "suppressor"
-	desc = "Small muzzle device that reduces flash and noise with special internal geometry.\n Reduces noise of the shot, increases accuracy and stability, but penalizes damage marginally."
+	desc = "A small tube with exhaust ports to expel noise and gas.\n Does not completely silence a weapon, but does make it much quieter and a little more accurate and stable at the cost of slightly reduced damage."
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "suppressor"
 	slot = "muzzle"
@@ -278,7 +278,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "bayonet"
 	item_state = "combat_knife"
-	desc = "USCMC standard issue combat knife. Can be put into boot holster or affixed to the bayonet lug of a rifle. Can also be used to extract shrapnel..."
+	desc = "The standard-issue bayonet of the Colonial Marines. You can slide this knife into your boots, or attach it to the end of a rifle."
 	sharp = IS_SHARP_ITEM_ACCURATE
 	force = MELEE_FORCE_NORMAL
 	throwforce = MELEE_FORCE_NORMAL
@@ -375,7 +375,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/extended_barrel
 	name = "extended barrel"
-	desc = "Longer barrel reduces unburnt powder, improving muzzle velocity and accuracy."
+	desc = "The lengthened barrel speeds up and stabilizes the bullet, increasing velocity and accuracy."
 	slot = "muzzle"
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "ebarrel"
@@ -452,7 +452,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/f90_dmr_barrel
 	name = "f90 barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon_state = "aug_dmr_barrel_a"
 	attach_icon = "aug_dmr_barrel_a"
 	slot = "muzzle"
@@ -463,7 +463,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/f90_shotgun_barrel
 	name = "f90 barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon_state = "aug_mkey_barrel_a"
 	attach_icon = "aug_mkey_barrel_a"
 	slot = "muzzle"
@@ -474,7 +474,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/l56a2_smartgun
 	name = "l56a2 barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon_state = "magsg_barrel_a"
 	attach_icon = "magsg_barrel_a"
 	slot = "muzzle"
@@ -613,7 +613,8 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/reddot
 	name = "S5 red-dot sight"
-	desc = "An ARMAT S5 red-dot, type designated as the AN/PVQ-62 Dot Sight. Zero-magnification optic equipped with a sunshade, for better clarity under bright conditions and weather resistance. Unobtrusive and compact, increases wielded accuracy."
+	desc = "An ARMAT S5 red-dot sight. A zero-magnification optic that offers faster, and more accurate target acquisition."
+	desc_lore = "An all-weather collimator sight, designated as the AN/PVQ-64 Dot Sight. Equipped with a sunshade to increase clarity in bright conditions and resist weathering. Compact and efficient, a marvel of military design, until you realize that this is actually just an off-the-shelf design that got a military designation slapped on."
 	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
 	icon_state = "reddot"
 	attach_icon = "reddot_a"
@@ -625,13 +626,10 @@ Defined in conflicts.dm of the #defines folder.
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
 	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
 
-/obj/item/attachable/reddot/upp
-	name = "EKP-9-M Red Dot Sight"
-	desc = "Cutting edge UPP sight with automated reticle correction for a fixed zero point. Increases accuracy significantly."
-
 /obj/item/attachable/reflex
 	name = "S6 reflex sight"
-	desc = "An ARMAT S6 reflex sight, type designated as the AN/PVG-72 Reflex. Zero-magnification alternative to irons, decreases scatter during burst fire. Can link with mil-HUDs for a limited CCIP."
+	desc = "An ARMAT S6 reflex sight. A zero-magnification alternative to iron sights with a more open optic window when compared to the S5 red-dot. Helps to reduce scatter during automated fire."
+	desc_lore = "A simple folding reflex sight designated as the AN/PVG-72 Reflex Sight, compatible with most rail systems. Bulky and built to last, it can link with military HUDs for limited point-of-aim calculations."
 	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
 	icon_state = "reflex"
 	attach_icon = "reflex_a"
@@ -645,13 +643,10 @@ Defined in conflicts.dm of the #defines folder.
 	burst_scatter_mod = -1
 	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
 
-/obj/item/attachable/reflex/upp
-	name = "PK-12 Reflex Sight"
-	desc = "Reflector type gunsight compatible with most standard issue UPP firearms. Durable but the power supply is notoriously unreliable. Reduces scatter significantly and boosts accuracy slightly."
 
 /obj/item/attachable/flashlight
 	name = "rail flashlight"
-	desc = "Railmounted flashlight. Pretty generic. Surprisingly high intensity, as it's a better light source than the suit lamps of most armor systems."
+	desc = "A flashlight, for rails, on guns. Can be toggled on and off. A better light source than standard M3 pattern armor lights."
 	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
 	icon_state = "flashlight"
 	attach_icon = "flashlight_a"
@@ -811,10 +806,6 @@ Defined in conflicts.dm of the #defines folder.
 		to_chat(user, SPAN_NOTICE("Hold on there cowboy, that grip is bolted on. You are unable to modify it."))
 	return
 
-/obj/item/attachable/flashlight/grip/upp
-	name = "RK-5A Flashlight Grip"
-	desc = "Folding grip with an integrated flashlight. Reduces recoil and scatter marginally, boosts accuracy slightly. \nStatistically udentical to the underbarrel flashlight grip."
-
 /obj/item/attachable/flashlight/laser_light_combo //Unique attachment for the VP78 based on the fact it has a Laser-Light Module in AVP2010
 	name = "VP78 Laser-Light Module"
 	desc = "A Laser-Light module for the VP78 Service Pistol which is currently undergoing limited field testing as part of the USCMs next generation pistol program. All VP78 pistols come equipped with the module."
@@ -908,7 +899,8 @@ Defined in conflicts.dm of the #defines folder.
 	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
 	icon_state = "sniperscope"
 	attach_icon = "sniperscope_a"
-	desc = "An ARMAT S8 scope, type designation AN/PVQ-31. Fixed 4x zoom, reduces fire rate and increases wield time but increases accuracy while scoped."
+	desc = "An ARMAT S8 telescopic eye piece. Fixed at 4x zoom. Press the 'use rail attachment' HUD icon or use the verb of the same name to zoom."
+	desc_lore = "An intermediate-power Armat scope designated as the AN/PVQ-31 4x Optic. Fairly basic, but both durable and functional... enough. 780 meters is about as far as one can push the 10x24mm cartridge, really."
 	slot = "rail"
 	aim_speed_mod = SLOWDOWN_ADS_SCOPE //Extra slowdown when wielded
 	wield_delay_mod = WIELD_DELAY_FAST
@@ -997,10 +989,6 @@ Defined in conflicts.dm of the #defines folder.
 #define ZOOM_LEVEL_2X 0
 #define ZOOM_LEVEL_4X 1
 
-/obj/item/attachable/scope/upp
-	name = "PO-M 4x Optic"
-	desc = "Old fashioned 4x scope. Sturdy, but a little unergonomic. UPP tradition. Reduces RoF and increases wield time. Major accuracy bonus when scoped."
-
 /obj/item/attachable/scope/variable_zoom
 	name = "S10 variable zoom telescopic scope"
 	desc = "An ARMAT S10 telescopic eye piece. Can be switched between 2x zoom, which allows the user to move while scoped in, and 4x zoom. Press the 'use rail attachment' HUD icon or use the verb of the same name to zoom."
@@ -1083,7 +1071,8 @@ Defined in conflicts.dm of the #defines folder.
 	name = "S4 2x telescopic mini-scope"
 	icon_state = "miniscope"
 	attach_icon = "miniscope_a"
-	desc = "An ARMAT S4 scope, type designation AN/PVQ-45. 2x magnification optic, increases accuracy while scoped, decreases RoF and increased wield speed. \nZero often, first production batch suffered from drifting under heavy use and some of them might be in circulation still."
+	desc = "An ARMAT S4 telescoping eye piece. Fixed at a modest 2x zoom. Press the 'use rail attachment' HUD icon or use the verb of the same name to zoom."
+	desc_lore = "A light-duty optic, designated as the AN/PVQ-45 2x Optic. Suited towards short to medium-range engagements. Users are advised to zero it often, as the first mass-production batch had a tendency to drift in one direction or another with sustained use."
 	slot = "rail"
 	zoom_offset = 6
 	zoom_viewsize = 7
@@ -1106,10 +1095,6 @@ Defined in conflicts.dm of the #defines folder.
 	G.slowdown -= dynamic_aim_slowdown
 	..()
 
-/obj/item/attachable/scope/mini/upp
-	name = "1P93 2x Optic"
-	desc = "Mild update of a 2159 UPP design. Holds zero in all conditions, antiglint grid prevents glare, but the reticle is unfortunately cluttered and busy. Reduces RoF and increases wield time, boosts accuracy while scoped."
-
 /obj/item/attachable/scope/mini/flaregun
 	wield_delay_mod = 0
 	dynamic_aim_slowdown = SLOWDOWN_ADS_MINISCOPE_DYNAMIC
@@ -1131,11 +1116,11 @@ Defined in conflicts.dm of the #defines folder.
 	name = "2x hunting mini-scope"
 	icon_state = "huntingscope"
 	attach_icon = "huntingscope"
-	desc = "Generic fixed-magnification 2x optic. Common just about everywhere in civil hands, and sometimes used by law enforcement too."
+	desc = "This civilian-grade scope is a common sight on hunting rifles due to its cheap price and great optics. Fixed at a modest 2x zoom. Press the 'use rail attachment' HUD icon or use the verb of the same name to zoom."
 
 /obj/item/attachable/scope/mini/nsg23
 	name = "W-Y S4 2x advanced telescopic mini-scope"
-	desc = "An ARMAT S4 telescoping eye piece, revised by W-Y scientists to be much more ergonomic."
+	desc = "An ARMAT S4 telescoping eye piece, custom-tuned by W-Y scientists to be as ergonomic as possible."
 	icon_state = "miniscope_nsg23"
 	attach_icon = "miniscope_nsg23_a"
 	zoom_offset = 7
@@ -1143,7 +1128,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/scope/mini/xm88
 	name = "XS-9 targeting relay"
-	desc = "An ARMAT XS-9 optical interface, type designation XAN/PVG-90. Computer controlled 2x magnification with electronic fire control system, interfacing with the rifle's sensors to provide near perfect shooting accuracy... In theory."
+	desc = "An ARMAT XS-9 optical interface. Unlike a traditional scope, this rail-mounted device features no telescoping lens. Instead, the firearm's onboard targeting system relays data directly to the optic for the system operator to reference in realtime."
 	icon_state = "boomslang-scope"
 	zoom_offset = 7
 	dynamic_aim_slowdown = SLOWDOWN_ADS_NONE
@@ -1157,7 +1142,8 @@ Defined in conflicts.dm of the #defines folder.
 	name = "B8 Smart-Scope"
 	icon_state = "iffbarrel"
 	attach_icon = "iffbarrel_a"
-	desc = "An experimental B8 Smart-Scope, type designation XAN/PVG-110. Limited automated IFF trigger interlock system allows for use with the M44 Combat Revolver and M4RA Battle Rifle. Reduces damage due to the momentary trigger delay."
+	desc = "An experimental B8 Smart-Scope. Based on the technologies used in the Smart Gun by ARMAT, this sight has integrated IFF systems. It can only attach to the M4RA Battle Rifle and M44 Combat Revolver."
+	desc_lore = "An experimental fire-control optic capable of linking into compatible IFF systems on certain weapons, designated the XAN/PVG-110 Smart Scope. Currently programmed for usage with the M4RA battle rifle and M44 Combat Revolver, due to their relatively lower rates of fire. Experimental technology developed by Armat, who have assured that all previously reported issues with false-negative IFF recognitions have been solved. Make sure to check the sight after every op, just in case."
 	slot = "rail"
 	zoom_offset = 6
 	zoom_viewsize = 7
@@ -1800,7 +1786,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/stock/xm88
 	name = "\improper XM88 padded stock"
-	desc = "A polymer framed alloy reinforced stock for the XM88 antimateriel rifle. Helps manage recoil."
+	desc = "A specially made compound polymer stock reinforced with aluminum rods and thick rubber padding to shield the user from recoil. Fitted specifically for the XM88 Heavy Rifle."
 	icon_state = "boomslang-stock"
 	wield_delay_mod = WIELD_DELAY_NORMAL
 	hud_offset_mod = 6
@@ -1956,8 +1942,8 @@ Defined in conflicts.dm of the #defines folder.
 	aim_speed_mod = CONFIG_GET(number/slowdown_med)
 
 /obj/item/attachable/stock/rifle/collapsible
-	name = "\improper M41A extendable stock"
-	desc = "The M41A's standard polymer extendable stock. When extended, it improves scatter, accuracy, and recoil, but slightly hinders agility."
+	name = "\improper M41A folding stock"
+	desc = "The standard back end of any gun starting with \"M41\". Compatible with the M41A series, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle."
 	slot = "stock"
 	melee_mod = 5
 	size_mod = 1
@@ -2199,7 +2185,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/m4ra_barrel
 	name = "M4RA barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon_state = "m4ra_barrel"
 	attach_icon = "m4ra_barrel"
 	slot = "special"
@@ -2225,7 +2211,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/m4ra_barrel_custom
 	name = "custom M4RA barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon_state = "m4ra_custom_barrel"
 	attach_icon = "m4ra_custom_barrel"
 	slot = "special"
@@ -2256,7 +2242,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/upp_rpg_breech
 	name = "HJRA-12 Breech"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/stock.dmi'
 	icon_state = "hjra_breech"
 	attach_icon = "hjra_breech"
@@ -2268,7 +2254,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/pkpbarrel
 	name = "QYJ-72 Barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "uppmg_barrel"
 	attach_icon = "uppmg_barrel"
@@ -2280,7 +2266,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/stock/pkpstock
 	name = "QYJ-72 Stock"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/stock.dmi'
 	icon_state = "uppmg_stock"
 	attach_icon = "uppmg_stock"
@@ -2292,7 +2278,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/type88_barrel
 	name = "Type-88 Barrel"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "type88_barrel"
 	attach_icon = "type88_barrel"
@@ -2304,7 +2290,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/type73suppressor
 	name = "Type 73 Integrated Suppressor"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "type73_suppressor"
 	attach_icon = "type73_suppressor"
@@ -2316,7 +2302,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/stock/type71
 	name = "Type 71 Stock"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
 	icon = 'icons/obj/items/weapons/guns/attachments/stock.dmi'
 	icon_state = "type71_stock"
 	attach_icon = "type71_stock"
@@ -2827,8 +2813,8 @@ Defined in conflicts.dm of the #defines folder.
 
 //For the Mk1
 /obj/item/attachable/attached_gun/grenade/mk1
-	name = "\improper PN 30mm underslung grenade launcher"
-	desc = "Standard pump action underslung grenade launcher. Fits the M41A, four round tube, chambers one."
+	name = "\improper MK1 underslung grenade launcher"
+	desc = "An older version of the classic underslung grenade launcher. Can store five grenades, and fire them farther, but fires them slower."
 	icon_state = "grenade-mk1"
 	attach_icon = "grenade-mk1_a"
 	current_rounds = 0
@@ -3017,7 +3003,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "\improper U7 underbarrel shotgun"
 	icon_state = "masterkey"
 	attach_icon = "masterkey_a"
-	desc = "An ARMAT U7 tactical shotgun. Attaches to the underbarrel of most weapons. Only capable of loading up to five buckshot shells. Specialized for breaching into buildings, shorter barrel reduces actual damage."
+	desc = "An ARMAT U7 tactical shotgun. Attaches to the underbarrel of most weapons. Only capable of loading up to five buckshot shells. Specialized for breaching into buildings."
 	w_class = SIZE_MEDIUM
 	max_rounds = 5
 	current_rounds = 5
@@ -3064,7 +3050,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "HME-12 underbarrel extinguisher"
 	icon_state = "extinguisher"
 	attach_icon = "extinguisher_a"
-	desc = "A Taiho-Technologies HME-12 underbarrel extinguisher, a miniaturization of a complex used by firefighters. Attaches to the underbarrel of most weapons, point at fire to remove fire."
+	desc = "A Taiho-Technologies HME-12 underbarrel extinguisher. Attaches to the underbarrel of most weapons. Point at flame before applying pressure."
 	w_class = SIZE_MEDIUM
 	slot = "under"
 	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION|ATTACH_WEAPON|ATTACH_MELEE
@@ -3204,10 +3190,6 @@ Defined in conflicts.dm of the #defines folder.
 	accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_3
 	scatter_unwielded_mod = SCATTER_AMOUNT_TIER_10
 
-/obj/item/attachable/verticalgrip/upp
-	name = "RK-5 Vertical Grip"
-	desc = "Sturdy grip positioned at optimal place offers enhanced stability in rapid fire. Increases weapon size, penalizes one handed fire, improves scatter and accuracy while wielded."
-
 /obj/item/attachable/angledgrip
 	name = "angled grip"
 	desc = "An angled foregrip that improves weapon ergonomics resulting in faster wielding time. \nHowever, it also increases weapon size."
@@ -3218,10 +3200,6 @@ Defined in conflicts.dm of the #defines folder.
 	size_mod = 1
 	slot = "under"
 	pixel_shift_x = 20
-
-/obj/item/attachable/angledgrip/upp
-	name = "RK-9 Angled Grip"
-	desc = "Ergonomic grip decreases time for shouldering the weapon. Increases weapon size, accelerates wield speed."
 
 /obj/item/attachable/gyro
 	name = "gyroscopic stabilizer"
@@ -3250,7 +3228,8 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/lasersight
 	name = "laser sight"
-	desc = "Standard issue visible-band underbarrel laser module, type designation AN/PEQ-42. Increases accuracy and decreases scatter, especially while one-handed. Also improves handling on the move."
+	desc = "A laser sight that attaches to the underside of most weapons. Increases accuracy and decreases scatter, especially while one-handed."
+	desc_lore = "A standard visible-band laser module designated as the AN/PEQ-42 Laser Sight. Can be mounted onto any firearm that has a lower rail large enough to accommodate it."
 	icon = 'icons/obj/items/weapons/guns/attachments/under.dmi'
 	icon_state = "lasersight"
 	attach_icon = "lasersight_a"
@@ -3266,14 +3245,6 @@ Defined in conflicts.dm of the #defines folder.
 	scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_9
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
 
-/obj/item/attachable/lasersight/upp
-	name = "Zvezda Laser Module"
-	desc = "Visible band 512nm green laser, compatible with NVG and IR. Bears striking resemblance to an old Weyland Yutani offering... Decreases scatter, especially onehanded, slightly boosts accuracy. "
-	icon = 'icons/obj/items/weapons/guns/attachments/under.dmi'
-	icon_state = "lasersight_upp"
-	attach_icon = "lasersight_upp_a"
-	pixel_shift_x = 15
-	pixel_shift_y = 18
 
 /obj/item/attachable/bipod
 	name = "bipod"
