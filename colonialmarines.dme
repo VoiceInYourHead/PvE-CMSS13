@@ -2525,6 +2525,7 @@
 #include "void-marines\code\modules\mob\living\carbon\human\emote.dm"
 #include "void-marines\code\playable_factions\alt_roles.dm"
 #include "void-marines\code\playable_factions\areas.dm"
+#include "void-marines\code\playable_factions\bio_terror.dm"
 #include "void-marines\code\playable_factions\fl_mod_items.dm"
 #include "void-marines\code\playable_factions\fl_presets.dm"
 #include "void-marines\code\playable_factions\fl_vendors.dm"

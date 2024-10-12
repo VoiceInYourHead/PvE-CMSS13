@@ -151,3 +151,28 @@
 		to_chat(usr, SPAN_WARNING("You have BLACKLISTED from entering!"))
 		return
 	. = ..()
+
+
+/datum/game_mode/colonialmarines/ai
+	corpses_to_spawn = 100
+
+// Cutscenes
+
+/*
+/client/proc/cutscenemaker()
+	set name = "Make Cutscene"
+	set category = "Game Master.Extras"
+
+	if(!check_rights())
+		return
+
+	var/list/players = tgui_input_checkboxes(usr, "Выберите игроков, что будут принимать участие", "Cutscene", GLOB.player_list)
+	for(var/mob/player as anything in players)
+		player.alpha = 0
+		player.invisibility = 50
+		player.able_to_speak = 0
+
+		player.forceMove(usr)
+
+/proc/cutscenewithteleport(players)
+*/
