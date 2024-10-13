@@ -20,7 +20,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
-	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEALLHAIR
 	flags_marine_helmet = NO_FLAGS
 
 /obj/item/clothing/head/helmet/marine/veteran/goc/heavy
@@ -36,9 +36,10 @@
 	armor_bio = CLOTHING_ARMOR_GIGAHIGHPLUS
 	armor_rad = CLOTHING_ARMOR_GIGAHIGHPLUS
 	armor_internaldamage = CLOTHING_ARMOR_HIGHPLUS
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 
 /obj/item/clothing/head/beret/goc
-	name = "GOC beret"
+	name = "UN beret"
 	desc = "A light blue beret with a officer's rank emblem. For officers that are more inclined towards style than safety."
 	icon = 'void-marines/code/scp/icons/obj_head.dmi'
 	item_icons = list(
@@ -151,3 +152,7 @@
 	)
 	icon_state = "goc_vest"
 	item_state = "goc_vest"
+
+
+/obj/item/weapon/gun/rifle/rmc_f90/bionational
+	// desc = "The standard issue rifle of Bionational Spec-Ops. Modified version with addition of burst-fire mode and larger magazine."
