@@ -284,7 +284,10 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 /turf/closed/wall/indestructible/splashscreen
 	name = "Lobby Art"
 	desc = "Assorted artworks."
-	icon = 'icons/lobby/title.dmi'
+//	icon = 'icons/lobby/title.dmi'
+	icon = 'void-marines/code/scp/physics.dmi'// I think, i will just force it
+	pixel_y = 128
+	pixel_x = 128
 	icon_state = ""
 // icon_state = "title_holiday"
 	layer = FLY_LAYER
