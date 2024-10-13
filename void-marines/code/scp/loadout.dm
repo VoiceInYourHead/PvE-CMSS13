@@ -10,6 +10,7 @@
 
 /datum/equipment_preset/uscm/goc/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_NORMAL
+	new_human.set_species("Human Hero")
 /*
 	new_human.apply_effect(100000, STUN)
 	new_human.able_to_speak = 0
