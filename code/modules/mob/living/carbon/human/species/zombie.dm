@@ -1,12 +1,12 @@
 // DEFINES
 ///Time until a zombie rises from the dead
-#define ZOMBIE_REVIVE_TIME 1 MINUTES
+#define ZOMBIE_REVIVE_TIME 5 MINUTES
 
 /datum/species/zombie
 	group = SPECIES_HUMAN
 	name = SPECIES_ZOMBIE
 	name_plural = "Zombies"
-	slowdown = 0.75
+	slowdown = 2
 	blood_color = BLOOD_COLOR_ZOMBIE
 	icobase = 'icons/mob/humans/species/r_goo_zed.dmi'
 	deform = 'icons/mob/humans/species/r_goo_zed.dmi'
@@ -16,8 +16,8 @@
 	death_message = "seizes up and falls limp..."
 	flags = NO_BREATHE|NO_CLONE_LOSS|NO_POISON|NO_NEURO|NO_SHRAPNEL
 	mob_inherent_traits = list(TRAIT_FOREIGN_BIO)
-	brute_mod = 0.6 //Minor bullet resistance
 	burn_mod = 0.8 //Lowered burn damage since it would 1-shot zombies from 2 to 0.8.
+	total_health = 50
 	speech_chance  = 5
 	cold_level_1 = -1  //zombies don't mind the cold
 	cold_level_2 = -1
@@ -67,6 +67,8 @@
 	var/datum/mob_hud/Hu = huds[MOB_HUD_MEDICAL_OBSERVER]
 	Hu.add_hud_to(zombie, zombie)
 
+	GLOB.zombie_list += zombie
+
 	return ..()
 
 
@@ -75,6 +77,7 @@
 	remove_from_revive(zombie)
 	var/datum/mob_hud/Hu = huds[MOB_HUD_MEDICAL_OBSERVER]
 	Hu.remove_hud_from(zombie, zombie)
+	GLOB.zombie_list -= zombie
 
 
 /datum/species/zombie/handle_unique_behavior(mob/living/carbon/human/zombie)
@@ -88,6 +91,7 @@
 
 	if(gibbed)
 		remove_from_revive(zombie)
+		GLOB.zombie_list -= zombie
 		return
 
 	if(zombie)
@@ -109,6 +113,7 @@
 /datum/species/zombie/handle_dead_death(mob/living/carbon/human/zombie, gibbed)
 	if(gibbed)
 		remove_from_revive(zombie)
+		GLOB.zombie_list -= zombie
 
 /datum/species/zombie/proc/revive_from_death(mob/living/carbon/human/zombie)
 	if(zombie && zombie.loc && zombie.stat == DEAD)
@@ -159,3 +164,4 @@
 		if(receiving_client)
 			receiving_client.mob.play_screen_text("<span class='langchat' style=font-size:16pt;text-align:center valign='top'><u>Beheaded...</u></span><br>Your corpse will no longer rise.", /atom/movable/screen/text/screen_text/command_order, rgb(155, 0, 200))
 			to_chat(receiving_client, SPAN_BOLDNOTICE(FONT_SIZE_LARGE("You've been beheaded! Your body will no longer rise.")))
+		GLOB.zombie_list -= zombie

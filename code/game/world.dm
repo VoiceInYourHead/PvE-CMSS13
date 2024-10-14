@@ -1,6 +1,6 @@
 
 var/world_view_size = 7
-var/lobby_view_size = 16
+var/lobby_view_size = 12
 
 var/internal_tick_usage = 0
 

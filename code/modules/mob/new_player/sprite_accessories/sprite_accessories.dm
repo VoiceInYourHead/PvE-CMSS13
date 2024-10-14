@@ -41,7 +41,8 @@
 		SYNTH_GEN_THREE,
 		SYNTH_WORKING_JOE,
 		SYNTH_INFILTRATOR,
-		"Thin Human"
+		"Thin Human",
+		"Child"
 		)
 
 	// Whether or not the accessory can be affected by colouration
