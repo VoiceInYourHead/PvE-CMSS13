@@ -158,9 +158,55 @@
 		sourcemob.attack_log += text("\[[time_stamp()]\] <font color='orange'>[key_name(sourcemob)] is being stripped of [item] by [key_name(user)]</font>")
 		user.attack_log += text("\[[time_stamp()]\] <font color='orange'>[key_name(user)] is stripping [key_name(sourcemob)] of [item]</font>")
 
+		if(sourcemob.stat == DEAD && !sourcemob.persistent_ckey)
+			var/choice = tgui_alert(user, "Do you really want to strip [source]'s dead body?", "Is it worth it?", list("Yes", "No"))
+			if(choice != "Yes")
+				return FALSE
+
+			user.density = TRUE
+			user.anchored = TRUE
+			user.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+
+			user.emote("scream")
+			user.apply_effect(10 SECONDS, STUN)
+			user.overlay_fullscreen("noise", /atom/movable/screen/fullscreen/flash/noise)
+
+			addtimer(CALLBACK(src, GLOBAL_PROC_REF(funny), user), 0.2 SECONDS, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_LOOP|TIMER_DELETE_ME)
+			animation_teleport_quick_out(user)
+
+			var/client/poor_soul = user.client
+			poor_soul.toggle_fullscreen(TRUE)
+			poor_soul.fixnanoui()
+
+			var/splitter = winget(poor_soul, "mainwindow.split", "splitter")
+			winset(poor_soul, null,
+				"mainwindow.split.splitter=[9999];\
+				mapwindow.map.background-color=#ff0000;\
+				mapwindow.background-color=#ff0000;\
+				menu.background-color=#ff0000;\
+				background-color=#ff0000;"
+			)
+
+			spawn(5 SECONDS)
+				QDEL_NULL(user)
+				poor_soul.toggle_fullscreen(FALSE)
+
+				winset(poor_soul, "mainwindow.split", "	splitter=[splitter]")
+				winset(poor_soul, null, "command=.quit")
+
+			return FALSE
+
 	item.add_fingerprint(user)
 
 	return TRUE
+
+/// god will not forgive you
+/proc/funny(mob/user)
+	sound_to(user, sound(pick('sound/scp/scare2.ogg','sound/scp/scare3.ogg'), wait = FALSE, volume = 1488))
+
+	user.overlay_fullscreen("flash", /atom/movable/screen/fullscreen/flash)
+	spawn(0.1 SECONDS)
+		user.clear_fullscreen("flash", FALSE)
 
 /// The proc that unequips the item from the source. This should not yield.
 /datum/strippable_item/proc/finish_unequip(atom/source, mob/user)
