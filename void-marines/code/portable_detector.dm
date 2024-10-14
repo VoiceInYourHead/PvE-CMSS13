@@ -33,7 +33,7 @@
 
 /obj/item/device/motiondetector/internal/no_debuff
 	name = "internal motion detector"
-	detector_range = 12
+//	detector_range = 12
 
 	var/obj/structure/machinery/defenses/bell_tower/md/radio/linked_tower2
 
@@ -43,7 +43,7 @@
 /*	var/mob/living/to_apply = target
 	if(istype(to_apply))
 		sound_to(to_apply, 'sound/items/detector.ogg')*/
-
+/*
 /obj/structure/machinery/defenses/bell_tower/md/radio/setup_tripwires()
 	clear_tripwires()
 	for(var/turf/T in orange(BELL_TOWER_RANGE, loc))
@@ -125,7 +125,7 @@
 	if(!silent && transceiver)
 		transceiver.talk_into(voice, "[message]", RADIO_CHANNEL_SENTRY)
 		voice.say(message)
-
+*/
 #undef BELL_TOWER_RANGE
 #undef BELL_TOWER_EFFECT
 #undef BELL_TOWER_COOLDOWN
