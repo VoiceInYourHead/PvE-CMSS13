@@ -12,7 +12,7 @@
 	desc = "They look like the remains of some horrible creature. They are not pleasant to look at..."
 	gender = PLURAL
 	icon = 'icons/effects/blood.dmi'
-	icon_state = "remainsxeno"
+	icon_state = "remains"
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
 

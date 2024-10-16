@@ -33,7 +33,7 @@
 	caste_type = XENO_CASTE_RUNNER
 	name = XENO_CASTE_RUNNER
 	desc = "A small red alien that looks like it could run fairly quickly..."
-	icon = 'icons/mob/xenos/runner.dmi'
+	icon = 'void-marines/icons/lavaland_elites.dmi'
 	icon_state = "Runner Walking"
 	icon_size = 64
 	layer = MOB_LAYER
@@ -64,7 +64,7 @@
 	)
 	mutation_type = RUNNER_NORMAL
 
-	icon_xeno = 'icons/mob/xenos/runner.dmi'
+	icon_xeno = 'void-marines/icons/lavaland_elites.dmi'
 	icon_xenonid = 'icons/mob/xenonids/runner.dmi'
 
 	var/linger_range = 5
