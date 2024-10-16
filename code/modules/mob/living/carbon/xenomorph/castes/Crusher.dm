@@ -40,6 +40,7 @@
 	tier = 3
 	drag_delay = 6 //pulling a big dead xeno is hard
 	melee_sentry_damage_multiplier = 2
+	icon = 'void-marines/icons/96x96megafauna.dmi'
 
 	small_explosives_stun = FALSE
 
@@ -70,7 +71,7 @@
 	mutation_icon_state = CRUSHER_NORMAL
 	mutation_type = CRUSHER_CHARGER
 
-	icon_xeno = 'icons/mob/xenos/crusher.dmi'
+	icon_xeno = 'void-marines/icons/96x96megafauna.dmi'
 	icon_xenonid = 'icons/mob/xenonids/crusher.dmi'
 
 	ai_range = 24
@@ -83,11 +84,11 @@
 	. = ..()
 	AddComponent(/datum/component/footstep, 2, 50, 15, 1, "metalbang")
 
-	playsound(src, 'sound/voice/alien_death_unused.ogg', 100, TRUE, 30, falloff = 5)
+	playsound(src, 'sound/voice/scream_horror1.ogg', 100, TRUE, 30, falloff = 5)
 	for(var/mob/current_mob as anything in get_mobs_in_z_level_range(get_turf(src), 30) - src)
 		var/relative_dir = get_dir(current_mob, src)
 		var/final_dir = dir2text(relative_dir)
-		to_chat(current_mob, SPAN_HIGHDANGER("You hear a terrible roar coming from [final_dir ? "the [final_dir]" : "nearby"] as the ground shakes!"))
+		to_chat(current_mob, SPAN_HIGHDANGER("You feel an unsettling presense [final_dir ? "from the [final_dir]" : "nearby"] as the walls rumble..."))
 
 /mob/living/carbon/xenomorph/crusher/death(cause, gibbed)
 	. = ..()

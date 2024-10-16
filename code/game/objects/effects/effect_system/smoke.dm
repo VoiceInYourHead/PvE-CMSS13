@@ -403,7 +403,7 @@
 //Xeno acid smoke.
 /obj/effect/particle_effect/smoke/xeno_burn
 	time_to_live = 12
-	color = "#86B028" //Mostly green?
+	color = "#b81f1f"
 	anchored = TRUE
 	spread_speed = 6
 	smokeranking = SMOKE_RANK_BOILER

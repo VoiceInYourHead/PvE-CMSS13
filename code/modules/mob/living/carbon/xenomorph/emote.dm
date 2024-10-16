@@ -23,8 +23,8 @@
 
 /datum/emote/living/carbon/xeno/hiss
 	key = "hiss"
-	message = "hisses."
-	sound = "alien_hiss"
+	message = "screams!"
+	sound = "pred_pain"
 	predalien_sound = 'sound/voice/predalien_hiss.ogg'
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
@@ -38,8 +38,8 @@
 	mob_type_blacklist_typecache = list()
 
 	key = "roar"
-	message = "roars!"
-	sound = "alien_roar"
+	message = "screams in pain!"
+	sound = "pred_pain"
 	predalien_sound = 'sound/voice/predalien_roar.ogg'
 	larva_sound = "alien_roar_larva"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE

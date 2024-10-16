@@ -1,8 +1,8 @@
 /datum/caste_datum/lesser_drone
 	caste_type = XENO_CASTE_LESSER_DRONE
 	tier = 1
-	melee_damage_lower = XENO_DAMAGE_TIER_1
-	melee_damage_upper = XENO_DAMAGE_TIER_1
+	melee_damage_lower = XENO_DAMAGE_TIER_1 / 2
+	melee_damage_upper = XENO_DAMAGE_TIER_1 / 2
 	melee_vehicle_damage = XENO_DAMAGE_TIER_1
 	max_health = XENO_HEALTH_LESSER_DRONE
 	plasma_gain = XENO_PLASMA_GAIN_TIER_7
@@ -41,7 +41,7 @@
 	caste_type = XENO_CASTE_LESSER_DRONE
 	name = XENO_CASTE_LESSER_DRONE
 	desc = "An alien drone. Looks... smaller."
-	icon = 'icons/mob/xenos/drone.dmi'
+	icon = 'void-marines/icons/lavaland_monsters.dmi'
 	icon_size = 48
 	icon_state = "Lesser Drone Walking"
 	plasma_types = list(PLASMA_PURPLE)
@@ -77,7 +77,7 @@
 
 	mutation_type = DRONE_NORMAL
 
-	icon_xeno = 'icons/mob/xenos/lesser_drone.dmi'
+	icon_xeno = 'void-marines/icons/lavaland_monsters.dmi'
 	icon_xenonid = 'icons/mob/xenonids/lesser_drone.dmi'
 
 /mob/living/carbon/xenomorph/lesser_drone/age_xeno()

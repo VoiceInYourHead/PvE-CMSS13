@@ -44,7 +44,7 @@
 	caste_type = XENO_CASTE_DRONE
 	name = XENO_CASTE_DRONE
 	desc = "An alien drone"
-	icon = 'icons/mob/xenos/drone.dmi'
+	icon = 'void-marines/icons/lavaland_monsters.dmi'
 	icon_size = 48
 	icon_state = "Drone Walking"
 	plasma_types = list(PLASMA_PURPLE)
@@ -73,7 +73,7 @@
 	mutation_type = DRONE_NORMAL
 	gib_chance = 100
 
-	icon_xeno = 'icons/mob/xenos/drone.dmi'
+	icon_xeno = 'void-marines/icons/lavaland_monsters.dmi'
 	icon_xenonid = 'icons/mob/xenonids/drone.dmi'
 
 /mob/living/carbon/xenomorph/drone/init_movement_handler()
