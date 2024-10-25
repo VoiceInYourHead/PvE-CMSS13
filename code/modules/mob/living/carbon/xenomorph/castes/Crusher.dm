@@ -35,7 +35,7 @@
 	name = XENO_CASTE_CRUSHER
 	desc = "A huge alien with an enormous armored crest."
 	icon_size = 64
-	icon_state = "Crusher Walking"
+	icon_state = "Warden Bot Walking"
 	plasma_types = list(PLASMA_CHITIN)
 	tier = 3
 	drag_delay = 6 //pulling a big dead xeno is hard
@@ -70,8 +70,8 @@
 	mutation_icon_state = CRUSHER_NORMAL
 	mutation_type = CRUSHER_CHARGER
 
-	icon_xeno = 'icons/mob/xenos/crusher.dmi'
-	icon_xenonid = 'icons/mob/xenonids/crusher.dmi'
+	icon_xeno = 'void-marines/icons/ai_mayhem.dmi'
+	icon_xenonid = 'void-marines/icons/ai_mayhem.dmi'
 
 	ai_range = 24
 	forced_retarget_time = (3 SECONDS)

@@ -31,9 +31,9 @@
 	caste_type = XENO_CASTE_KING
 	name = XENO_CASTE_KING
 	desc = "A massive alien covered in spines and armoured plates."
-	icon = 'icons/mob/xenos/king.dmi'
+	icon = 'void-marines/icons/64x64.dmi'
 	icon_size = 64
-	icon_state = "King Walking"
+	icon_state = " Steel Guardian Walking"
 	plasma_types = list(PLASMA_CHITIN)
 	pixel_x = -16
 	old_x = -16
@@ -59,7 +59,7 @@
 		/datum/action/xeno_action/onclick/emit_pheromones,
 	)
 
-	icon_xeno = 'icons/mob/xenos/king.dmi'
+	icon_xeno = 'void-marines/icons/64x64.dmi'
 
 	bubble_icon = "alienroyal"
 

@@ -33,8 +33,8 @@
 	caste_type = XENO_CASTE_RUNNER
 	name = XENO_CASTE_RUNNER
 	desc = "A small red alien that looks like it could run fairly quickly..."
-	icon = 'icons/mob/xenos/runner.dmi'
-	icon_state = "Runner Walking"
+	icon = 'void-marines/icons/ai_mayhem.dmi'
+	icon_state = "Renewed Man Walking"
 	icon_size = 64
 	layer = MOB_LAYER
 	plasma_types = list(PLASMA_CATECHOLAMINE)
@@ -64,8 +64,8 @@
 	)
 	mutation_type = RUNNER_NORMAL
 
-	icon_xeno = 'icons/mob/xenos/runner.dmi'
-	icon_xenonid = 'icons/mob/xenonids/runner.dmi'
+	icon_xeno = 'void-marines/icons/ai_mayhem.dmi'
+	icon_xenonid = 'void-marines/icons/ai_mayhem.dmi'
 
 	var/linger_range = 5
 	var/linger_deviation = 1

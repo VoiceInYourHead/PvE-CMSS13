@@ -41,9 +41,9 @@
 	caste_type = XENO_CASTE_LESSER_DRONE
 	name = XENO_CASTE_LESSER_DRONE
 	desc = "An alien drone. Looks... smaller."
-	icon = 'icons/mob/xenos/drone.dmi'
+	icon = 'void-marines/icons/ai_mayhem.dmi'
 	icon_size = 48
-	icon_state = "Lesser Drone Walking"
+	icon_state = "System Bug Walking"
 	plasma_types = list(PLASMA_PURPLE)
 	tier = 0
 	mob_flags = NOBIOSCAN
@@ -77,8 +77,8 @@
 
 	mutation_type = DRONE_NORMAL
 
-	icon_xeno = 'icons/mob/xenos/lesser_drone.dmi'
-	icon_xenonid = 'icons/mob/xenonids/lesser_drone.dmi'
+	icon_xeno = 'void-marines/icons/ai_mayhem.dmi'
+	icon_xenonid = 'void-marines/icons/ai_mayhem.dmi'
 
 /mob/living/carbon/xenomorph/lesser_drone/age_xeno()
 	if(stat == DEAD || !caste || QDELETED(src) || !client)

@@ -31,9 +31,9 @@
 	caste_type = XENO_CASTE_DEFENDER
 	name = XENO_CASTE_DEFENDER
 	desc = "A alien with an armored crest."
-	icon = 'icons/mob/xenos/defender.dmi'
+	icon = 'void-marines/icons/ai_mayhem.dmi'
 	icon_size = 64
-	icon_state = "Defender Walking"
+	icon_state = "Corrupted Cyborg Walking"
 	plasma_types = list(PLASMA_CHITIN)
 	pixel_x = -16
 	old_x = -16
@@ -51,8 +51,8 @@
 	)
 	mutation_icon_state = DEFENDER_NORMAL
 	mutation_type = DEFENDER_NORMAL
-	icon_xeno = 'icons/mob/xenos/defender.dmi'
-	icon_xenonid = 'icons/mob/xenonids/defender.dmi'
+	icon_xeno = 'void-marines/icons/ai_mayhem.dmi'
+	icon_xenonid = 'void-marines/icons/ai_mayhem.dmi'
 
 /mob/living/carbon/xenomorph/defender/handle_special_state()
 	if(fortify)

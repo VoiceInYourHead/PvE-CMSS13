@@ -39,9 +39,9 @@
 	caste_type = XENO_CASTE_BOILER
 	name = XENO_CASTE_BOILER
 	desc = "A huge, grotesque xenomorph covered in glowing, oozing acid slime."
-	icon = 'icons/mob/xenos/boiler.dmi'
+	icon = 'void-marines/icons/ai_mayhem.dmi'
 	icon_size = 64
-	icon_state = "Boiler Walking"
+	icon_state = "Bomber Bot Walking"
 	plasma_types = list(PLASMA_NEUROTOXIN)
 	pixel_x = -16
 	old_x = -16
@@ -54,8 +54,8 @@
 	tileoffset = 3
 	viewsize = 7
 
-	icon_xeno = 'icons/mob/xenos/boiler.dmi'
-	icon_xenonid = 'icons/mob/xenonids/boiler.dmi'
+	icon_xeno = 'void-marines/icons/ai_mayhem.dmi'
+	icon_xenonid = 'void-marines/icons/ai_mayhem.dmi'
 
 	var/datum/effect_system/smoke_spread/xeno_acid/smoke
 

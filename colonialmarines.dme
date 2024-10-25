@@ -2510,6 +2510,7 @@
 #include "maps\map_files\golden_arrow_forecon\area.dm"
 #include "maps\map_files\LV671_Ark\LV671.dm"
 #include "maps\map_files\USCSS_Tortuga\tortuga_areas.dm"
+#include "void-marines\code\ai_boss.dm"
 #include "void-marines\code\admin_tools.dm"
 #include "void-marines\code\chair_shifting.dm"
 #include "void-marines\code\factory_areas.dm"
