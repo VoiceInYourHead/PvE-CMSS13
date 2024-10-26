@@ -18,9 +18,6 @@ tmp/
 dmdoc/
 tools/Runtime Condenser/Input.txt
 tools/Runtime Condenser/Output.txt
-sound/music/*.ogg
-sound/music/walkman/*/*.ogg
-sound/music/walkman/*.txt
 icons/custom/*
 maps/**/backup
 *.before
