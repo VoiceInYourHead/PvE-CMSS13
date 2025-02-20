@@ -38,7 +38,6 @@
 		to_chat(user, SPAN_NOTICE("You need to open the drink!"))
 		return
 	var/datum/reagents/R = src.reagents
-	var/fillevel = gulp_size
 
 	if(!R.total_volume || !R)
 		if(M == user && M.a_intent == INTENT_HARM && M.zone_selected == "head")
@@ -79,13 +78,6 @@
 		if(reagents.total_volume)
 			reagents.set_source_mob(user)
 			reagents.trans_to_ingest(M, gulp_size)
-
-		if(isrobot(user)) //Cyborg modules that include drinks automatically refill themselves, but drain the borg's cell
-			var/mob/living/silicon/robot/bro = user
-			bro.cell.use(30)
-			var/refill = R.get_master_reagent_id()
-			spawn(1 MINUTES)
-				R.add_reagent(refill, fillevel)
 
 		playsound(M.loc,'sound/items/drink.ogg', 15, 1)
 		return 1
@@ -154,8 +146,8 @@
 //SODA
 
 /obj/item/reagent_container/food/drinks/cans/classcola
-	name = "\improper Classic Cola"
-	desc = "A classic cola with a taste that's been around for centuries. Nobody can beat it."
+	name = "\improper Coca-Cola"
+	desc = "Victor of the Cola Wars, this beverage is the most popular soft drink in the UA and much of the TWE."
 	icon_state = "cola"
 	center_of_mass = "x=16;y=10"
 
@@ -163,9 +155,18 @@
 	. = ..()
 	reagents.add_reagent("cola", 30)
 
+/obj/item/reagent_container/food/drinks/cans/pepsi
+	name = "\improper Pepsi"
+	desc = "The Cola Wars left it defeated, but this beverage retains its place as second-most popular soft drink in the UA."
+	icon_state = "pepsi"
+
+/obj/item/reagent_container/food/drinks/cans/pepsi/Initialize()
+	. = ..()
+	reagents.add_reagent("pepsi", 30)
+
 /obj/item/reagent_container/food/drinks/cans/space_mountain_wind
-	name = "\improper Mountain Wind"
-	desc = "Blows right through you like a space wind."
+	name = "\improper Mountain Dew"
+	desc = "For the discerning gamer."
 	icon_state = "space_mountain_wind"
 	center_of_mass = "x=16;y=10"
 
@@ -185,8 +186,8 @@
 	reagents.add_reagent("thirteenloko", 30)
 
 /obj/item/reagent_container/food/drinks/cans/dr_gibb
-	name = "\improper Dr. Gibb"
-	desc = "A delicious mixture of 42 different flavors of chemicals that you can't pronounce."
+	name = "\improper Dr Pepper"
+	desc = "A mixture of 23 different flavors, proving its not about quantity."
 	icon_state = "dr_gibb"
 	center_of_mass = "x=16;y=10"
 
@@ -195,8 +196,8 @@
 	reagents.add_reagent("dr_gibb", 30)
 
 /obj/item/reagent_container/food/drinks/cans/starkist
-	name = "\improper Star-kist"
-	desc = "The taste of a star in liquid form. And, a bit of tuna...?"
+	name = "\improper Sunkist"
+	desc = "Despite tasting ostensibly like carbonated orange juice, it holds no vitamin C content."
 	icon_state = "starkist"
 	center_of_mass = "x=16;y=10"
 
@@ -206,8 +207,8 @@
 	reagents.add_reagent("orangejuice", 15)
 
 /obj/item/reagent_container/food/drinks/cans/space_up
-	name = "\improper Space-Up"
-	desc = "Tastes like a hull breach in your mouth."
+	name = "\improper 7-UP"
+	desc = "Friend to many a cocktail."
 	icon_state = "space-up"
 	center_of_mass = "x=16;y=10"
 
@@ -226,8 +227,8 @@
 	reagents.add_reagent("lemon_lime", 30)
 
 /obj/item/reagent_container/food/drinks/cans/iced_tea
-	name = "iced tea can"
-	desc = "Just like the squad redneck's grandmother used to buy."
+	name = "Lipton iced tea"
+	desc = "It doesn't hold a candle to meemaw's sweet tea, but it does the trick in a pinch."
 	icon_state = "ice_tea_can"
 	center_of_mass = "x=16;y=10"
 
@@ -301,9 +302,9 @@
 	reagents.add_reagent("fruit_beer", 30)
 
 /obj/item/reagent_container/food/drinks/cans/waterbottle
-	name = "\improper Weyland-Yutani Bottled Spring Water"
-	desc = "Overpriced 'Spring' water. Bottled by the Weyland-Yutani Corporation."
-	icon_state = "wy_water"
+	name = "\improper Mountain Spring"
+	desc = "One of the most popular brands of bottled water in UA and TWE space, thanks to aggressive marketing abroad and in-house contracting with company colonies."
+	icon_state = "water"
 	center_of_mass = "x=15;y=8"
 
 /obj/item/reagent_container/food/drinks/cans/waterbottle/Initialize()

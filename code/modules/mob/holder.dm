@@ -15,12 +15,13 @@
 
 /obj/item/holder/process()
 
-	if(istype(loc,/turf) || !(contents.len))
+	if(istype(loc,/turf) || !(length(contents)))
 
 		for(var/mob/M in contents)
 
 			var/atom/movable/mob_container
 			mob_container = M
+			M.invisibility = initial(invisibility)
 			mob_container.forceMove(get_turf(src))
 			M.reset_view()
 
@@ -33,6 +34,15 @@
 /obj/item/holder/proc/show_message(message, m_type)
 	for(var/mob/living/M in contents)
 		M.show_message(message,m_type)
+
+/obj/item/holder/get_examine_text(mob/user)
+	. = list()
+	. += "[icon2html(src, user)] That's \a [src]."
+	if(desc)
+		. += desc
+	if(desc_lore)
+		. += SPAN_NOTICE("This has an <a href='byond://?src=\ref[src];desc_lore=1'>extended lore description</a>.")
+
 
 //Mob procs and vars for scooping up
 /mob/living/var/holder_type
@@ -48,9 +58,12 @@
 		return
 
 	var/obj/item/holder/mob_holder = new holder_type(loc)
-	src.forceMove(mob_holder)
-	mob_holder.name = loc.name
+	forceMove(mob_holder)
+	mob_holder.name = name
+	mob_holder.desc = desc
+	mob_holder.gender = gender
 	mob_holder.attack_hand(grabber)
+	invisibility = INVISIBILITY_MAXIMUM
 
 	to_chat(grabber, "You scoop up [src].")
 	to_chat(src, "[grabber] scoops you up.")
@@ -115,38 +128,3 @@
 /obj/item/holder/mouse/brown/Tom
 	name = "Tom"
 	desc = "Jerry the cat is not amused."
-
-// Rat
-
-/obj/item/holder/rat
-	name = "rat"
-	desc = "It's a big rat."
-	icon = 'icons/mob/animal.dmi'
-	icon_state = "rat_white"
-	w_class = SIZE_TINY;
-	flags_equip_slot = null
-
-/obj/item/holder/rat/white
-	icon_state = "rat_white"
-
-/obj/item/holder/rat/gray
-	icon_state = "rat_gray"
-
-/obj/item/holder/rat/brown
-	icon_state = "rat_brown"
-
-/obj/item/holder/rat/black
-	icon_state = "rat_black"
-
-
-/obj/item/holder/rat/white/Milky
-	name = "Milky"
-	desc = "An escaped test rat from the Weyland-Yutani Research Facility. Hope it doesn't have some sort of genetically engineered disease or something..."
-
-/obj/item/holder/rat/brown/Old_Timmy
-	name = "Old Timmy"
-	desc = "An ancient looking rat from the old days of the colony."
-
-/obj/item/holder/rat/black/Korey
-	name = "Korey"
-	desc = "An escaped test rat from the Weyland-Yutani Research Facility. Hope it doesn't have some sort of genetically engineered disease or something..."

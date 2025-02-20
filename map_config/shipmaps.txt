@@ -26,23 +26,4 @@ endmap
 map rover
 endmap
 
-map desert_dam_fob
-endmap
-
 map golden_arrow_classic
-endmap
-
-map lead_hawk
-endmap
-
-map corsair
-endmap
-
-map tortuga
-endmap
-
-map tempestbreaker
-endmap
-
-map golden_arrow_forecon
-endmap

@@ -112,7 +112,7 @@
 		var/datum/sprite_accessory/facial_hair_style = GLOB.facial_hair_styles_list[H.f_style]
 		if(facial_hair_style)
 			var/icon/facial = new/icon("icon" = facial_hair_style.icon, "icon_state" = "[facial_hair_style.icon_state]_s")
-			if(facial_hair_style.do_colouration)
+			if(facial_hair_style.do_coloration)
 				facial.Blend(rgb(H.r_facial, H.g_facial, H.b_facial), ICON_ADD)
 
 			overlays.Add(facial) // icon.Blend(facial, ICON_OVERLAY)

@@ -48,12 +48,12 @@
 				M.client.images -= langchat_image
 	langchat_listeners = null
 
-/atom/proc/langchat_set_x_offset()
-	langchat_image.maptext_x = world.icon_size / 2 - langchat_image.maptext_width / 2
-/atom/movable/langchat_set_x_offset()
-	langchat_image.maptext_x = bound_width / 2 - langchat_image.maptext_width / 2
-/mob/langchat_set_x_offset()
-	langchat_image.maptext_x = icon_size / 2 - langchat_image.maptext_width / 2
+/atom/proc/get_maxptext_x_offset(image/maptext_image)
+	return (world.icon_size / 2) - (maptext_image.maptext_width / 2)
+/atom/movable/get_maxptext_x_offset(image/maptext_image)
+	return (bound_width / 2) - (maptext_image.maptext_width / 2)
+/mob/get_maxptext_x_offset(image/maptext_image)
+	return (icon_size / 2) - (maptext_image.maptext_width / 2)
 
 ///Creates the image if one does not exist, resets settings that are modified by speech procs.
 /atom/proc/langchat_make_image(override_color = null)
@@ -65,7 +65,7 @@
 		langchat_image.maptext_y = langchat_height
 		langchat_image.maptext_height = 64
 		langchat_image.maptext_y -= LANGCHAT_MESSAGE_POP_Y_SINK
-		langchat_set_x_offset()
+		langchat_image.maptext_x = get_maxptext_x_offset(langchat_image)
 
 	langchat_image.pixel_y = 0
 	langchat_image.alpha = 0
@@ -110,7 +110,7 @@
 
 	langchat_image.maptext = text_to_display
 	langchat_image.maptext_width = LANGCHAT_WIDTH
-	langchat_set_x_offset()
+	langchat_image.maptext_x = get_maxptext_x_offset(langchat_image)
 
 	langchat_listeners = listeners
 	for(var/mob/M in langchat_listeners)
@@ -138,7 +138,7 @@
 			langchat_image.alpha = 0
 			animate(langchat_image, pixel_y = langchat_image.pixel_y + LANGCHAT_MESSAGE_FAST_POP_Y_SINK, alpha = LANGCHAT_MAX_ALPHA, time = LANGCHAT_MESSAGE_FAST_POP_TIME)
 
-	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, langchat_drop_image), language), timer, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_NO_HASH_WAIT)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, langchat_drop_image), language), timer, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_NO_HASH_WAIT|TIMER_COMPLETE_ON_DELETE)
 
 /atom/proc/langchat_long_speech(message, list/listeners, language)
 	langchat_drop_image()
@@ -157,7 +157,7 @@
 
 	langchat_image.maptext = text_to_display
 	langchat_image.maptext_width = LANGCHAT_WIDTH * 2
-	langchat_set_x_offset()
+	langchat_image.maptext_x = get_maxptext_x_offset(langchat_image)
 
 	langchat_listeners = listeners
 	for(var/mob/M in langchat_listeners)
