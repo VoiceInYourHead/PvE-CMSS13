@@ -2,7 +2,7 @@
 	name = "Kriegsman | Lasgun"
 	idtype = null //No IDs for him!
 	languages = list(LANGUAGE_ENGLISH)
-	faction = FACTION_USCM
+	faction = FACTION_MARINE
 	uses_special_name = TRUE
 	skills = /datum/skills/pfc
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
@@ -40,7 +40,7 @@
 	name = "Kriegsman | Grenadier"
 	idtype = null //No IDs for him!
 	languages = list(LANGUAGE_ENGLISH)
-	faction = FACTION_USCM
+	faction = FACTION_MARINE
 	uses_special_name = TRUE
 	skills = /datum/skills/SL
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
@@ -67,7 +67,7 @@
 	name = "Kriegsman | Watchmaster"
 	idtype = null //No IDs for him!
 	languages = list(LANGUAGE_ENGLISH)
-	faction = FACTION_USCM
+	faction = FACTION_MARINE
 	uses_special_name = TRUE
 	skills = /datum/skills/SL
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
@@ -98,7 +98,7 @@
 	new_human.gender = pick(60;MALE,40;FEMALE)
 	var/datum/preferences/A = new()
 	A.randomize_appearance(new_human)
-	var/random_name = capitalize(pick(new_human.gender == MALE ? first_names_male : first_names_female)) + " " + capitalize(pick(last_names))
+	var/random_name = capitalize(pick(new_human.gender == MALE ? GLOB.first_names_male : GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
 	new_human.change_real_name(new_human, random_name)
 	new_human.age = rand(21,45)
 

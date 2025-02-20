@@ -125,7 +125,7 @@
 //			var/icon/eyes = new/icon("icon" = 'icons/mob/humans/onmob/human_face.dmi', "icon_state" = H.species ? H.species.eyes : "eyes_s")
 			var/icon/eyes = new/icon("icon" = H.species.eye_icon_location, "icon_state" = H.species ? H.species.eyes : "eyes_s")
 // [/PVE-RU-EDIT]
-			if(hair_style.do_colouration)
+			if(hair_style.do_coloration)
 				hair.Blend(rgb(H.r_hair, H.g_hair, H.b_hair), ICON_ADD)
 				eyes.Blend(rgb(H.r_eyes, H.g_eyes, H.b_eyes), ICON_ADD)
 

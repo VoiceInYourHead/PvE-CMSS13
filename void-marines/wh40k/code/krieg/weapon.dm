@@ -1,3 +1,9 @@
+/obj/item/weapon/gun
+	var/muzzle_flash_icon = 'icons/obj/items/weapons/projectiles.dmi'
+
+/obj/item/weapon/gun/lasgun
+	muzzle_flash_color = COLOR_WHITE
+
 
 /obj/item/weapon/gun/lasgun/lucius
 	name = "Lucius-pattern Lasgun"

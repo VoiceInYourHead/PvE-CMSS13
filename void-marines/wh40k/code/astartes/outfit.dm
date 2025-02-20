@@ -3,7 +3,7 @@
 	name = " Astartes | Ultramarine Tactical Brother"
 	idtype = null
 	languages = list(LANGUAGE_ENGLISH)
-	faction = FACTION_USCM
+	faction = FACTION_MARINE
 	uses_special_name = TRUE
 	skills = /datum/skills/commando/deathsquad
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
