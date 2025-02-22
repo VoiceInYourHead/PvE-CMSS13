@@ -203,7 +203,7 @@
 	desc = "You can stick them in the ground"
 	icon = 'icons/obj/items/lighting.dmi'
 	icon_state = "lightstick_blue0"
-	light_color = COLOUR_BLUE
+	light_color = COLOR_BLUE
 	var/s_color = "blue"
 	var/trample_chance = 30
 
