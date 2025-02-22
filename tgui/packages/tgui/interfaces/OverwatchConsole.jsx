@@ -48,7 +48,7 @@ const HomePanel = (props) => {
     <Section
       fontSize="20px"
       textAlign="center"
-      title="OVERWATCH DISABLED - SELECT SQUAD"
+      title="OVERWATCH DISABLED - SELECT UNIT"
     >
       <Stack justify="center" align="end" fontSize="20px">
         {data.squad_list.map((squad, index) => {
@@ -83,7 +83,7 @@ const SquadPanel = (props) => {
         <MainDashboard />
       </Collapsible>
 
-      <Collapsible title="Squad Roles" fontSize="16px">
+      <Collapsible title="Unit Roles" fontSize="16px">
         <RoleTable />
       </Collapsible>
 
@@ -93,7 +93,7 @@ const SquadPanel = (props) => {
           icon="heartbeat"
           onClick={() => setCategory('monitor')}
         >
-          Squad Monitor
+          Unit Monitor
         </Tabs.Tab>
         {!!data.can_launch_crates && (
           <Tabs.Tab
@@ -104,7 +104,7 @@ const SquadPanel = (props) => {
             Supply Drop
           </Tabs.Tab>
         )}
-        {!!data.can_launch_bombardments && (
+        {!!data.can_launch_obs && (
           <Tabs.Tab
             selected={category === 'ob'}
             icon="bomb"
@@ -119,9 +119,7 @@ const SquadPanel = (props) => {
       </Tabs>
       {category === 'monitor' && <SquadMonitor />}
       {category === 'supply' && data.can_launch_crates && <SupplyDrop />}
-      {category === 'ob' && data.can_launch_bombardments && (
-        <OrbitalBombardment />
-      )}
+      {category === 'ob' && data.can_launch_obs && <OrbitalBombardment />}
     </>
   );
 };
@@ -206,7 +204,7 @@ const MainDashboard = (props) => {
           icon="envelope"
           onClick={() => act('message')}
         >
-          MESSAGE SQUAD
+          MESSAGE SECTION
         </Button>
         <Button
           inline
@@ -214,7 +212,7 @@ const MainDashboard = (props) => {
           icon="person"
           onClick={() => act('sl_message')}
         >
-          MESSAGE SQUAD LEADER
+          MESSAGE SECTION LEADER
         </Button>
       </Box>
     </Section>
@@ -246,10 +244,10 @@ const RoleTable = (props) => {
     <Table m="1px" fontSize="12px" bold>
       <Table.Row>
         <Table.Cell textAlign="center" p="4px">
-          Platoon Sergeant
+          Section Sergeant
         </Table.Cell>
         <Table.Cell collapsing p="4px">
-          Squad Sergeants
+          Squad Leaders
         </Table.Cell>
         <Table.Cell collapsing p="4px">
           Specialist
@@ -324,8 +322,8 @@ const SquadMonitor = (props) => {
     a = a.role;
     b = b.role;
     const roleValues = {
-      'Platoon Sergeant': 10,
-      'Squad Sergeant': 9,
+      'Section Sergeant': 10,
+      'Squad Leader': 9,
       'Weapons Specialist': 8,
       Smartgunner: 7,
       'Platoon Corpsman': 6,
@@ -561,7 +559,7 @@ const SquadMonitor = (props) => {
                     <Button
                       icon="arrow-up"
                       color="green"
-                      tooltip="Promote marine to Squad Leader"
+                      tooltip="Promote marine to Unit Leader"
                       onClick={() => act('replace_lead', { ref: marine.ref })}
                     />
                   </Table.Cell>

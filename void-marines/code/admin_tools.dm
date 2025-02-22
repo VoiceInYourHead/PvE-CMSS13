@@ -26,10 +26,11 @@
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
 		if(H.wear_id)
-			H.wear_id.name = "[H.real_name]'s ID Card"
-			H.wear_id.registered_name = "[H.real_name]"
-			if(H.wear_id.assignment)
-				H.wear_id.name += " ([H.wear_id.assignment])"
+			var/obj/item/card/id/card = H.wear_id
+			card.name = "[H.real_name]'s ID Card"
+			card.registered_name = "[H.real_name]"
+			if(card.assignment)
+				card.name += " ([card.assignment])"
 
 	message_admins("[key_name(src)] changed name of [old_name] to [newname].")
 

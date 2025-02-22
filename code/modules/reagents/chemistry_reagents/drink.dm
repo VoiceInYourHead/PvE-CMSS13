@@ -174,8 +174,10 @@
 
 /datum/reagent/drink/milk/on_mob_life(mob/living/M)
 	. = ..()
-	if(!.) return
-	if(M.getBruteLoss() && prob(20)) M.heal_limb_damage(1,0)
+	if(!.)
+		return
+	if(M.getBruteLoss() && prob(20))
+		M.heal_limb_damage(1,0)
 	holder.remove_reagent("capsaicin", 10*REAGENTS_METABOLISM)
 	holder.remove_reagent("hotsauce", 10*REAGENTS_METABOLISM)
 
@@ -211,7 +213,7 @@
 		M = holder.my_atom
 	if(prob(1))
 		M.emote("shiver")
-	M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+	M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, T0C)
 	M.recalculate_move_delay = TRUE
 	holder.remove_reagent("capsaicin", 5)
 	holder.remove_reagent("hotsauce", 5)
@@ -231,7 +233,7 @@
 	name = "Cherry Souto"
 	id = "souto_cherry"
 	description = "A cherry flavored soda that's canned in Havanna"
-	color = "#800000"
+	color = COLOR_MAROON
 
 /datum/reagent/drink/souto/lime
 	name = "Lime Souto"
@@ -293,8 +295,16 @@
 	adj_drowsy = -3
 
 /datum/reagent/drink/cold/space_cola
-	name = "Space Cola"
+	name = "Coca-Cola"
 	id = "cola"
+	description = "A refreshing beverage."
+	reagent_state = LIQUID
+	color = "#100800" // rgb: 16, 8, 0
+	adj_drowsy = -3
+
+/datum/reagent/drink/cold/pepsi
+	name = "Pepsi"
+	id = "pepsi"
 	description = "A refreshing beverage."
 	reagent_state = LIQUID
 	color = "#100800" // rgb: 16, 8, 0
@@ -323,28 +333,26 @@
 	M.drowsyness = 0
 
 /datum/reagent/drink/cold/spacemountainwind
-	name = "Mountain Wind"
+	name = "Mountain Dew"
 	id = "spacemountainwind"
-	description = "Blows right through you like a space wind."
+	description = "The favoured drink of all true keyboard warriors."
 	color = "#102000" // rgb: 16, 32, 0
 	adj_drowsy = -7
 	adj_sleepy = -1
 
 /datum/reagent/drink/cold/dr_gibb
-	name = "Dr. Gibb"
+	name = "Dr Pepper"
 	id = "dr_gibb"
-	description = "A delicious blend of 42 different flavours"
-	color = "#102000" // rgb: 16, 32, 0
+	description = "A delicious blend of 23 different flavours"
+	color = "#110b03" // rgb: 16, 32, 0
 	adj_drowsy = -6
 
 /datum/reagent/drink/cold/space_up
-	name = "Space-Up"
+	name = "7-UP"
 	id = "space_up"
-	description = "Tastes like a hull breach in your mouth."
-	color = "#202800" // rgb: 32, 40, 0
+	description = "Friend to many a cocktail."
+	color = "#677c12" // rgb: 32, 40, 0
 	adj_temp = 0
-
-
 
 //BEER//
 
@@ -374,7 +382,6 @@
 /datum/reagent/drink/coffee/on_mob_life(mob/living/M)
 	. = ..()
 	if(!.) return
-	M.make_jittery(5)
 	if(adj_temp > 0 && holder)
 		holder.remove_reagent("frostoil", 10*REAGENTS_METABOLISM)
 
@@ -503,7 +510,7 @@
 	name = "Lemonade"
 	description = "Oh the nostalgia..."
 	id = "lemonade"
-	color = "#FFFF00" // rgb: 255, 255, 0
+	color = COLOR_YELLOW
 
 //*****************************************************************************************************/
 //***************************************Remove When Safe**********************************************/
