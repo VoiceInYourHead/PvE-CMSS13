@@ -84,6 +84,3 @@
 
 /// From /client/proc/rename_platoon()
 #define COMSIG_GLOB_PLATOON_NAME_CHANGE "platoon_name_change"
-
-//Called when minimap shifts
-#define COMSIG_GLOB_MINIMAP_SHIFTED "!minimap_shift"

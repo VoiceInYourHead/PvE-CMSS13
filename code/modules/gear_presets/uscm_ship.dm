@@ -78,6 +78,7 @@
 	skills = /datum/skills/civilian
 
 	minimap_icon = "cl"
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIVILIAN
 
 	dress_under = list(
 		/obj/item/clothing/under/liaison_suit/black,
@@ -189,6 +190,7 @@
 	idtype = /obj/item/card/id/silver/cl
 
 	minimap_icon = "correspondent"
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIVILIAN
 
 	dress_under = list()
 	dress_over = list()
@@ -223,6 +225,7 @@
 	idtype = /obj/item/card/id/dogtag
 
 	minimap_icon = "correspondent"
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/nco)
 	dress_hat = list(/obj/item/clothing/head/marine/dress_cover)
@@ -282,7 +285,8 @@
 	minimum_age = 27
 	skills = /datum/skills/CE
 
-	minimap_icon = list("engi")
+	minimap_icon = list("engi" = MINIMAP_ICON_COLOR_HEAD)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 	utility_under = list(/obj/item/clothing/under/marine/officer/ce)
 
@@ -425,7 +429,8 @@
 	minimum_age = 27
 	skills = /datum/skills/RO
 
-	minimap_icon = list("ct")
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
+	minimap_icon = list("ct" = MINIMAP_ICON_COLOR_HEAD)
 
 	utility_under = list(/obj/item/clothing/under/rank/qm_suit)
 	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/nco)
@@ -509,7 +514,8 @@
 	minimum_age = 30
 	skills = /datum/skills/commander
 
-	minimap_icon = "cic"
+	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_COMMANDER)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 	utility_under = list(/obj/item/clothing/under/marine, /obj/item/clothing/under/marine/officer/command, /obj/item/clothing/under/marine/officer/boiler)
 	utility_hat = list(/obj/item/clothing/head/cmcap,/obj/item/clothing/head/beret/cm/tan)
@@ -623,7 +629,8 @@
 	minimum_age = 35
 	skills = /datum/skills/XO
 
-	minimap_icon = "cic"
+	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_HEAD)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 	dress_extra = list(/obj/item/storage/large_holster/ceremonial_sword/full)
 
@@ -659,7 +666,7 @@
 	minimum_age = 25
 	skills = /datum/skills/SO
 	minimap_icon = list("cic" = COLOR_SILVER)
-	minimap_icon = "cic"
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 	var/access_list = ACCESS_LIST_MARINE_MAIN
 
 /datum/equipment_preset/uscm_ship/so/New()
@@ -673,7 +680,6 @@
 		return
 
 	add_verb(new_human.client, /client/proc/commander_rename_platoon)
-	give_action(new_human, /datum/action/innate/message_squad)
 
 /datum/equipment_preset/uscm_ship/so/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -752,7 +758,8 @@
 	role_comm_title = "PltCo"
 	minimum_age = 25
 	skills = /datum/skills/SO
-	minimap_icon = "cic"
+	minimap_icon = list("cic" = COLOR_SILVER)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 	var/access_list = ACCESS_LIST_MARINE_MAIN
 
 /datum/equipment_preset/uscm_ship/so_equipped/New()
@@ -850,7 +857,8 @@
 	minimum_age = 27
 	skills = /datum/skills/auxiliary_officer
 
-	minimap_icon = "cic"
+	minimap_icon = list("cic" = COLOR_SILVER)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 /datum/equipment_preset/uscm_ship/auxiliary_officer/New()
 	. = ..()

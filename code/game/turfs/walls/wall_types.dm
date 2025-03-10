@@ -354,14 +354,6 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	var/last_event = 0
 	var/active = null
 	tiles_with = list(/turf/closed/wall/mineral)
-	minimap_color = MINIMAP_BLACK
-
-/turf/closed/mineral/Initialize(mapload)
-	. = ..()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(!isnull(turf_to_check) && !turf_to_check.density && !(istype(turf_to_check, /turf/open/space)))
-			minimap_color = MINIMAP_SOLID
 
 /turf/closed/wall/mineral/gold
 	name = "gold wall"
@@ -549,14 +541,6 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	walltype = WALL_CAVE
 	hull = 1
 	color = "#535963"
-	minimap_color = MINIMAP_BLACK
-
-/turf/closed/wall/rock/Initialize(mapload)
-	. = ..()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(!isnull(turf_to_check) && !turf_to_check.density && !(istype(turf_to_check, /turf/open/space)))
-			minimap_color = MINIMAP_SOLID
 
 /turf/closed/wall/rock/brown
 	color = "#826161"
@@ -590,13 +574,6 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "Columns and crags stacked atop one another. They defiantly push towards the heavens, but are stopped short by dripping frigid excess."
 	walltype = WALL_STRATA_ICE_DIRTY
 
-/turf/closed/wall/strata_ice/dirty/Initialize(mapload)
-	. = ..()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(!isnull(turf_to_check) && !turf_to_check.density && !(istype(turf_to_check, /turf/open/space)))
-			minimap_color = MINIMAP_SOLID
-
 /turf/closed/wall/strata_ice/jungle
 	name = "jungle vegetation"
 	icon = 'icons/turf/walls/jungle_veg.dmi'
@@ -604,14 +581,6 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "Exceptionally dense vegetation that you can't see through."
 	walltype = WALL_JUNGLE_UPDATED //Not a metal wall
 	hull = 1
-	minimap_color = MINIMAP_BLACK
-
-/turf/closed/wall/strata_ice/jungle/Initialize(mapload)
-	. = ..()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(!isnull(turf_to_check) && !turf_to_check.density && !(istype(turf_to_check, /turf/open/space)))
-			minimap_color = MINIMAP_SOLID
 
 /turf/closed/wall/strata_outpost_ribbed //this guy is our reinforced replacement
 	name = "ribbed outpost walls"
@@ -701,14 +670,6 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	icon_state = "rock"
 	walltype = WALL_KUTJEVO_ROCK
 	hull = 1
-	minimap_color = MINIMAP_BLACK
-
-/turf/closed/wall/kutjevo/rock/Initialize(mapload)
-	. = ..()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(!isnull(turf_to_check) && !turf_to_check.density && !(istype(turf_to_check, /turf/open/space)))
-			minimap_color = MINIMAP_SOLID
 
 /turf/closed/wall/kutjevo/rock/border
 	icon_state = "rock_border"//no sandy edges

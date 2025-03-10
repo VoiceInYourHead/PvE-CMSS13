@@ -7,11 +7,11 @@
  * enqueues it if a screen text is running and plays i otherwise
  * Arguments:
  * * text: text we want to be displayed
- * * alert_type: typepath OR atom for screen text type we want to play here
+ * * alert_type: typepath for screen text type we want to play here
  * * override_color: the color of the text to use
  */
 /mob/proc/play_screen_text(text, alert_type = /atom/movable/screen/text/screen_text, override_color = "#FFFFFF")
-	var/atom/movable/screen/text/screen_text/text_box = isatom(alert_type) ? alert_type : new alert_type()
+	var/atom/movable/screen/text/screen_text/text_box = new alert_type()
 	text_box.text_to_play = text
 	text_box.player = client
 	if(override_color)
@@ -52,7 +52,7 @@
 	///The client that this text is for
 	var/client/player
 
-/*/atom/movable/screen/text/screen_text/command_order
+/atom/movable/screen/text/screen_text/command_order
 	maptext_height = 64
 	maptext_width = 480
 	maptext_x = 0
@@ -82,7 +82,7 @@
 		LAZYREMOVE(player.screen_texts, tutorial_message)
 		qdel(tutorial_message)
 
-	return ..()*/
+	return ..()
 
 ///proc for actually playing this screen_text on a mob.
 /atom/movable/screen/text/screen_text/proc/play_to_client()
@@ -273,6 +273,10 @@
 			ghost_user.do_observe(target)
 		if(NOTIFY_JOIN_XENO)
 			ghost_user.join_as_alien()
+		if(NOTIFY_USCM_TACMAP)
+			GLOB.uscm_tacmap_status.tgui_interact(ghost_user)
+		if(NOTIFY_XENO_TACMAP)
+			GLOB.xeno_tacmap_status.tgui_interact(ghost_user)
 
 /atom/movable/screen/alert/buckled
 	name = "Buckled"

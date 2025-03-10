@@ -105,9 +105,8 @@
 	. = ..()
 	if(!destination)
 		in_flyby = TRUE
-	if(!(MODE_HAS_TOGGLEABLE_FLAG(MODE_DISABLE_INTRO_BLURB)))
-		if(SSticker?.mode && !(SSticker.mode.flags_round_type & MODE_DS_LANDED)) //Launching on first drop.
-			SSticker.mode.ds_first_drop(src)
+	if(SSticker?.mode && !(SSticker.mode.flags_round_type & MODE_DS_LANDED)) //Launching on first drop.
+		SSticker.mode.ds_first_drop(src)
 
 /obj/docking_port/mobile/marine_dropship/beforeShuttleMove(turf/newT, rotation, move_mode, obj/docking_port/mobile/moving_dock)
 	. = ..()
@@ -337,9 +336,8 @@
 		var/obj/structure/machinery/computer/shuttle/dropship/flight/console = dropship.getControlConsole()
 		console?.update_equipment()
 	if(is_ground_level(z))
-		if(!(MODE_HAS_TOGGLEABLE_FLAG(MODE_DISABLE_INTRO_BLURB)))
-			SSticker.mode.ds_first_landed(src)
-			SSticker.mode.flags_round_type |= MODE_DS_LANDED
+		SSticker.mode.ds_first_landed(src)
+		SSticker.mode.flags_round_type |= MODE_DS_LANDED
 
 	if(xeno_announce)
 		xeno_announcement(SPAN_XENOANNOUNCE("The dropship has landed."), "everything")

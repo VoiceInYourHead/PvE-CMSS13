@@ -27,7 +27,7 @@
 
 /obj/effect/alien/resin/special/cluster/proc/update_minimap_icon()
 	SSminimaps.remove_marker(src)
-	SSminimaps.add_marker(src, MINIMAP_FLAG_XENO, image('icons/ui_icons/map_blips.dmi', null, "cluster"))
+	SSminimaps.add_marker(src, z, MINIMAP_FLAG_XENO, "cluster")
 
 /obj/effect/alien/resin/special/cluster/Destroy()
 	QDEL_NULL(node)

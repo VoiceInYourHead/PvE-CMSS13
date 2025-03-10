@@ -40,7 +40,8 @@
 	role_comm_title = "CMO"
 	skills = /datum/skills/CMO
 
-	minimap_icon = list("medic")
+	minimap_icon = list("medic" = MINIMAP_ICON_COLOR_HEAD)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 
 	utility_under = list(/obj/item/clothing/under/rank/chief_medical_officer)
 	utility_hat = list()
@@ -69,7 +70,7 @@
 	role_comm_title = "Doc"
 	skills = /datum/skills/doctor
 
-	minimap_icon = list("medic")
+	minimap_icon = list("medic" = MINIMAP_ICON_COLOR_DOCTOR)
 
 /datum/equipment_preset/uscm_ship/uscm_medical/doctor/load_gear(mob/living/carbon/human/new_human)
 	var/back_item = /obj/item/storage/backpack/marine/satchel

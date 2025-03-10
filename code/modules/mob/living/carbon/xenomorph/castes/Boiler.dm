@@ -74,6 +74,7 @@
 		/datum/action/xeno_action/activable/spray_acid/boiler, //3rd macro
 		/datum/action/xeno_action/onclick/toggle_long_range/boiler, //4th macro
 		/datum/action/xeno_action/onclick/acid_shroud, //5th macro
+		/datum/action/xeno_action/onclick/tacmap,
 	)
 
 /mob/living/carbon/xenomorph/boiler/Initialize(mapload, mob/living/carbon/xenomorph/oldxeno, h_number)
