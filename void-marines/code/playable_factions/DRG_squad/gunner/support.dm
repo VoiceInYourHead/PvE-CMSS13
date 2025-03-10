@@ -44,7 +44,7 @@
 			continue
 
 		/// Let's find the opposite direction
-		var/angle = get_angle(loc, T)
+		var/angle = Get_Angle(loc, T)
 		var/relative_direction = get_dir_p_cardinals(angle)
 
 		/// Corners needs to be duplicated and properly turned
@@ -200,7 +200,7 @@ GLOBAL_LIST_EMPTY(telepads)
 /obj/item/drg/teleport
 	name = "teleportation pad"
 	desc = "Long-range teleportation pad, used in pair with special DRG Company scanners."
-	light_color = COLOUR_BLUE
+	light_color = COLOR_BLUE
 	var/s_color = "blue"
 
 /obj/item/drg/teleport/Initialize(mapload, ...)
