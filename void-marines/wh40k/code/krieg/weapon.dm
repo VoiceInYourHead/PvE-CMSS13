@@ -23,8 +23,8 @@
 	unload_sound = 'void-marines/wh40k/sounds/weapons/smg_magout.ogg'
 	cocked_sound = null
 
-	muzzle_flash = "muzzle_las"
-	muzzle_flash_icon = 'void-marines/wh40k/icons/weapon/projectiles.dmi'
+	muzzleflash_iconstate = "muzzle_laser"
+
 	muzzle_flash_lum = 4
 	muzzle_flash_color = "#ff3333"
 
