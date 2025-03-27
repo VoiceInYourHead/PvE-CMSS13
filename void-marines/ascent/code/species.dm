@@ -1,6 +1,12 @@
+// Ascent Military Force
+
 #define SPECIES_ALATE "Alate"
 #define SPECIES_GYNE "Gyne"
 #define SPECIES_MONARCH "Monarch"
+
+// Military Support Force
+
+#define SPECIES_TAJARAN "Tajaran"
 
 /obj/effect/temp_visual/dir_setting/bloodsplatter/kharmaani
 	splatter_type = "csplatter"
@@ -9,6 +15,10 @@
 /obj/effect/temp_visual/dir_setting/bloodsplatter/monarch
 	splatter_type = "csplatter"
 	color = LIGHT_COLOR_PURPLE
+
+/obj/effect/temp_visual/dir_setting/bloodsplatter/tajaran
+	splatter_type = "csplatter"
+	color = "#725379"
 
 // ALATE
 
@@ -42,7 +52,7 @@
 						'void-marines/ascent/sounds/ascent4.ogg','void-marines/ascent/sounds/ascent5.ogg', 'void-marines/ascent/sounds/ascent6.ogg')
 	speech_chance = 100
 
-	slowdown = -1 //зато очень быстрое
+	slowdown = -0.5 //зато очень быстрое
 	total_health = 60 //это буквально ходячее стекло - что вы хотите от него?
 
 	brute_mod = 1.2 // нам очень больно от кинетики
@@ -102,7 +112,7 @@
 						'void-marines/ascent/sounds/ascent4.ogg','void-marines/ascent/sounds/ascent5.ogg', 'void-marines/ascent/sounds/ascent6.ogg')
 	speech_chance = 100
 
-	slowdown = -0.5 //медленнее чем алат
+	slowdown = 0.5 //тяжёлая хуёвина
 	total_health = 200 //но гораздо толще
 
 	brute_mod = 1.2 // резисты те же
@@ -153,7 +163,7 @@
 						'void-marines/ascent/sounds/ascent4.ogg','void-marines/ascent/sounds/ascent5.ogg', 'void-marines/ascent/sounds/ascent6.ogg')
 	speech_chance = 100
 
-	slowdown = -1.5 //ебанутый хищник убивца
+	slowdown = -1.5 //ебанутый хищник убивца, быстрее чем алат
 	total_health = 200 //крепок как гиина
 
 	brute_mod = 0.5 // хитин крепкий, но всё ещё простреливаемый
@@ -368,3 +378,53 @@
 			var/turf/acid_loc = pick(get_step(src,rand(0,8)))
 			if(acid_loc && !(locate(/obj/effect/xenomorph/acid) in acid_loc))
 				new /obj/effect/xenomorph/acid/spatter(acid_loc) ///Don't want to double up. It will target barricades first.
+
+// TAJARAN
+
+/mob/living/carbon/human/tajaran/Initialize(mapload, new_species = SPECIES_TAJARAN)
+	. = ..(mapload, new_species)
+
+/datum/species/tajaran
+	group = SPECIES_TAJARAN
+	name = SPECIES_TAJARAN
+	icobase = 'void-marines/ascent/icons/tajaran/body.dmi'
+	deform = 'void-marines/ascent/icons/tajaran/body.dmi'
+	eyes = "blank_s"
+	blood_mask = 'void-marines/ascent/icons/tajaran/blood_mask.dmi'
+	mob_flags = KNOWS_TECHNOLOGY
+	pain_type = /datum/pain/xeno
+	unarmed_type = /datum/unarmed_attack/claws/strong
+	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
+	death_message = "lets out a faint scream as it collapses and stops moving..."
+	knock_down_reduction = 0.5
+	stun_reduction = 0.5
+	gibbed_anim = "gibbed-m"
+	dusted_anim = "dust-m"
+	mob_inherent_traits = list(
+		TRAIT_EMOTE_CD_EXEMPT,
+		TRAIT_YAUTJA_TECH,
+		TRAIT_FOREIGN_BIO,
+	)
+	blood_color = "#725379"
+	uses_skin_color = FALSE
+	speech_sounds = list()
+	speech_chance = 100
+
+	slowdown = -1 //GOTTA GO FAST BOIIII!!! быстрее алатов и гиин, но всё ещё медленней ГБСов и Монархов
+	total_health = 80 //слабее человека
+
+	brute_mod = 0.8
+	burn_mod = 0.8
+
+	bloodsplatter_type = /obj/effect/temp_visual/dir_setting/bloodsplatter/tajaran
+
+/datum/species/tajaran/handle_post_spawn(mob/living/carbon/human/H)
+	H.universal_speak = TRUE
+	H.universal_understand = TRUE
+	H.gender = PLURAL
+
+	return ..()
+
+/datum/species/tajaran/handle_on_fire(humanoidmob)
+	. = ..()
+	INVOKE_ASYNC(humanoidmob, TYPE_PROC_REF(/mob, emote), pick("pain", "scream"))
