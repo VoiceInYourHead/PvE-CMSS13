@@ -57,7 +57,7 @@
 //SPECIES EQUIPMENT
 
 // Literally just boots
-/obj/item/clothing/shoes/jackboots/taj
+/obj/item/clothing/shoes/jackboots/taj/combat
 	name = "Combat Boots"
 	desc = "Simple brown shoes."
 	icon_state = "taj_old_shoes"
@@ -67,7 +67,7 @@
 		WEAR_FEET = 'void-marines/ascent/icons/tajaran/onmob/onmob_feet.dmi'
 	)
 
-/obj/item/clothing/shoes/jackboots/taj/black
+/obj/item/clothing/shoes/jackboots/taj/combat/black
 	name = "Combat Boots"
 	desc = "Simple black shoes."
 	icon_state = "taj_new_shoes"
@@ -78,7 +78,7 @@
 	)
 
 // Regular Militia Equipment
-/obj/item/clothing/under/rank/ascent/taj/militia
+/obj/item/clothing/under/rank/ascent/taj/militia/regular
 	name = "Dusted Militia uniform"
 	desc = "Pair of camo pants and white shirt."
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_under.dmi'
@@ -89,7 +89,7 @@
 		WEAR_BODY = 'void-marines/ascent/icons/tajaran/onmob/onmob_under.dmi'
 	)
 
-/obj/item/clothing/accessory/storage/ascent/taj/militia
+/obj/item/clothing/accessory/storage/ascent/taj/militia/regular_coat
 	name = "Dusted Militia coat"
 	desc = "An old desert camo coat, used by Tajaran Militia."
 	icon_state = "taj_overcoat_s"
@@ -97,7 +97,7 @@
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_suit.dmi'
 	accessory_icons = list(WEAR_BODY = 'void-marines/ascent/icons/tajaran/onmob/onmob_suit.dmi', WEAR_JACKET = 'void-marines/ascent/icons/tajaran/onmob/onmob_suit.dmi')
 
-/obj/item/clothing/head/helmet/ascent/taj/militia_armored
+/obj/item/clothing/head/helmet/ascent/taj/militia/medium
 	name = "Old-looking Helmet"
 	desc = "An armored helmet. Looks like something straight from WW1!"
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -119,7 +119,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
-/obj/item/clothing/suit/armor/storage/ascent/taj/militia
+/obj/item/clothing/suit/armor/storage/ascent/taj/militia/medium
 	name = "Light-armored plate"
 	desc = "Small, probably not that expensive armored plate."
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -142,7 +142,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
 // Regular Militia Officer Equipment
-/obj/item/clothing/under/rank/ascent/taj/militia_officer
+/obj/item/clothing/under/rank/ascent/taj/militia/officer
 	name = "Dusted Militia uniform"
 	desc = "Pair of camo pants and white shirt."
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -153,7 +153,7 @@
 		WEAR_BODY = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
 	)
 
-/obj/item/clothing/head/helmet/ascent/taj/militia_officer
+/obj/item/clothing/head/helmet/ascent/taj/militia/officer
 	name = "Golden-Trimmed Cap"
 	desc = "An armored cap, worn by Tajaran Militia officers."
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -175,7 +175,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 
-/obj/item/clothing/suit/armor/storage/ascent/taj/militia_officer
+/obj/item/clothing/suit/armor/storage/ascent/taj/militia/officer
 	name = "Armored Trenchcoat"
 	desc = "An dusted trench with armored plates attached to it."
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -198,7 +198,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
 // Regular Militia Heavy Armor
-/obj/item/clothing/head/helmet/ascent/taj/militia_heavy
+/obj/item/clothing/head/helmet/ascent/taj/militia/heavy
 	name = "Strange diving helmet"
 	desc = "An highly-armored helmet. Looks like someone's diving gear!"
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -220,7 +220,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
-/obj/item/clothing/suit/armor/storage/ascent/taj/militia_heavy
+/obj/item/clothing/suit/armor/storage/ascent/taj/militia/heavy
 	name = "Strange Bomb-suit"
 	desc = "Very large protective suit."
 	icon = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
@@ -243,7 +243,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
 // Regular Militia Various Headgear
-/obj/item/clothing/mask/ascent/taj/militia
+/obj/item/clothing/mask/ascent/taj/militia/turban
 	name = "Dusted Turban"
 	desc = "An practical, but not much defensive face cover."
 	icon_state = "turban2_flipped"
@@ -254,7 +254,7 @@
 	)
 	color = "#47443f"
 
-/obj/item/clothing/mask/ascent/taj/militia/open
+/obj/item/clothing/mask/ascent/taj/militia/turban/open
 	name = "Dusted Turban"
 	desc = "An practical, but not much defensive face cover."
 	icon_state = "turban2"
@@ -265,7 +265,7 @@
 	)
 	color = "#47443f"
 
-/obj/item/clothing/mask/ascent/taj/militia_scarf
+/obj/item/clothing/mask/ascent/taj/militia/scarf
 	name = "Black Scarf"
 	desc = "An practical, but not much defensive face cover."
 	icon_state = "furscarf_black"
@@ -275,7 +275,7 @@
 		WEAR_FACE = 'void-marines/ascent/icons/tajaran/tajara_items.dmi'
 	)
 
-/obj/item/clothing/head/helmet/ascent/taj/militia
+/obj/item/clothing/head/helmet/ascent/taj/militia/headband
 	name = "Dusted Headband"
 	desc = "No, it doesn't protect anything. At all. But looks badass!"
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_head.dmi'
@@ -297,7 +297,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_NONE
 
-/obj/item/clothing/head/helmet/ascent/taj/militia_turban
+/obj/item/clothing/head/helmet/ascent/taj/militia/turban
 	name = "Dusted Turban"
 	desc = "No, it doesn't protect anything. At all. But looks badass!"
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_head.dmi'
@@ -321,7 +321,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_NONE
 
-/obj/item/clothing/accessory/ascent/taj/militia_cape
+/obj/item/clothing/accessory/ascent/taj/militia/cape
 	name = "Dark Cloak"
 	desc = "Worn out dusted cloak."
 	icon_state = "taj_cloak_su"
@@ -331,7 +331,7 @@
 	slot = ACCESSORY_SLOT_PONCHO
 
 // Tajaran Elites
-/obj/item/clothing/under/rank/ascent/taj/elite
+/obj/item/clothing/under/rank/ascent/taj/elite/uniform
 	name = "Dark Fatigues"
 	desc = "An nice-looking east-influenced pair of clothing, used by Tajaran elite soldiers."
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_under.dmi'
@@ -353,7 +353,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
-/obj/item/clothing/head/helmet/ascent/taj/elite
+/obj/item/clothing/head/helmet/ascent/taj/elite/beret
 	name = "Pitch-black Turban"
 	desc = "An armored beret, used by Tajaran elite soldiers"
 	icon = 'void-marines/ascent/icons/tajaran/onmob/onmob_head.dmi'

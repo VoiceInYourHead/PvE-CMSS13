@@ -10,26 +10,26 @@
 	aim_slowdown = SLOWDOWN_ADS_SPECIALIST
 	wield_delay = WIELD_DELAY_SLOW
 
-	var/has_aimed_shot = TRUE
-	var/aiming_time = 1.25 SECONDS
-	var/aimed_shot_cooldown
-	var/aimed_shot_cooldown_delay = 2.5 SECONDS
+	has_aimed_shot = TRUE
+	aiming_time = 1.25 SECONDS
+	aimed_shot_cooldown
+	aimed_shot_cooldown_delay = 2.5 SECONDS
 
-	var/enable_aimed_shot_laser = TRUE
-	var/sniper_lockon_icon = "sniper_lockon"
-	var/obj/effect/ebeam/sniper_beam_type = /obj/effect/ebeam/laser
-	var/sniper_beam_icon = "laser_beam"
+	enable_aimed_shot_laser = TRUE
+	sniper_lockon_icon = "sniper_lockon"
+	sniper_beam_type = /obj/effect/ebeam/laser
+	sniper_beam_icon = "laser_beam"
 	var/skill_locked = FALSE
 
 	/// How far out people can tell the direction of the shot, baseline of the hAI marksman firing range
-	var/fire_message_range = 30
+	fire_message_range = 30
 	///If the sniper will generate a message when shot
-	var/loud = TRUE
+	loud = TRUE
 
 	/// Variables for Focus Fire and alternate icons for lockon and laser.
-	var/enable_aimed_shot_icon_alt = FALSE
-	var/sniper_lockon_icon_max = "sniper_lockon_intense"
-	var/sniper_beam_icon_max = "laser_beam_intense"
+	enable_aimed_shot_icon_alt = FALSE
+	sniper_lockon_icon_max = "sniper_lockon_intense"
+	sniper_beam_icon_max = "laser_beam_intense"
 
 /obj/item/weapon/gun/rifle/sniper/get_examine_text(mob/user)
 	. = ..()
@@ -79,7 +79,7 @@
 	button.overlays.Cut()
 	var/image/IMG = image('icons/mob/hud/actions.dmi', button, "sniper_aim")
 	button.overlays += IMG
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 	sniper_rifle.aimed_shot_cooldown = world.time
 
 /*
@@ -119,7 +119,7 @@
 	if(target.stat == DEAD || target == human)
 		return
 
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 	if(world.time < sniper_rifle.aimed_shot_cooldown)
 		return
 
@@ -212,7 +212,7 @@
 
 /datum/action/item_action/specialist/aimed_shot/proc/check_can_use(mob/M, cover_lose_focus)
 	var/mob/living/carbon/human/H = owner
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 
 	if(!can_use_action())
 		return FALSE
@@ -280,7 +280,7 @@
 	update_button_icon()
 
 /datum/action/item_action/specialist/toggle_laser/update_button_icon()
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 
 	var/icon = 'icons/mob/hud/actions.dmi'
 	var/icon_state = "sniper_toggle_laser_[sniper_rifle.enable_aimed_shot_laser ? "on" : "off"]"
@@ -290,7 +290,7 @@
 	button.overlays += IMG
 
 /datum/action/item_action/specialist/toggle_laser/can_use_action()
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 
 	if(owner.is_mob_incapacitated())
 		return FALSE
@@ -302,14 +302,14 @@
 
 /datum/action/item_action/specialist/toggle_laser/action_activate()
 	. = ..()
-	var/obj/item/weapon/gun/rifle/sniper/sniper_rifle = holder_item
+	var/obj/item/weapon/gun/sniper_rifle = holder_item
 
 	if(owner.get_held_item() != sniper_rifle)
 		to_chat(owner, SPAN_WARNING("How do you expect to do this without the sniper rifle in your hand?"))
 		return FALSE
 	sniper_rifle.toggle_laser(owner, src)
 
-/obj/item/weapon/gun/rifle/sniper/proc/toggle_laser(mob/user, datum/action/toggling_action)
+/obj/item/weapon/gun/proc/toggle_laser(mob/user, datum/action/toggling_action)
 	enable_aimed_shot_laser = !enable_aimed_shot_laser
 	to_chat(user, SPAN_NOTICE("You flip a switch on \the [src] and [enable_aimed_shot_laser ? "enable" : "disable"] its targeting laser."))
 	playsound(user, 'sound/machines/click.ogg', 15, TRUE)
@@ -324,7 +324,7 @@
 	set desc = "Toggles your laser on or off."
 	set src = usr.contents
 
-	var/obj/item/weapon/gun/rifle/sniper/sniper = get_active_firearm(usr)
+	var/obj/item/weapon/gun/sniper = get_active_firearm(usr)
 	if((sniper == src) && has_aimed_shot)
 		toggle_laser(usr)
 

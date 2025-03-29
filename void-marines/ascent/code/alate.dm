@@ -65,7 +65,7 @@
 //SPECIES EQUIPMENT
 
 // Utility Suit
-/obj/item/clothing/under/rank/ascent/alate
+/obj/item/clothing/under/rank/ascent/alate/utility
 	name = "Strange-shaped undersuit"
 	desc = "It almost doesn't cover anything."
 	icon = 'void-marines/ascent/icons/alate/onmob/onmob_under_alate.dmi'
@@ -78,7 +78,7 @@
 
 	color = COLOR_GRAY
 
-/obj/item/clothing/suit/armor/storage/ascent/alate
+/obj/item/clothing/suit/armor/storage/ascent/alate/utility
 	name = "Ascent utility suit"
 	desc = "An light-armored combat suit, used by Alate workers."
 	icon = 'void-marines/ascent/icons/clothing/obj_suit.dmi'
@@ -100,7 +100,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 
-/obj/item/clothing/head/helmet/ascent/alate
+/obj/item/clothing/head/helmet/ascent/alate/utility
 	name = "Ascent armored helmet"
 	desc = "An combat-oriented light purple helmet."
 	icon = 'void-marines/ascent/icons/clothing/obj_head.dmi'
@@ -122,7 +122,7 @@
 
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-/obj/item/clothing/shoes/jackboots/ascent/alate
+/obj/item/clothing/shoes/jackboots/ascent/alate/utility
 	name = "Light-armored appendages"
 	desc = "Simple utility boots, used by Alate workers."
 	icon_state = "ascent_boots1"

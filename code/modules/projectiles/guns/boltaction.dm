@@ -169,7 +169,7 @@
 	has_openbolt_icon = FALSE
 	bolt_delay = 1 SECONDS
 	/// How far out people can tell the direction of the shot
-	var/fire_message_range = 25
+	fire_message_range = 25
 	/// If the gun should bypass the trait requirement
 	var/bypass_trait = FALSE
 
