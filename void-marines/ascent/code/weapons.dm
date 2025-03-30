@@ -4,9 +4,9 @@
 /obj/item/weapon/gun/ascent/taj/militia/pistol/regular
 	name = "Ash'ain-Pattern Pistol (7.97)"
 	desc = "Very simple in design, but still very practical Militia pistol, used by most of Tajaran troops."
-	icon = 'void-marines/bay_stuff/obj/guns/adhomian_heavy_pistol.dmi'
-	icon_state = "adhomian_heavy_pistol"
-	item_state = "adhomian_heavy_pistol"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "pistol"
+	item_state = "pistol"
 	force = MELEE_FORCE_WEAK
 	w_class = SIZE_MEDIUM
 	flags_equip_slot = SLOT_WAIST
@@ -68,9 +68,9 @@
 /obj/item/weapon/gun/revolver/ascent/taj/militia/officer
 	name = "Ash'ain-Pattern Revolver (7.97)"
 	desc = "So called 'piercer' is an beutifully engineered killing machine, used by Tajaran Commissar's and high-ops."
-	icon = 'void-marines/bay_stuff/obj/guns/adhomian_revolver.dmi'
-	icon_state = "adhomian_revolver"
-	item_state = "adhomian_revolver"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "revolver"
+	item_state = "revolver"
 	item_icons = list(
 		WEAR_L_HAND = 'void-marines/bay_stuff/obj/guns/onmob/lefthand.dmi',
 		WEAR_R_HAND = 'void-marines/bay_stuff/obj/guns/onmob/righthand.dmi'
@@ -151,9 +151,9 @@
 /obj/item/weapon/gun/ascent/taj/militia/rifle/sniper
 	name = "Kar'ishan-Pattern Scout Rifle (.42)"
 	desc = "An heavy sniper rifle, used by most professional Tajaran soldiers."
-	icon = 'void-marines/bay_stuff/obj/guns/dragunov.dmi'
-	icon_state = "dragunov_dark"
-	item_state = "dragunov_dark"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "sniper"
+	item_state = "sniper"
 	item_icons = list(
 		WEAR_L_HAND = 'void-marines/bay_stuff/obj/guns/onmob/lefthand.dmi',
 		WEAR_R_HAND = 'void-marines/bay_stuff/obj/guns/onmob/righthand.dmi'
@@ -282,3 +282,4 @@
 	accuracy = HIT_ACCURACY_TIER_8
 	scatter = 0
 	shell_speed = AMMO_SPEED_TIER_8
+//MILITIA SNIPER RIFLE//
