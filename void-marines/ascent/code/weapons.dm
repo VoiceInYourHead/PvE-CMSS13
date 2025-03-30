@@ -170,7 +170,6 @@
 
 	has_aimed_shot = TRUE
 	aiming_time = 1.25 SECONDS
-	aimed_shot_cooldown
 	aimed_shot_cooldown_delay = 2.5 SECONDS
 
 	enable_aimed_shot_laser = TRUE
@@ -264,8 +263,8 @@
 	name = "Rifle Magazine (.42)"
 	desc = "An simple rifle magazine."
 	caliber = ".42"
-	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
-	icon_state = "m42c"
+	icon = 'void-marines/bay_stuff/obj/ammo.dmi'
+	icon_state = "hookmg_ammobox"
 	w_class = SIZE_MEDIUM
 	max_rounds = 5
 	default_ammo = /datum/ammo/bullet/rifle/heavy/heap/ascent/taj

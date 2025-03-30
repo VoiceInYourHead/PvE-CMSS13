@@ -12,7 +12,6 @@
 
 	has_aimed_shot = TRUE
 	aiming_time = 1.25 SECONDS
-	aimed_shot_cooldown
 	aimed_shot_cooldown_delay = 2.5 SECONDS
 
 	enable_aimed_shot_laser = TRUE
