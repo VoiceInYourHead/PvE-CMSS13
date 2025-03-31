@@ -2624,6 +2624,7 @@
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
 #include "void-marines\ascent\code\alate.dm"
+#include "void-marines\ascent\code\ascent_faction.dm"
 #include "void-marines\ascent\code\gas.dm"
 #include "void-marines\ascent\code\gyne.dm"
 #include "void-marines\ascent\code\monarch.dm"

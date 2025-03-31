@@ -17,7 +17,7 @@
 	eyes = "eyes_s"
 	blood_mask = 'void-marines/ascent/icons/tajaran/blood_mask.dmi'
 	mob_flags = KNOWS_TECHNOLOGY
-	pain_type = /datum/pain/xeno
+	pain_type = /datum/pain/human
 	unarmed_type = /datum/unarmed_attack/claws/strong
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
 	death_message = "lets out a faint scream as it collapses and stops moving..."
@@ -39,7 +39,7 @@
 	total_health = 80 //слабее человека
 
 	brute_mod = 0.8
-	burn_mod = 0.8
+	burn_mod = 1.2
 
 	bloodsplatter_type = /obj/effect/temp_visual/dir_setting/bloodsplatter/tajaran
 
@@ -377,4 +377,259 @@
 
 //OUTFIT PRESETS
 
-//...
+// Militia Soldier
+/datum/equipment_preset/ascent/taj/soldier
+	name = "Bay12 | Tajaran | Soldier"
+	idtype = null
+	languages = list(LANGUAGE_ENGLISH) //Let's keep it simple for now
+	faction = FACTION_ASCENT
+	faction_group = (FACTION_ASCENT)
+	uses_special_name = TRUE
+	skills = /datum/skills/pfc
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+
+/datum/equipment_preset/ascent/taj/soldier/load_id(mob/living/carbon/human/new_human)
+	new_human.faction = faction
+	new_human.faction_group = faction_group
+
+/datum/equipment_preset/ascent/taj/soldier/load_name(mob/living/carbon/human/new_human, randomise)
+	. = ..()
+	var/new_name = "Tajaran Militia ([rand(1, 9)][rand(1, 9)][rand(1, 9)])"
+	new_human.change_real_name(new_human, new_name)
+
+/datum/equipment_preset/ascent/taj/soldier/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_TAJARAN)
+	new_human.body_type = "tajaran"
+
+/datum/equipment_preset/ascent/taj/soldier/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/tech, WEAR_BACK)
+
+	var/pick_type = pick(1,2,3,4)
+	switch(pick_type)
+		if(1) //basic set
+			var/obj/item/clothing/under/rank/ascent/taj/militia/regular/M = new()
+			var/obj/item/clothing/accessory/storage/ascent/taj/militia/regular_coat/W = new()
+			M.attach_accessory(new_human, W)
+			new_human.equip_to_slot_or_del(M, WEAR_BODY)
+
+			if(prob(30))
+				new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/ascent/taj/militia/scarf, WEAR_FACE)
+
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/medium, WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/storage/ascent/taj/militia/medium, WEAR_JACKET)
+
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/carbine, WEAR_R_HAND)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+		if(2) //rambo
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/ascent/taj/militia/regular, WEAR_BODY)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/headband, WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+
+			var/obj/item/clothing/suit/armor/storage/ascent/taj/militia/medium/M = new()
+			var/obj/item/clothing/accessory/ascent/taj/militia/cape/W = new()
+			M.attach_accessory(new_human, W)
+			new_human.equip_to_slot_or_del(M, WEAR_JACKET)
+			if(prob(30))
+				new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch, WEAR_EYES)
+
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun, WEAR_R_HAND)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/pistol/regular, WEAR_WAIST)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/carbine, WEAR_J_STORE)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+		if(3) //turban
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/ascent/taj/militia/regular, WEAR_BODY)
+			var/which_one = pick(1,2)
+			switch(which_one)
+				if(1)
+					new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/ascent/taj/militia/turban, WEAR_FACE)
+				if(2)
+					new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/ascent/taj/militia/turban/open, WEAR_FACE)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/turban, WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/storage/ascent/taj/militia/medium, WEAR_JACKET)
+
+			var/pick_gun = pick(1,2)
+			switch(pick_gun)
+				if(1)
+					new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/carbine, WEAR_R_HAND)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+				if(2)
+					new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/pistol/regular, WEAR_R_HAND)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+		if(4) //no armor
+			var/obj/item/clothing/under/rank/ascent/taj/militia/regular/M = new()
+			var/obj/item/clothing/accessory/storage/ascent/taj/militia/regular_coat/W = new()
+			M.attach_accessory(new_human, W)
+			new_human.equip_to_slot_or_del(M, WEAR_BODY)
+
+			if(prob(30))
+				new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/ascent/taj/militia/scarf, WEAR_FACE)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/turban, WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+
+			var/pick_gun = pick(1,2)
+			switch(pick_gun)
+				if(1)
+					new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/carbine, WEAR_R_HAND)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/rifle, WEAR_IN_BACK)
+				if(2)
+					new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/pistol/regular, WEAR_R_HAND)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+					new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/pistol, WEAR_IN_BACK)
+
+// Militia Heavy Trooper
+/datum/equipment_preset/ascent/taj/heavy_soldier
+	name = " Bay12 | Tajaran | Heavy Trooper"
+	idtype = null
+	languages = list(LANGUAGE_ENGLISH) //Let's keep it simple for now
+	faction = FACTION_ASCENT
+	faction_group = (FACTION_ASCENT)
+	uses_special_name = TRUE
+	skills = /datum/skills/pfc
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+
+/datum/equipment_preset/ascent/taj/heavy_soldier/load_id(mob/living/carbon/human/new_human)
+	new_human.faction = faction
+	new_human.faction_group = faction_group
+
+/datum/equipment_preset/ascent/taj/heavy_soldier/load_name(mob/living/carbon/human/new_human, randomise)
+	. = ..()
+	var/new_name = "Tajaran Heavy Militia ([rand(1, 9)][rand(1, 9)][rand(1, 9)])"
+	new_human.change_real_name(new_human, new_name)
+
+/datum/equipment_preset/ascent/taj/heavy_soldier/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_TAJARAN)
+	new_human.body_type = "tajaran"
+
+/datum/equipment_preset/ascent/taj/heavy_soldier/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/tech, WEAR_BACK)
+	var/obj/item/clothing/under/rank/ascent/taj/militia/regular/M = new()
+	var/obj/item/clothing/accessory/storage/ascent/taj/militia/regular_coat/W = new()
+	M.attach_accessory(new_human, W)
+	new_human.equip_to_slot_or_del(M, WEAR_BODY)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/heavy, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/storage/ascent/taj/militia/heavy, WEAR_JACKET)
+
+	var/pick_gun = pick(1,2)
+	switch(pick_gun)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun, WEAR_R_HAND)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/machinegun, WEAR_IN_BACK)
+		if(2)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/flamer, WEAR_R_HAND)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/flamer_tank, WEAR_WAIST)
+
+// Militia Officer
+/datum/equipment_preset/ascent/taj/officer
+	name = "Bay12 | Tajaran | Officer"
+	idtype = null
+	languages = list(LANGUAGE_ENGLISH) //Let's keep it simple for now
+	faction = FACTION_ASCENT
+	faction_group = (FACTION_ASCENT)
+	uses_special_name = TRUE
+	skills = /datum/skills/pfc
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+
+/datum/equipment_preset/ascent/taj/officer/load_id(mob/living/carbon/human/new_human)
+	new_human.faction = faction
+	new_human.faction_group = faction_group
+
+/datum/equipment_preset/ascent/taj/officer/load_name(mob/living/carbon/human/new_human, randomise)
+	. = ..()
+	var/new_name = "Tajaran Militia Officer ([rand(1, 9)][rand(1, 9)][rand(1, 9)])"
+	new_human.change_real_name(new_human, new_name)
+
+/datum/equipment_preset/ascent/taj/officer/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_TAJARAN)
+	new_human.body_type = "tajaran"
+
+/datum/equipment_preset/ascent/taj/officer/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/ascent/taj/militia/officer, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/storage/ascent/taj/militia/officer, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat/black, WEAR_FEET)
+
+	if(prob(30))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch, WEAR_EYES)
+	if(prob(30))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/ascent/taj/militia/scarf, WEAR_FACE)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/officer, WEAR_HEAD)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/revolver/ascent/taj/militia/officer, WEAR_R_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/ascent/taj/militia/officer, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/ascent/taj/militia/officer, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/ascent/taj/militia/officer, WEAR_IN_BACK)
+
+//Militia Sniper
+/datum/equipment_preset/ascent/taj/sniper
+	name = "Bay12 | Tajaran | Sniper"
+	idtype = null
+	languages = list(LANGUAGE_ENGLISH) //Let's keep it simple for now
+	faction = FACTION_ASCENT
+	faction_group = (FACTION_ASCENT)
+	uses_special_name = TRUE
+	skills = /datum/skills/pfc
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+
+/datum/equipment_preset/ascent/taj/sniper/load_id(mob/living/carbon/human/new_human)
+	new_human.faction = faction
+	new_human.faction_group = faction_group
+
+/datum/equipment_preset/ascent/taj/sniper/load_name(mob/living/carbon/human/new_human, randomise)
+	. = ..()
+	var/new_name = "Tajaran Militia Sniper ([rand(1, 9)][rand(1, 9)][rand(1, 9)])"
+	new_human.change_real_name(new_human, new_name)
+
+/datum/equipment_preset/ascent/taj/sniper/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_TAJARAN)
+	new_human.body_type = "tajaran"
+
+/datum/equipment_preset/ascent/taj/sniper/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/tech, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/ascent/taj/militia/regular, WEAR_BODY)
+
+	var/obj/item/clothing/suit/armor/storage/ascent/taj/militia/medium/M = new()
+	var/obj/item/clothing/accessory/ascent/taj/militia/cape/W = new()
+	M.attach_accessory(new_human, W)
+	new_human.equip_to_slot_or_del(M, WEAR_JACKET)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/taj/combat, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ascent/taj/militia/heavy, WEAR_HEAD)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/ascent/taj/militia/rifle/sniper, WEAR_R_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/sniper, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/sniper, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/sniper, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/ascent/taj/militia/sniper, WEAR_IN_BACK)

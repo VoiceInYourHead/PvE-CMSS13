@@ -44,22 +44,22 @@
 /obj/item/ammo_magazine/ascent/taj/militia/pistol
 	name = "\improper Pistol Magazine (7.97)"
 	caliber = "7.97"
-	icon = 'void-marines/bay_stuff/obj/ammo.dmi'
-	icon_state = "45x"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "pistol_mag"
 	default_ammo = /datum/ammo/bullet/pistol/ascent/taj
-	max_rounds = 10
+	max_rounds = 8
 	gun_type = /obj/item/weapon/gun/ascent/taj/militia/pistol
 
 /datum/ammo/bullet/pistol/ascent/taj
 	name = "7.97 bullet"
-	damage = 70
+	damage = 50
 	accurate_range = 10
 	accuracy = HIT_ACCURACY_TIER_10
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = AMMO_SPEED_TIER_3
 	effective_range_max = 5
 	max_range = 20
-	penetration = ARMOR_PENETRATION_TIER_6
+	penetration = ARMOR_PENETRATION_TIER_4
 
 	handful_state = "lever_action_bullet"
 //MILITIA PISTOL//
@@ -167,6 +167,7 @@
 	starting_attachment_types = list()
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_WIELDED_FIRING_ONLY
 	flags_item = TWOHANDED
+	gun_category = GUN_CATEGORY_HEAVY
 
 	has_aimed_shot = TRUE
 	aiming_time = 1.25 SECONDS
@@ -176,6 +177,8 @@
 	sniper_lockon_icon = "sniper_lockon"
 	sniper_beam_type = /obj/effect/ebeam/laser
 	sniper_beam_icon = "laser_beam"
+
+	aim_slowdown = SLOWDOWN_ADS_SPECIALIST
 
 	/// How far out people can tell the direction of the shot, baseline of the hAI marksman firing range
 	fire_message_range = 30
@@ -264,7 +267,7 @@
 	desc = "An simple rifle magazine."
 	caliber = ".42"
 	icon = 'void-marines/bay_stuff/obj/ammo.dmi'
-	icon_state = "hookmg_ammobox"
+	icon_state = "k2557"
 	w_class = SIZE_MEDIUM
 	max_rounds = 5
 	default_ammo = /datum/ammo/bullet/rifle/heavy/heap/ascent/taj
@@ -283,3 +286,132 @@
 	scatter = 0
 	shell_speed = AMMO_SPEED_TIER_8
 //MILITIA SNIPER RIFLE//
+
+//MILITIA CARBINE//
+/obj/item/weapon/gun/ascent/taj/militia/rifle/carbine
+	name = "Ash'ain-Pattern Tactical Rifle (7.97)"
+	desc = "A dependable, hefty weapon. Usually not the first choice of Tajaran Militia, but the combination of heft, weight, and satisfying boom makes it worthwhile all the same."
+
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "carbine"
+	item_state = "carbine"
+	item_icons = list(
+		WEAR_L_HAND = 'void-marines/bay_stuff/obj/guns/onmob/lefthand.dmi',
+		WEAR_R_HAND = 'void-marines/bay_stuff/obj/guns/onmob/righthand.dmi'
+		)
+
+	w_class = SIZE_LARGE
+	force = MELEE_FORCE_NORMAL
+	flags_atom = NOBLOODY|CONDUCT
+
+	current_mag = /obj/item/ammo_magazine/ascent/taj/militia/rifle
+
+	fire_sound = 'sound/weapons/gun_ar10.ogg'
+	reload_sound = 'sound/weapons/handling/gun_m16_reload.ogg'
+	unload_sound = 'sound/weapons/handling/gun_ar10_unload.ogg'
+	cocked_sound = 'sound/weapons/handling/gun_ar10_cocked.ogg'
+
+	wield_delay = WIELD_DELAY_VERY_FAST
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
+	gun_category = GUN_CATEGORY_RIFLE
+
+	start_semiauto = TRUE
+
+	attachable_allowed = list()
+
+/obj/item/weapon/gun/ascent/taj/militia/rifle/carbine/Initialize(mapload, spawn_empty)
+	. = ..()
+	if(current_mag && current_mag.current_rounds > 0) load_into_chamber()
+
+/obj/item/weapon/gun/ascent/taj/militia/rifle/carbine/set_gun_config_values()
+	set_fire_delay(FIRE_DELAY_TIER_9)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	set_burst_delay(FIRE_DELAY_TIER_SG)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_5
+	scatter = SCATTER_AMOUNT_NONE
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_7
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_5
+	recoil = RECOIL_OFF
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+
+/obj/item/ammo_magazine/ascent/taj/militia/rifle
+	name = "Rifle Magazine (7.97)"
+	desc = "A 7.97 rifle magazine."
+	caliber = "7.97"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "carbine_mag"
+	w_class = SIZE_MEDIUM
+	default_ammo = /datum/ammo/bullet/pistol/ascent/taj
+	max_rounds = 21
+	gun_type = /obj/item/weapon/gun/ascent/taj/militia/rifle/carbine
+//MILITIA CARBINE//
+
+//MILITIA MACHINE GUN//
+/obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun
+	name = "Kar'ishan-Pattern Breaching LMG (12.7)"
+	desc = "An heavy weapon, used to quickly clear fortified positions of the enemy."
+
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "lmg"
+	item_state = "lmg"
+	item_icons = list(
+		WEAR_L_HAND = 'void-marines/bay_stuff/obj/guns/onmob/lefthand.dmi',
+		WEAR_R_HAND = 'void-marines/bay_stuff/obj/guns/onmob/righthand.dmi'
+		)
+
+	w_class = SIZE_LARGE
+	force = MELEE_FORCE_NORMAL
+	flags_atom = NOBLOODY|CONDUCT
+
+	current_mag = /obj/item/ammo_magazine/ascent/taj/militia/machinegun
+
+	fire_sound = 'sound/weapons/gun_mar40.ogg'
+	reload_sound = 'sound/weapons/handling/gun_mar40_reload.ogg'
+	unload_sound = 'sound/weapons/handling/gun_mar40_unload.ogg'
+
+	wield_delay = WIELD_DELAY_NORMAL
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
+	flags_item = TWOHANDED
+	gun_category = GUN_CATEGORY_HEAVY
+
+	start_automatic = TRUE
+	aim_slowdown = SLOWDOWN_ADS_LMG
+
+	attachable_allowed = list()
+
+/obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun/Initialize(mapload, spawn_empty)
+	. = ..()
+	if(current_mag && current_mag.current_rounds > 0) load_into_chamber()
+
+/obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun/set_gun_config_values()
+	set_fire_delay(FIRE_DELAY_TIER_SG)
+	accuracy_mult = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil = RECOIL_AMOUNT_TIER_4
+
+/obj/item/ammo_magazine/ascent/taj/militia/machinegun
+	name = "MG Magazine (12.7)"
+	desc = "A 12.7 machine gun magazine."
+	caliber = "12.7"
+	icon = 'void-marines/bay_stuff/obj/guns/tajaran_armory.dmi'
+	icon_state = "lmg_mag"
+	w_class = SIZE_MEDIUM
+	default_ammo = /datum/ammo/bullet/pistol/ascent/taj/heavy
+	max_rounds = 130
+	gun_type = /obj/item/weapon/gun/ascent/taj/militia/rifle/machinegun
+
+/datum/ammo/bullet/pistol/ascent/taj/heavy
+	name = "12.7 bullet"
+	damage = 80
+	accurate_range = 15
+	accuracy = HIT_ACCURACY_TIER_8
+	scatter = SCATTER_AMOUNT_TIER_8
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 10
+	max_range = 30
+	penetration = ARMOR_PENETRATION_TIER_8
