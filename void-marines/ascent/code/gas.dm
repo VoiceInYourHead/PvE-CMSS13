@@ -34,7 +34,7 @@
 	minimap_icon = "lurker"
 
 /mob/living/carbon/xenomorph/lurker
-	faction = FACTION_ASCENT
+	faction = FACTION_XENOMORPH
 	caste_type = XENO_CASTE_LURKER
 	name = "Giant Armored Serpentid"
 	desc = "A beefy, fast alien with sharp claws and deadly grip."
