@@ -127,7 +127,7 @@
 	item_state = "scim"
 	attack_speed = 5
 	attack_verb = list("sliced", "slashed", "jabbed", "torn", "gored")
-	force = MELEE_FORCE_TIER_5
+	force = MELEE_FORCE_TIER_7
 	has_speed_bonus = FALSE
 
 /*#########################################
@@ -153,7 +153,7 @@
 	embeddable = FALSE
 	w_class = SIZE_MEDIUM
 	unacidable = TRUE
-	force = MELEE_FORCE_TIER_6
+	force = MELEE_FORCE_TIER_8
 	throwforce = MELEE_FORCE_TIER_5
 	sharp = IS_SHARP_ITEM_SIMPLE
 	edge = TRUE
@@ -175,7 +175,7 @@
 	flags_atom = FPRINT|QUICK_DRAWABLE|CONDUCT
 	flags_item = ITEM_PREDATOR
 	flags_equip_slot = SLOT_BACK
-	force = MELEE_FORCE_TIER_7
+	force = MELEE_FORCE_TIER_9
 	throwforce = MELEE_FORCE_TIER_5
 	sharp = IS_SHARP_ITEM_ACCURATE
 	edge = TRUE
@@ -200,7 +200,7 @@
 	flags_atom = FPRINT|QUICK_DRAWABLE|CONDUCT
 	flags_item = ITEM_PREDATOR
 	flags_equip_slot = SLOT_WAIST
-	force = MELEE_FORCE_TIER_6
+	force = MELEE_FORCE_TIER_9
 	throwforce = MELEE_FORCE_TIER_5
 	sharp = IS_SHARP_ITEM_SIMPLE
 	edge = TRUE
@@ -479,9 +479,9 @@
 	flags_item = ITEM_PREDATOR|CAN_DIG_SHRAPNEL
 	flags_equip_slot = SLOT_STORE
 	sharp = IS_SHARP_ITEM_ACCURATE
-	force = MELEE_FORCE_TIER_5
+	force = MELEE_FORCE_TIER_8
 	w_class = SIZE_TINY
-	throwforce = MELEE_FORCE_TIER_4
+	throwforce = MELEE_FORCE_TIER_6
 	throw_speed = SPEED_VERY_FAST
 	throw_range = 6
 	hitsound = 'sound/weapons/slash.ogg'
@@ -708,8 +708,8 @@
 	icon_state = "spearhunter"
 	item_state = "spearhunter"
 	flags_item = NOSHIELD|TWOHANDED
-	force = MELEE_FORCE_TIER_3
-	force_wielded = MELEE_FORCE_TIER_7
+	force = MELEE_FORCE_TIER_5
+	force_wielded = MELEE_FORCE_TIER_9
 	sharp = IS_SHARP_ITEM_SIMPLE
 	attack_verb = list("attacked", "stabbed", "jabbed", "torn", "gored")
 
@@ -762,8 +762,8 @@
 	desc = "A huge, powerful blade on a metallic pole. Mysterious writing is carved into the weapon."
 	icon_state = "glaive"
 	item_state = "glaive"
-	force = MELEE_FORCE_TIER_3
-	force_wielded = MELEE_FORCE_TIER_9
+	force = MELEE_FORCE_TIER_5
+	force_wielded = MELEE_FORCE_TIER_11
 	throwforce = MELEE_FORCE_TIER_3
 	embeddable = FALSE //so predators don't lose their glaive when thrown.
 	sharp = IS_SHARP_ITEM_BIG
