@@ -170,6 +170,9 @@
 	icon_state = "ammoniatank"
 	chemical = "ammonia"
 
+/obj/structure/reagent_dispensers/watertank/yautja
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi'
+
 /obj/structure/reagent_dispensers/acidtank
 	name = "sulfuric acid tank"
 	desc = "A sulfuric acid tank"
@@ -385,6 +388,9 @@
 	if(!reinforced)
 		reagents.source_mob = flame_cause_data?.weak_mob
 		explode()
+
+/obj/structure/reagent_dispensers/fueltank/yautja
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi'
 
 /obj/structure/reagent_dispensers/fueltank/gas
 	name = "gastank"
