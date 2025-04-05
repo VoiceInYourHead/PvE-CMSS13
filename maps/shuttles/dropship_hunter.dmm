@@ -293,8 +293,9 @@
 /turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
 /area/shuttle/hunter)
 "M" = (
-/obj/structure/machinery/door/airlock/yautja{
-	dir = 1
+/obj/structure/machinery/door/airlock/yautja/secure/elder{
+	dir = 1;
+	name = "\improper Airlock"
 	},
 /turf/open/floor/corsat,
 /area/shuttle/hunter)

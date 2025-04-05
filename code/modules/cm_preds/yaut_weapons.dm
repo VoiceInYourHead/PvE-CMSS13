@@ -192,6 +192,30 @@
 		var/mob/living/carbon/xenomorph/xenomorph = target
 		xenomorph.AddComponent(/datum/component/status_effect/interference, 30, 30)
 
+/obj/item/weapon/yautja/sword/alt
+	name = "clan sword"
+	desc = "An expertly crafted Yautja blade carried by hunters who wish to fight up close. Razor sharp and capable of cutting flesh into ribbons. Commonly carried by aggressive and lethal hunters."
+	icon_state = "clansword_alt"
+	item_state = "clansword_alt"
+
+/obj/item/weapon/yautja/sword/alt2
+	name = "clan sword"
+	desc = "An expertly crafted Yautja blade carried by hunters who wish to fight up close. Razor sharp and capable of cutting flesh into ribbons. Commonly carried by aggressive and lethal hunters."
+	icon_state = "clansword_alt2"
+	item_state = "clansword_alt2"
+
+/obj/item/weapon/yautja/sword/alt3
+	name = "clan sword"
+	desc = "An expertly crafted Yautja blade carried by hunters who wish to fight up close. Razor sharp and capable of cutting flesh into ribbons. Commonly carried by aggressive and lethal hunters."
+	icon_state = "clansword_alt3"
+	item_state = "clansword_alt3"
+
+/obj/item/weapon/yautja/sword/staff
+	name = "cruel staff"
+	desc = "A wicked and battered staff wrapped in worn crimson rags. A crescent shaped blade adorns the top, while the bottom is rounded and blunt."
+	icon_state = "staff"
+	item_state = "staff"
+
 /obj/item/weapon/yautja/scythe
 	name = "dual war scythe"
 	desc = "A huge, incredibly sharp dual blade used for hunting dangerous prey. This weapon is commonly carried by Yautja who wish to disable and slice apart their foes."
@@ -782,6 +806,12 @@
 /obj/item/weapon/twohanded/yautja/glaive/alt
 	icon_state = "glaive_alt"
 	item_state = "glaive_alt"
+
+/obj/item/weapon/twohanded/yautja/glaive/longaxe
+	name = "longaxe"
+	desc = "A frighteningly big axe. The blade edge is chipped and gnarled from thousands of bone-crushing blows."
+	icon_state = "longaxe"
+	item_state = "longaxe"
 
 /obj/item/weapon/twohanded/yautja/glaive/damaged
 	name = "ancient war glaive"

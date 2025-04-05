@@ -1079,12 +1079,13 @@
 /turf/open/shuttle/dropship/predship/red_glow/on,
 /area/yautja)
 "dN" = (
+/obj/structure/prop/hunter/misc/prop_armor/ancient{
+	pixel_y = 33
+	},
+/obj/item/weapon/shield/riot/yautja/ancient,
 /obj/structure/closet/crate{
 	color = "#6b675e";
 	pixel_y = 13
-	},
-/obj/structure/prop/hunter/misc/prop_armor/ancient{
-	pixel_y = 33
 	},
 /turf/open/shuttle/dropship/predship/tile/red2,
 /area/yautja)
@@ -3437,6 +3438,15 @@
 	},
 /turf/open/shuttle/dropship/predship/mainfloor/direction_3/west,
 /area/yautja)
+"lN" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/yautja/sword/alt,
+/obj/item/weapon/yautja/sword/alt,
+/turf/open/floor/corsat,
+/area/yautja)
 "lO" = (
 /obj/structure/platform_decoration/metal/hunter/east{
 	pixel_x = -6;
@@ -3989,6 +3999,14 @@
 /obj/effect/decal/cleanable/dirt/greenglow{
 	color = "#212121";
 	name = "dried blood"
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 1
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 4
 	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
@@ -5710,6 +5728,15 @@
 	},
 /turf/open/shuttle/dropship/predship/red_glow/on,
 /area/yautja/hangar)
+"tI" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/twohanded/yautja/glaive/longaxe,
+/obj/item/weapon/twohanded/yautja/glaive/longaxe,
+/turf/open/floor/corsat,
+/area/yautja)
 "tJ" = (
 /obj/effect/hunter/bridge_border/brown/corner{
 	dir = 4
@@ -6643,6 +6670,11 @@
 /turf/open/shuttle/dropship/predship/red_glow/on,
 /area/yautja)
 "xp" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/yautja/sword/alt3,
 /turf/open/floor/corsat,
 /area/yautja)
 "xq" = (
@@ -7562,6 +7594,14 @@
 	},
 /turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
 /area/yautja)
+"Ar" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/yautja/sword/staff,
+/turf/open/floor/corsat,
+/area/yautja)
 "Au" = (
 /obj/structure/platform_decoration/metal/hunter,
 /obj/effect/hunter/bridge_border/brown{
@@ -8347,6 +8387,10 @@
 	layer = 3.2;
 	color = "#bccab4"
 	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 1
+	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
 "CG" = (
@@ -8485,6 +8529,13 @@
 	anchored = 1
 	},
 /turf/open/shuttle/dropship/predship/tile/red2,
+/area/yautja)
+"Dc" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/turf/open/floor/corsat,
 /area/yautja)
 "De" = (
 /obj/structure/curtain/leather/alt_1,
@@ -9726,6 +9777,9 @@
 	layer = 3.2;
 	color = "#bccab4"
 	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3"
+	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
 "Hs" = (
@@ -10463,6 +10517,13 @@
 	empty_desc = "Glass shards, don't step on this...";
 	name = "glass shards"
 	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3"
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 8
+	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
 "Kd" = (
@@ -10557,6 +10618,14 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/yautja/lower_deck)
+"Ky" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/twohanded/yautja/glaive/damaged,
+/turf/open/floor/corsat,
+/area/yautja)
 "Kz" = (
 /obj/structure/platform_decoration/metal/hunter/west{
 	layer = 3.1;
@@ -11442,6 +11511,15 @@
 	anchored = 1
 	},
 /turf/open/floor/predship/hull,
+/area/yautja)
+"NM" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/yautja/sword/staff,
+/obj/item/weapon/yautja/sword/staff,
+/turf/open/floor/corsat,
 /area/yautja)
 "NO" = (
 /obj/structure/prop/hunter/fake_platform/hunter,
@@ -13257,6 +13335,14 @@
 	layer = 3.2;
 	color = "#bccab4"
 	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 1
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 8
+	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
 "TS" = (
@@ -13271,6 +13357,13 @@
 /obj/effect/decal/cleanable/generic{
 	color = "#5d524b";
 	alpha = 155
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3"
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3";
+	dir = 4
 	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
@@ -14082,6 +14175,14 @@
 /obj/structure/platform/metal/hunter/west,
 /turf/open/shuttle/dropship/predship/red_glow/on,
 /area/yautja)
+"Wg" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/weapon/yautja/sword/alt2,
+/turf/open/floor/corsat,
+/area/yautja)
 "Wj" = (
 /obj/structure/surface/rack{
 	color = "#6b675e";
@@ -14578,6 +14679,9 @@
 	layer = 3.2;
 	color = "#bccab4"
 	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3"
+	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
 "XW" = (
@@ -14671,6 +14775,9 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 3.2;
 	color = "#bccab4"
+	},
+/obj/structure/barricade/handrail/wire{
+	color = "#f0ebd3"
 	},
 /turf/open/shuttle/dropship/predship/hunter_grille,
 /area/yautja/lower_deck)
@@ -18061,7 +18168,7 @@ Yc
 IN
 aV
 aV
-xp
+Ar
 WS
 iT
 cl
@@ -18163,7 +18270,7 @@ dI
 Nu
 aV
 aV
-xp
+NM
 sW
 ty
 rE
@@ -18265,7 +18372,7 @@ dI
 Nu
 aV
 aV
-xp
+Wg
 sW
 ty
 lL
@@ -18469,7 +18576,7 @@ hH
 aV
 aV
 aV
-xp
+lN
 hC
 Mu
 Ji
@@ -19999,7 +20106,7 @@ IN
 aV
 aV
 aV
-xp
+Ky
 WS
 iT
 DU
@@ -20101,7 +20208,7 @@ aa
 Nu
 aV
 aV
-xp
+tI
 in
 wf
 lX
@@ -20305,7 +20412,7 @@ aa
 Nu
 aV
 aV
-xp
+Dc
 gq
 hD
 rE
@@ -20407,7 +20514,7 @@ lv
 hH
 aV
 aV
-xp
+Dc
 hC
 Mu
 rm
