@@ -145,6 +145,18 @@
 /obj/docking_port/mobile/marine_dropship/midway/get_transit_path_type()
 	return /turf/open/space/transit/dropship/midway
 
+/obj/docking_port/mobile/marine_dropship/hunter
+	name = "Hunter"
+	id = DROPSHIP_HUNTER
+	width = 9
+	height = 18
+
+	dwidth = 4
+	dheight = 8
+
+/obj/docking_port/mobile/marine_dropship/hunter/get_transit_path_type()
+	return /turf/open/space/transit/dropship/hunter
+
 /obj/docking_port/mobile/marine_dropship/upp
 	name = "Akademia Nauk"
 	id = DROPSHIP_UPP
@@ -398,6 +410,12 @@
 	auto_open = TRUE
 	roundstart_template = /datum/map_template/shuttle/midway
 
+/obj/docking_port/stationary/marine_dropship/huntership
+	name = "Huntership - Hangar Bay"
+	id = HUNTER_LZ
+	auto_open = TRUE
+	roundstart_template = /datum/map_template/shuttle/hunter
+
 /obj/docking_port/stationary/marine_dropship/crash_site
 	auto_open = TRUE
 
@@ -427,6 +445,10 @@
 /datum/map_template/shuttle/midway
 	name = "Midway"
 	shuttle_id = DROPSHIP_MIDWAY
+
+/datum/map_template/shuttle/hunter
+	name = "Hunter"
+	shuttle_id = DROPSHIP_HUNTER
 
 /datum/map_template/shuttle/alamo
 	name = "Alamo"

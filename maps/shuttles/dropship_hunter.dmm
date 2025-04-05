@@ -1,0 +1,541 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/shuttle/dropship/predship/hunter_grille,
+/area/shuttle/hunter)
+"b" = (
+/obj/docking_port/mobile/marine_dropship/hunter,
+/turf/open/shuttle/dropship/predship/hunter_grille,
+/area/shuttle/hunter)
+"c" = (
+/obj/effect/hunter/bridge_border{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"d" = (
+/obj/structure/blocker/invisible_wall,
+/obj/structure/machinery/door_control/yautja{
+	pixel_x = -32;
+	pixel_y = 0;
+	id = "dropshiphunter";
+	name = "Shutters"
+	},
+/turf/open/floor/predship/hull/non_weedable_hull,
+/area/shuttle/hunter)
+"e" = (
+/obj/effect/hunter/bridge_border/edge,
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"f" = (
+/obj/effect/hunter/rune/stripes_arrow,
+/turf/open/shuttle/dropship/predship/tile/red,
+/area/shuttle/hunter)
+"h" = (
+/obj/effect/hunter/bridge_border{
+	dir = 1
+	},
+/obj/structure/showcase{
+	desc = null;
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi';
+	icon_state = "smallmonitor";
+	name = "Monitor";
+	pixel_y = 22;
+	pixel_x = 0;
+	density = 0
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"i" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/hunting_trap{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/item/hunting_trap{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/hunting_trap{
+	pixel_x = -4;
+	pixel_y = 1
+	},
+/turf/open/shuttle/dropship/predship/tile/red4/glow,
+/area/shuttle/hunter)
+"j" = (
+/obj/effect/hunter/bridge_border/corner,
+/obj/structure/surface/table/reinforced/prison{
+	color = "#6b675e"
+	},
+/obj/structure/showcase{
+	desc = "A console used for monitoring the ships defences systems.";
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi';
+	icon_state = "overwatch";
+	name = "Ship Defenses Console";
+	pixel_y = 13;
+	density = 0
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"k" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/stack/medical/advanced/ointment/predator{
+	desc = "A poultice made of cold, blue petals that is rubbed on burns. Not to be removed from the ship.";
+	name = "arena soothing herbs";
+	pixel_x = 4;
+	pixel_y = 39
+	},
+/obj/item/stack/medical/advanced/bruise_pack/predator{
+	pixel_x = 2;
+	pixel_y = 15
+	},
+/obj/item/reagent_container/hypospray/autoinjector/yautja{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/reagent_container/hypospray/autoinjector/yautja{
+	pixel_x = -1;
+	pixel_y = -3
+	},
+/turf/open/shuttle/dropship/predship/tile/red4/glow,
+/area/shuttle/hunter)
+"l" = (
+/obj/effect/hunter/bridge_border{
+	dir = 1
+	},
+/obj/structure/surface/table/reinforced/prison{
+	color = "#6b675e"
+	},
+/obj/structure/machinery/computer/shuttle/dropship/flight/hunter{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"m" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/southeast,
+/area/shuttle/hunter)
+"n" = (
+/obj/effect/hunter/bridge_border/corner{
+	dir = 1
+	},
+/obj/structure/surface/table/reinforced/prison{
+	color = "#6b675e"
+	},
+/obj/structure/showcase{
+	desc = "A console equipped with a radar used by the Hunters to detect gear and good hunting grounds.";
+	dir = 2;
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi';
+	icon_state = "terminal";
+	name = "Radar Console";
+	pixel_x = 0;
+	pixel_y = 3
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"o" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/stack/medical/advanced/bruise_pack/predator{
+	pixel_x = -4;
+	pixel_y = 15
+	},
+/obj/item/stack/medical/advanced/ointment/predator{
+	desc = "A poultice made of cold, blue petals that is rubbed on burns. Not to be removed from the ship.";
+	name = "arena soothing herbs";
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/turf/open/shuttle/dropship/predship/tile/red4/glow,
+/area/shuttle/hunter)
+"p" = (
+/obj/effect/hunter/bridge_border/corner{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"r" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/northeast,
+/area/shuttle/hunter)
+"s" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/west,
+/area/shuttle/hunter)
+"t" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/northwest,
+/area/shuttle/hunter)
+"u" = (
+/obj/effect/hunter/bridge_border{
+	dir = 1
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"v" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/east,
+/area/shuttle/hunter)
+"w" = (
+/obj/effect/hunter/bridge_border/edge{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"x" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/southwest,
+/area/shuttle/hunter)
+"y" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull/north,
+/area/shuttle/hunter)
+"z" = (
+/obj/structure/bed/chair/hunter{
+	dir = 4;
+	buckling_x = -4;
+	buckling_y = 4
+	},
+/turf/open/floor/corsat/squares,
+/area/shuttle/hunter)
+"A" = (
+/obj/effect/hunter/rune,
+/turf/open/shuttle/dropship/predship/mainfloor/upper,
+/area/shuttle/hunter)
+"B" = (
+/obj/structure/machinery/door/airlock/yautja{
+	dir = 1;
+	id = "aft_door"
+	},
+/obj/structure/machinery/door/poddoor/hybrisa/ultra_reinforced_door/open{
+	color = "#f0ebd3";
+	id = "dropshiphunter"
+	},
+/turf/open/shuttle/dropship/predship/tile/red3,
+/area/shuttle/hunter)
+"C" = (
+/obj/effect/hunter/bridge_border/edge{
+	dir = 1
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"D" = (
+/obj/effect/hunter/bridge_border/corner,
+/obj/structure/surface/table/reinforced/prison{
+	color = "#6b675e"
+	},
+/obj/structure/machinery/hunting_ground_selection{
+	pixel_y = 13
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"E" = (
+/obj/effect/hunter/glowing_shape/small_red{
+	pixel_x = -11;
+	dir = 1;
+	pixel_y = -6
+	},
+/obj/effect/hunter/bridge_border/corner{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"F" = (
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
+	},
+/obj/item/stack/yautja_rope{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/item/stack/yautja_rope{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/turf/open/shuttle/dropship/predship/tile/red4/glow,
+/area/shuttle/hunter)
+"G" = (
+/turf/closed/wall/huntership,
+/area/shuttle/hunter)
+"H" = (
+/obj/effect/hunter/rune/corner_2{
+	dir = 8
+	},
+/obj/structure/curtain/leather/alt,
+/turf/open/shuttle/dropship/predship/mainfloor/upper,
+/area/shuttle/hunter)
+"I" = (
+/turf/open/shuttle/dropship/predship/tile/red,
+/area/shuttle/hunter)
+"J" = (
+/obj/effect/hunter/rune{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/predship/mainfloor/upper/north,
+/area/shuttle/hunter)
+"K" = (
+/obj/structure/window/framed/colony/reinforced/hull{
+	basestate = "pred_window";
+	icon_state = "pred_window0"
+	},
+/turf/open/floor/corsat,
+/area/shuttle/hunter)
+"L" = (
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"M" = (
+/obj/structure/machinery/door/airlock/yautja{
+	dir = 1
+	},
+/turf/open/floor/corsat,
+/area/shuttle/hunter)
+"N" = (
+/obj/structure/bed/chair/hunter{
+	dir = 8;
+	buckling_x = -4;
+	buckling_y = 4
+	},
+/turf/open/floor/corsat/squares,
+/area/shuttle/hunter)
+"O" = (
+/obj/effect/hunter/rune/corner_2,
+/obj/structure/curtain/leather/alt,
+/turf/open/shuttle/dropship/predship/mainfloor/upper/north,
+/area/shuttle/hunter)
+"P" = (
+/turf/template_noop,
+/area/template_noop)
+"Q" = (
+/obj/structure/bed/chair/hunter{
+	dir = 1
+	},
+/obj/effect/hunter/bridge_border/corner{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"S" = (
+/obj/effect/hunter/bridge_border/corner{
+	dir = 1
+	},
+/obj/structure/surface/table/reinforced/prison{
+	color = "#6b675e"
+	},
+/obj/structure/machinery/hunt_ground_spawner{
+	pixel_y = 13;
+	pixel_x = -1
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"T" = (
+/obj/structure/bed/chair/hunter{
+	dir = 1;
+	pixel_y = 9
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"U" = (
+/obj/effect/hunter/bridge_border/edge{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"V" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/predship/hull/non_weedable_hull,
+/area/shuttle/hunter)
+"W" = (
+/obj/structure/machinery/door_control/yautja{
+	pixel_x = -32;
+	pixel_y = 0;
+	id = "dropshiphunter";
+	name = "Shutters"
+	},
+/obj/effect/hunter/rune/stripes_arrow,
+/turf/open/shuttle/dropship/predship/tile/red,
+/area/shuttle/hunter)
+"Y" = (
+/obj/structure/bed/chair/hunter{
+	dir = 1
+	},
+/obj/effect/hunter/bridge_border/corner{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/predship/tile/hunter_tile_1,
+/area/shuttle/hunter)
+"Z" = (
+/obj/structure/curtain/leather/alt,
+/turf/open/shuttle/dropship/predship/hunter_grille,
+/area/shuttle/hunter)
+
+(1,1,1) = {"
+P
+t
+G
+G
+G
+G
+s
+s
+s
+G
+G
+s
+s
+s
+s
+x
+"}
+(2,1,1) = {"
+P
+y
+K
+j
+Q
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+V
+"}
+(3,1,1) = {"
+t
+G
+G
+h
+c
+G
+G
+z
+z
+z
+z
+G
+i
+F
+G
+G
+"}
+(4,1,1) = {"
+y
+G
+D
+C
+e
+E
+G
+A
+A
+A
+A
+H
+I
+I
+W
+B
+"}
+(5,1,1) = {"
+y
+K
+l
+T
+L
+c
+M
+a
+b
+a
+a
+Z
+I
+I
+f
+B
+"}
+(6,1,1) = {"
+y
+G
+S
+U
+w
+p
+G
+J
+J
+J
+J
+O
+I
+I
+f
+B
+"}
+(7,1,1) = {"
+r
+G
+G
+u
+c
+G
+G
+N
+N
+N
+N
+G
+o
+k
+G
+G
+"}
+(8,1,1) = {"
+P
+y
+K
+n
+Y
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+d
+"}
+(9,1,1) = {"
+P
+r
+G
+G
+G
+G
+v
+v
+v
+G
+G
+v
+v
+v
+v
+m
+"}

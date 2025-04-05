@@ -122,12 +122,14 @@
 #define DROPSHIP_TORNADO "dropship_tornado"
 #define DROPSHIP_TYPHOON "dropship_typhoon"
 #define DROPSHIP_TRIPOLI "dropship_tripoli"
+#define DROPSHIP_HUNTER "dropship_hunter"
 
 #define ALMAYER_DROPSHIP_LZ1 "almayer-hangar-lz1"
 #define ALMAYER_DROPSHIP_LZ2 "almayer-hangar-lz2"
 
 #define TEMPEST_LZ "tempestbreaker lz"  //RU-PVE
 #define GOLDEN_ARROW_LZ "golden arrow lz"
+#define HUNTER_LZ "huntership lz"
 
 #define DROPSHIP_FLYBY_ID "special_flight"
 #define DROPSHIP_LZ1 "dropship-lz1"

@@ -631,6 +631,11 @@
 	icon = 'icons/obj/structures/machinery/computer.dmi'
 	icon_state = "cameras_old"
 
+/obj/structure/machinery/computer/shuttle/dropship/flight/hunter
+	icon = 'icons/obj/structures/machinery/yautja_machines.dmi'
+	icon_state = "crew"
+	shuttleId = DROPSHIP_HUNTER
+
 /obj/structure/machinery/computer/shuttle/dropship/flight/laptop
 	name = "\improper Dropship Remote-Flight Laptop"
 	desc = "A laptop loaded with flight control software that has a customized keyboard."
